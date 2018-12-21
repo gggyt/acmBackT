@@ -1,0 +1,245 @@
+2018-12-21 14:53:27.897 DEBUG --- [main] com.example.acm.AcmApplication Line:53  - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-12-21 14:53:28.053 DEBUG --- [background-preinit] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Line:89  - Loaded expression factory via original TCCL
+2018-12-21 14:53:28.069 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:578 - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-12-21 14:53:28.069 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:579 - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-12-21 14:53:28.069 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:580 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-12-21 14:53:28.069 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:581 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-12-21 14:53:28.069 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:582 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-12-21 14:53:31.444 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [C:\Users\tal100\Desktop\acmBack\acm\target\classes\com\example\acm\mapper\UserMapper.class]
+2018-12-21 14:53:31.444 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'userMapper' and 'com.example.acm.mapper.UserMapper' mapperInterface
+2018-12-21 14:53:31.444 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2018-12-21 14:53:33.928 DEBUG --- [main] io.netty.util.internal.logging.InternalLoggerFactory Line:71  - Using SLF4J as the default logging framework
+2018-12-21 14:53:33.928 DEBUG --- [main] io.lettuce.core.resource.DefaultClientResources Line:76  - -Dio.netty.eventLoopThreads: 8
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.ResourceLeakDetector Line:81  - -Dio.netty.leakDetection.level: simple
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.ResourceLeakDetector Line:81  - -Dio.netty.leakDetection.targetRecords: 4
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:71  - Platform: Windows
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - -Dio.netty.noUnsafe: false
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - Java version: 8
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - sun.misc.Unsafe.theUnsafe: available
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - sun.misc.Unsafe.copyMemory: available
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - java.nio.Buffer.address: available
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - direct buffer constructor: available
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - java.nio.Bits.unaligned: available, true
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - sun.misc.Unsafe: available
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.tmpdir: C:\Users\tal100\AppData\Local\Temp (java.io.tmpdir)
+2018-12-21 14:53:33.990 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-12-21 14:53:34.006 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.noPreferDirect: false
+2018-12-21 14:53:34.006 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.maxDirectMemory: 2831679488 bytes
+2018-12-21 14:53:34.006 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-12-21 14:53:34.006 DEBUG --- [main] io.netty.util.internal.CleanerJava6 Line:71  - java.nio.ByteBuffer.cleaner(): available
+2018-12-21 14:53:34.006 DEBUG --- [main] io.netty.util.ResourceLeakDetectorFactory Line:76  - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1603dc2f
+2018-12-21 14:53:34.006 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:71  - org.jctools-core.MpscChunkedArrayQueue: available
+2018-12-21 14:53:34.022 DEBUG --- [main] reactor.util.Loggers$LoggerFactory Line:213 - Using Slf4j logging framework
+2018-12-21 14:53:34.037 DEBUG --- [main] reactor.core.publisher.UnsafeSupport Line:213 - Starting UnsafeSupport init in Java 1.8
+2018-12-21 14:53:34.037 DEBUG --- [main] reactor.core.publisher.UnsafeSupport Line:213 - Unsafe is available
+2018-12-21 14:53:34.053 DEBUG --- [main] io.lettuce.core.resource.DefaultClientResources Line:71  - LatencyUtils/HdrUtils are not available, metrics are disabled
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.numHeapArenas: 16
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.numDirectArenas: 16
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.pageSize: 8192
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.maxOrder: 11
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.chunkSize: 16777216
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.tinyCacheSize: 512
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.smallCacheSize: 256
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.normalCacheSize: 64
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-12-21 14:53:34.147 DEBUG --- [main] io.netty.util.internal.InternalThreadLocalMap Line:76  - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-12-21 14:53:34.162 DEBUG --- [main] io.netty.util.internal.InternalThreadLocalMap Line:76  - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-12-21 14:53:34.365 DEBUG --- [main] com.zaxxer.hikari.HikariConfig Line:495 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2018-12-21 14:53:34.397 DEBUG --- [main] org.apache.ibatis.logging.LogFactory Line:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-12-21 14:53:34.725 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [C:\Users\tal100\Desktop\acmBack\acm\target\classes\mapper\UserMapper.xml]'
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers Line:60  - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Line:89  - Loaded expression factory via original TCCL
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers Line:60  - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.engine.ConfigurationImpl Line:148 - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.engine.ConfigurationImpl Line:180 - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.engine.ConfigurationImpl Line:194 - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.xml.ValidationXmlParser Line:133 - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper Line:53  - Trying to load META-INF/validation.xml via user class loader
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper Line:60  - Trying to load META-INF/validation.xml via TCCL
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper Line:66  - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-12-21 14:53:35.740 DEBUG --- [main] org.hibernate.validator.internal.xml.ValidationXmlParser Line:140 - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-12-21 14:53:35.756 DEBUG --- [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:578 - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-12-21 14:53:35.756 DEBUG --- [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:579 - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-12-21 14:53:35.756 DEBUG --- [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:580 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-12-21 14:53:35.756 DEBUG --- [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:581 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-12-21 14:53:35.756 DEBUG --- [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:582 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-12-21 14:53:37.006 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.006 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.006 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.021 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.021 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.021 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 1. Next position is: 2
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 2. Next position is: 3
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 3. Next position is: 4
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 4. Next position is: 5
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 5. Next position is: 6
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 6. Next position is: 7
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method showPhotos
+2018-12-21 14:53:37.037 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResponseEntity
+2018-12-21 14:53:37.053 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 7. Next position is: 8
+2018-12-21 14:53:37.053 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |showPhotos|
+2018-12-21 14:53:37.084 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'headers' renamed to 'headers'
+2018-12-21 14:53:37.084 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'body' renamed to 'body'
+2018-12-21 14:53:37.084 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'statusCode' renamed to 'statusCode'
+2018-12-21 14:53:37.084 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'statusCodeValue' renamed to 'statusCodeValue'
+2018-12-21 14:53:37.084 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:73  - Swagger generated parameter model id: ResponseEntity, name: ResponseEntity, schema: {} models
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'headers' renamed to 'headers'
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'body' renamed to 'body'
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'statusCode' renamed to 'statusCode'
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'statusCodeValue' renamed to 'statusCodeValue'
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |showPhotos|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |showPhotos|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |showPhotos|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |showPhotos|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method uploadImg
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:object
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |uploadImg|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:78  - Swagger core did not find any models
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |uploadImg|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |uploadImg|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |uploadImg|
+2018-12-21 14:53:37.099 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |uploadImg|
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method register
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResultBean
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |register|
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'code' renamed to 'code'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'result' renamed to 'result'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'msg' renamed to 'msg'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'resultBean' renamed to 'resultBean'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:73  - Swagger generated parameter model id: ResultBean, name: ResultBean, schema: {} models
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'code' renamed to 'code'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'result' renamed to 'result'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'msg' renamed to 'msg'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'resultBean' renamed to 'resultBean'
+2018-12-21 14:53:37.146 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |register|
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |register|
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |register|
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |register|
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method getUserInfo
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResultBean
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |getUserInfo|
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'code' renamed to 'code'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'result' renamed to 'result'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'msg' renamed to 'msg'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'resultBean' renamed to 'resultBean'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:73  - Swagger generated parameter model id: ResultBean, name: ResultBean, schema: {} models
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'code' renamed to 'code'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'result' renamed to 'result'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'msg' renamed to 'msg'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'resultBean' renamed to 'resultBean'
+2018-12-21 14:53:37.162 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |getUserInfo|
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |getUserInfo|
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |getUserInfo|
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |getUserInfo|
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method login
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ResultBean
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |login|
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'code' renamed to 'code'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'result' renamed to 'result'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'msg' renamed to 'msg'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'resultBean' renamed to 'resultBean'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:73  - Swagger generated parameter model id: ResultBean, name: ResultBean, schema: {} models
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'code' renamed to 'code'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'result' renamed to 'result'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'msg' renamed to 'msg'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'resultBean' renamed to 'resultBean'
+2018-12-21 14:53:37.178 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |login|
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |login|
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |login|
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |login|
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 1. Next position is: 2
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 2. Next position is: 3
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 3. Next position is: 4
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 4. Next position is: 5
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.193 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 5. Next position is: 6
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 6. Next position is: 7
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method error
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:Map«string,object»
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 7. Next position is: 8
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |error|
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:78  - Swagger core did not find any models
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |error|
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |error|
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |error|
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |error|
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 0. Next position is: 1
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.209 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 1. Next position is: 2
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 2. Next position is: 3
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 3. Next position is: 4
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 4. Next position is: 5
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 5. Next position is: 6
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 6. Next position is: 7
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationAuthReader Line:64  - Authorization count 0 for method errorHtml
+2018-12-21 14:53:37.224 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationResponseClassReader Line:36  - Setting response class to:ModelAndView
+2018-12-21 14:53:37.240 DEBUG --- [main] com.mangofactory.swagger.readers.operation.OperationPositionReader Line:25  - Added operation at position: 7. Next position is: 8
+2018-12-21 14:53:37.240 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:53  - Reading models for handlerMethod |errorHtml|
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'view' renamed to 'view'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'model' renamed to 'model'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'status' renamed to 'status'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'empty' renamed to 'empty'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'reference' renamed to 'reference'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'viewName' renamed to 'viewName'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'modelMap' renamed to 'modelMap'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:73  - Swagger generated parameter model id: ModelAndView, name: ModelAndView, schema: {} models
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'view' renamed to 'view'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'model' renamed to 'model'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'status' renamed to 'status'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'empty' renamed to 'empty'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'reference' renamed to 'reference'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'viewName' renamed to 'viewName'
+2018-12-21 14:53:37.271 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'modelMap' renamed to 'modelMap'
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'contentType' renamed to 'contentType'
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'empty' renamed to 'empty'
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'contentType' renamed to 'contentType'
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.models.ObjectMapperBeanPropertyNamingStrategy Line:46  - Name 'empty' renamed to 'empty'
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:178 - Reading parameters models for handlerMethod |errorHtml|
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:210 - Finished reading parameters models for handlerMethod |errorHtml|
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:94  - Reading parameters models for handlerMethod |errorHtml|
+2018-12-21 14:53:37.287 DEBUG --- [main] com.mangofactory.swagger.readers.ApiModelReader Line:85  - Finished reading models for handlerMethod |errorHtml|
