@@ -14,9 +14,15 @@ public class UserView {
         this.uId = user.getUserId();
         this.username = user.getUsername();
         this.realname = user.getRealname();
-        this.grade = user.getGrade();
-        this.classNum = user.getClassNum();
-        this.image = user.getImage();
+        if (user.getGrade()!=null) {
+            this.grade = user.getGrade();
+        }
+        if (user.getClassNum()!=null) {
+            this.classNum = user.getClassNum();
+        }
+        if (user.getImage()!=null) {
+            this.image = user.getImage();
+        }
     }
     public int getuId() {
         return uId;

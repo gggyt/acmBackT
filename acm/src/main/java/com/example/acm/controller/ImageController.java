@@ -1,9 +1,5 @@
 package com.example.acm.controller;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import io.lettuce.core.dynamic.annotation.Value;
-import org.apache.logging.log4j.util.PropertiesUtil;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -42,7 +38,7 @@ public class ImageController {
     }
     @RequestMapping(value = "/uploadImg", method = RequestMethod.POST)
     @ResponseBody
-    public Object   uploadImg(@RequestParam(value = "myFileName", required = false) MultipartFile file,
+    public Object  uploadImg(@RequestParam(value = "myFileName", required = false) MultipartFile file,
                           HttpServletRequest request, HttpServletResponse response) throws Exception{
         System.out.println("*************接收上传文件*************");
         if (file.isEmpty()) {
@@ -51,7 +47,7 @@ public class ImageController {
         String fileName = file.getOriginalFilename();  // 文件名
         String suffixName = fileName.substring(fileName.lastIndexOf("."));  // 后缀名
 
-        String filePath = "E://pic/"; // 上传后的路径
+        String filePath = "D://pic/"; // 上传后的路径
          fileName = UUID.randomUUID() + suffixName; // 新文件名 File dest = new File(filePath + fileName);
         File dest = new File(filePath + fileName);
         System.out.println(filePath + fileName);
@@ -64,8 +60,8 @@ public class ImageController {
         Map<String, Object> map = new HashMap<>();
         map.put("errno", 0);
         map.put("data", "http://localhost:9999/image/"+fileName);
-        String jo = JSONArray.toJSONString(map);
-        return jo;
+        //String jo = map;
+        return map;
     }
 }
 

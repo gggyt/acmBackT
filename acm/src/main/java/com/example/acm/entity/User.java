@@ -13,7 +13,7 @@ import org.springframework.format.annotation.DateTimeFormat;
  */
 public class User implements Serializable {
 
-	private Integer auth;//
+	private Integer auth;// 0-未通过审核 1-超级管理员 2-管理员 3-队员 4-萌新 5-未完善资料的萌新
 	private Integer classNum;//
 	private Date createDay;//
 	private Integer grade;//

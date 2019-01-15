@@ -57,6 +57,7 @@ public class userController extends BaseController{
             LOG.info("-----------token:"+request.getHeader("Authorization"));
             LOG.info("username"+username);
             map.put("username", username);
+            map.put("isEffective", 1);
             List<User> user = userService.findUserListByQuery(map);
             if (user==null) {
                 return new ResultBean(ResultCode.HAS_NO_THIS_USER);
@@ -65,6 +66,10 @@ public class userController extends BaseController{
                 setUserSession(request, response, request.getSession(), user.get(0));
                 LOG.info(username);
                 LOG.info("userId-----------------"+user.get(0).getUserId());
+                if (user.get(0).getAuth()==0) {
+                    return new ResultBean(ResultCode.PARAM_ERROR, "用户尚未通过审核");
+
+                }
                 TokenModel model = tokenManager.createToken(user.get(0).getUserId());
                 return new ResultBean(ResultCode.SUCCESS, model);
             } else {
@@ -90,6 +95,10 @@ public class userController extends BaseController{
             User user = getUserIdFromSession(request);
             if (user==null) {
                 return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth()==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "用户尚未通过审核");
+
             }
             UserView userView = new UserView(user);
             LOG.info(userView.getUsername());

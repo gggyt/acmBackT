@@ -9,7 +9,6 @@ import com.example.acm.common.SysConst;
 import com.example.acm.conf.RedisComponent;
 import com.example.acm.entity.User;
 import com.example.acm.service.UserService;
-import com.example.acm.utils.JSONUtils;
 import com.example.acm.view.UserView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
