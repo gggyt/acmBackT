@@ -43,5 +43,6 @@ public interface ClassificationMapper{
     
 
     public List<Map<String,Object>> findClassificationMapListByQuery(@Param("map") Map<String, Object> map);
-	
+
+    public List<Classification> findNewsClasfication(@Param("map") Map<String, Object> map);
 }

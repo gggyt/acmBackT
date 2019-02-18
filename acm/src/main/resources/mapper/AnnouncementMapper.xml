@@ -198,7 +198,7 @@
 				AND a.announceBody=#{map.announceBody}
 			</if>
 			<if test="map.announceCreateTime != null ">
-				AND a.announceCreateTime=#{map.announceCreateTime}
+				AND <![CDATA[  a.announceCreateTime=#{map.announceCreateTime}]]>
 			</if>
 			<if test="map.announceCreateUser != null ">
 				AND a.announceCreateUser=#{map.announceCreateUser}
@@ -251,8 +251,12 @@
 			</if>
 		</trim>
 		<if test="map.order != null ">
-		ORDER BY 
-			a.${map.order} ${map.aOrs}
+		ORDER BY
+			a.isFirst DESC, a.${map.order} ${map.aOrs}
+		</if>
+		<if test="map.order == null ">
+			ORDER BY
+			a.isFirst DESC
 		</if>
 		<if test="map.start != null ">
 		limit #{map.start},#{map.limit}

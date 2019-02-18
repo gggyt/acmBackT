@@ -2,6 +2,7 @@ package com.example.acm.authorization.manager.impl;
 
 import com.example.acm.authorization.manager.TokenManager;
 import com.example.acm.authorization.model.TokenModel;
+import com.example.acm.common.SysConst;
 import com.example.acm.conf.Constants;
 import com.example.acm.conf.RedisComponent;
 import com.example.acm.utils.UUIDUtil;
@@ -15,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 通过Redis存储和验证token的实现类
- * @see com.scienjus.authorization.manager.TokenManager
  * @author ScienJus
  * @date 2015/7/31.
  */
@@ -40,7 +40,7 @@ public class RedisTokenManager implements TokenManager {
         System.out.println(token);
         TokenModel model = new TokenModel(userId, token);
         System.out.println(token);
-        redis.set(token+"", userId+"", 1000);
+        redis.set(token+"", userId+"", SysConst.TOKEN_TIME);
         System.out.println("+===="+redis.get(token+""));
         return model;
     }

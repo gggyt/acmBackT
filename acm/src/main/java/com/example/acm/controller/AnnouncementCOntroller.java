@@ -141,4 +141,25 @@ public class AnnouncementCOntroller extends BaseController{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    //修改置顶状态
+    @RequestMapping(value = "/updateFirst")
+    @ResponseBody
+    public ResultBean updateFirst(@RequestParam(value = "announceId", required = true) long announceId,
+                             HttpServletRequest request, HttpServletResponse response) {
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+
+            return announceDealService.updateFirst(user, announceId);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
 }

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.acm.entity.Classification;
+import org.apache.ibatis.annotations.Param;
 
 
 public interface ClassificationService{
@@ -127,5 +128,8 @@ public interface ClassificationService{
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassificationMapListByQuery(Map<String, Object> map);
+
+
+    public List<Classification> findNewsClasfication(@Param("map") Map<String, Object> map);
 	
 }

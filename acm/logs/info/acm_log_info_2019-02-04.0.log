@@ -1,0 +1,678 @@
+2019-02-04 12:08:51.721 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:08:52.966 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-02-04 12:08:52.966 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-02-04 12:08:57.263 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:48.971 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:49.113 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:49.113 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:09:49.412 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:49.701 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:49.702 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:09:53.628 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:53.629 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:09:56.546 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:09:56.547 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:10:04.289 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:04.289 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:10:16.518 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:16.518 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:10:45.551 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:45.552 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:10:45.812 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:46.057 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:46.058 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:10:46.119 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:58.160 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:58.161 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:10:58.419 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:58.943 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:59.397 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:10:59.398 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:11:05.340 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:11:05.341 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:11:30.009 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:11:30.009 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:11:30.223 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:11:30.802 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:11:30.803 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:11:30.962 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:14:46.202 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:14:46.203 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:14:47.081 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:14:47.279 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:14:47.279 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:14:47.466 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:14:53.101 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:14:53.101 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:15:11.513 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:15:11.513 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:15:11.668 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:15:11.669 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:15:11.802 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:15:12.265 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:15:12.267 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:15:12.348 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:15:15.072 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:15:15.072 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:16:20.539 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:16:20.540 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:16:20.725 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:16:20.729 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:16:21.075 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:16:21.233 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:16:21.234 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:16:21.314 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:25:21.135 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:25:21.136 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:25:21.269 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:25:21.269 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:25:21.961 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:25:22.259 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:25:22.260 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:25:22.632 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:20.398 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:20.403 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:28:20.456 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:20.457 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:28:20.906 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:21.199 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:21.199 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:28:21.328 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:29.149 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:29.149 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 12:28:29.208 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:29.209 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:28:29.654 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:29.858 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 12:28:29.859 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 12:28:30.252 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:32.166 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:32.167 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:46:32.204 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:32.205 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:46:32.634 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:32.799 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:32.800 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:46:33.115 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:43.108 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:43.108 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:46:57.960 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:57.961 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:46:57.994 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:57.995 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:46:58.714 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:58.947 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:46:58.947 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:46:58.990 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:26.905 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:26.905 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:48:26.978 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:26.979 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:48:27.614 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:27.710 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:27.710 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:48:27.810 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:38.429 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:48:38.430 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:49:01.274 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:01.274 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:49:01.548 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:01.550 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:49:02.047 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:02.384 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:02.385 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:49:02.505 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:04.416 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:04.417 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:49:04.418 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:49:04.419 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:49:04.544 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:50:51.774 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:50:51.774 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:50:51.896 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:50:51.896 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:50:52.176 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:50:52.520 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:50:52.520 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:50:52.727 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:51:10.659 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:51:10.663 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:51:30.386 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:51:30.386 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:51:30.647 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:51:30.648 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:51:31.003 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:51:31.004 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:51:31.131 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:51:31.451 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:13.024 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:13.024 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:54:13.448 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:13.448 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:54:13.546 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:13.891 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:14.857 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:14.857 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:54:30.653 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:30.654 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:54:31.079 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:31.080 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:54:31.332 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:31.368 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:31.893 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:54:31.893 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:56:02.579 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:56:02.580 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:56:03.018 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:56:03.019 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:56:03.764 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:56:04.331 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:56:04.331 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:57:25.714 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:25.715 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:57:27.214 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:27.215 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:57:27.254 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:27.572 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:27.573 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:57:54.137 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:54.137 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 14:57:55.639 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:55.639 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 14:57:55.755 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:55.847 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 14:57:55.848 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:18:55.760 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:18:55.761 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:18:56.595 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:18:56.595 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:18:57.015 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:18:57.308 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:18:57.308 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:20:15.814 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:15.816 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:20:16.587 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:16.588 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:20:16.625 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:16.695 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:16.696 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:20:28.695 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:28.696 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:20:29.890 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:29.949 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:30.025 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:30.163 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:20:30.163 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:20:55.306 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:55.306 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:20:55.544 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:55.544 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:20:55.611 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:56.055 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:20:56.056 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:21:14.113 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:21:14.117 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:21:14.498 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:21:14.966 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:21:14.967 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:21:15.339 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:21:15.343 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:23:26.182 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:27.257 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:27.257 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:23:27.337 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:27.338 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:23:27.617 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:27.622 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:23:42.731 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:42.731 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:23:43.764 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:43.764 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:23:43.788 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:44.680 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:23:44.680 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:24:13.434 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:13.434 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:24:15.219 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:15.219 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:24:15.395 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:15.669 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:15.669 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:24:49.615 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:49.640 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:49.640 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:24:49.737 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:49.737 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:24:49.930 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:24:49.931 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:26:34.744 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:34.744 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:26:34.748 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:34.765 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:34.765 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:26:35.812 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:35.812 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:26:46.749 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:46.750 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:26:47.914 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:48.811 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:48.812 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:26:48.948 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:26:48.949 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:36:10.620 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:10.621 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:36:10.682 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:10.762 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:10.765 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:36:10.955 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:10.956 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:36:31.469 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:31.470 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:36:31.713 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:31.714 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:36:31.721 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:31.910 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:31.911 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:36:39.729 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:39.729 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:36:40.073 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:40.074 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:36:40.341 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:40.537 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:36:40.537 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:37:13.148 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:13.149 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:37:13.288 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:13.289 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:37:13.343 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:13.838 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:13.838 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:37:34.539 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:34.540 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:37:34.634 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:34.634 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:37:34.750 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:35.157 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:37:35.158 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:39:13.407 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:39:13.407 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:39:13.595 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:39:13.677 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:39:13.677 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:39:14.124 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:39:14.124 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:40:08.571 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:40:08.572 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:40:08.738 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:40:09.075 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:40:09.076 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:40:09.381 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:40:09.381 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:42:00.177 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:42:00.178 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:42:00.377 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:42:00.458 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:42:00.458 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:42:01.183 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:42:01.184 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:43:00.677 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:43:00.677 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:43:00.855 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:43:00.856 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:43:00.985 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:43:01.710 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:43:01.710 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:44:20.152 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:44:20.153 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:44:20.651 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:44:20.652 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:44:20.888 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:44:20.950 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:44:20.950 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:45:21.298 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:45:21.352 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:45:21.352 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:45:21.506 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:45:21.507 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:45:21.562 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:45:21.564 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:50:21.917 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:22.142 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:22.142 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:50:22.347 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:22.348 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:50:22.923 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:22.924 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:50:48.269 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:48.270 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:50:48.745 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:48.878 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:48.880 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:50:49.279 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:49.282 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:50:58.167 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:58.168 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:50:58.661 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:58.663 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:50:58.746 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:59.436 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:50:59.436 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:51:18.371 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:18.372 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:51:19.034 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:19.035 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:51:19.353 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:19.488 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:19.490 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:51:42.542 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:42.543 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:51:43.133 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:43.133 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:51:43.414 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:43.787 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:43.788 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:51:51.599 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:51.600 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:51:52.109 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:52.134 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:52.134 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:51:52.318 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:51:52.319 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:52:11.395 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:11.396 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:52:11.733 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:11.733 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:52:12.125 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:12.512 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:12.514 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:52:36.526 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:36.527 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:52:37.578 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:37.578 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:52:37.722 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:38.188 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:52:38.188 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:02.982 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:02.983 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:03.701 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:03.702 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:53:03.768 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:04.445 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:04.446 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:08.049 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:08.050 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:08.836 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:08.837 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:53:08.900 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:08.901 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:08.908 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:30.554 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:30.554 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:31.060 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:31.060 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:53:31.093 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:31.665 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:31.666 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:43.219 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:43.219 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:44.002 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:44.003 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:53:44.061 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:44.518 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:44.522 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:50.553 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:50.553 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:53:51.443 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:51.453 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:51.453 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:53:51.497 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:53:51.500 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:54:16.476 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:16.480 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:54:17.162 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:17.200 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:17.200 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:54:17.639 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:17.639 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:54:31.094 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:31.095 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:54:31.953 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:31.953 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:54:31.992 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:32.497 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:54:32.501 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:55:48.131 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:55:48.132 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:55:48.494 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:55:48.494 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:55:48.947 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:55:49.311 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:55:49.868 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:55:59.510 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:55:59.510 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 15:56:00.162 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:56:00.164 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 15:56:00.211 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:56:00.827 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 15:56:00.827 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:00:47.876 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:01:06.506 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:02:38.706 INFO  --- [main] com.example.acm.AcmApplication Line:50  - Starting AcmApplication on DESKTOP-03CDSMO with PID 14720 (D:\ACM\acmBackT\acm\target\classes started by ggg in D:\ACM\acmBackT\acm)
+2019-02-04 16:02:38.712 INFO  --- [main] com.example.acm.AcmApplication Line:659 - No active profile set, falling back to default profiles: default
+2019-02-04 16:02:43.086 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-9999"]
+2019-02-04 16:02:43.096 INFO  --- [main] org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-02-04 16:02:43.096 INFO  --- [main] org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-02-04 16:02:43.101 INFO  --- [localhost-startStop-1] org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\ggg\tomcat\apache-tomcat-7.0.82\lib;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\ggg\apache-maven-3.5.2\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\sbin;C:\Program Files\hadoop\hadoop-2.7.4\bin;C:\Program Files\hadoop\hadoop-2.7.4\sbin;C:\Python27;C:\Program Files\PuTTY\;C:\Python27\Lib\site-packages\django\bin;C:\Python27\Scripts;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\ggg\SDK\tools;C:\Users\ggg\SDK\platform-tools;D:\Git\cmd;D:\nodej\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\ggg\AppData\Local\Microsoft\WindowsApps;C:\Users\ggg\SSH Secure Shell;D:\GO\bin;C:\Users\ggg\AppData\Roaming\npm;D:\Microsoft VS Code\bin;;.]
+2019-02-04 16:02:43.202 INFO  --- [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-02-04 16:02:45.953 INFO  --- [main] com.mangofactory.swagger.plugin.SwaggerPluginAdapter Line:33  - Context refreshed
+2019-02-04 16:02:45.954 INFO  --- [main] com.mangofactory.swagger.plugin.SwaggerPluginAdapter Line:46  - Found custom SwaggerSpringMvcPlugins
+2019-02-04 16:02:45.954 INFO  --- [main] com.mangofactory.swagger.plugin.SwaggerPluginAdapter Line:50  - initializing plugin bean customImplementation
+2019-02-04 16:02:45.962 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:55  - Scanning for api listing references
+2019-02-04 16:02:45.965 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteAlbum was album-controller
+2019-02-04 16:02:45.967 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteAlbum belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-02-04 16:02:45.967 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:deleteAlbum
+2019-02-04 16:02:45.967 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addAlbum was album-controller
+2019-02-04 16:02:45.968 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addAlbum belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-02-04 16:02:45.968 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:addAlbum
+2019-02-04 16:02:45.968 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectAlbum was album-controller
+2019-02-04 16:02:45.968 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectAlbum belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-02-04 16:02:45.968 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:selectAlbum
+2019-02-04 16:02:45.969 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method AlbumDetail was album-controller
+2019-02-04 16:02:45.969 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: AlbumDetail belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-02-04 16:02:45.969 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:AlbumDetail
+2019-02-04 16:02:45.969 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detail was announcement-c-ontroller
+2019-02-04 16:02:45.969 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detail belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-02-04 16:02:45.970 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:detail
+2019-02-04 16:02:45.970 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addNews was announcement-c-ontroller
+2019-02-04 16:02:45.970 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addNews belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-02-04 16:02:45.970 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:addNews
+2019-02-04 16:02:45.970 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateFirst was announcement-c-ontroller
+2019-02-04 16:02:45.971 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateFirst belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-02-04 16:02:45.971 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:updateFirst
+2019-02-04 16:02:45.971 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectAnnounce was announcement-c-ontroller
+2019-02-04 16:02:45.971 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectAnnounce belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-02-04 16:02:45.972 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:selectAnnounce
+2019-02-04 16:02:45.972 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectClass was announcement-c-ontroller
+2019-02-04 16:02:45.972 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectClass belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-02-04 16:02:45.972 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:selectClass
+2019-02-04 16:02:45.973 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateAnnounce was announcement-c-ontroller
+2019-02-04 16:02:45.973 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateAnnounce belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-02-04 16:02:45.973 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:updateAnnounce
+2019-02-04 16:02:45.973 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method uploadImg was image-controller
+2019-02-04 16:02:45.973 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: uploadImg belongs to groups: [[ResourceGroup{groupName='image-controller', position=0}]] 
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='image-controller', position=0} with description:Image Controller for handler method:uploadImg
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method uploadImg1 was image-controller
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: uploadImg1 belongs to groups: [[ResourceGroup{groupName='image-controller', position=0}]] 
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='image-controller', position=0} with description:Image Controller for handler method:uploadImg1
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method showPhotos was image-controller
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: showPhotos belongs to groups: [[ResourceGroup{groupName='image-controller', position=0}]] 
+2019-02-04 16:02:45.974 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='image-controller', position=0} with description:Image Controller for handler method:showPhotos
+2019-02-04 16:02:45.975 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addNews was new-classify-controller
+2019-02-04 16:02:45.975 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addNews belongs to groups: [[ResourceGroup{groupName='new-classify-controller', position=0}]] 
+2019-02-04 16:02:45.975 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='new-classify-controller', position=0} with description:New Classify Controller for handler method:addNews
+2019-02-04 16:02:45.975 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectClass was new-classify-controller
+2019-02-04 16:02:45.975 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectClass belongs to groups: [[ResourceGroup{groupName='new-classify-controller', position=0}]] 
+2019-02-04 16:02:45.975 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='new-classify-controller', position=0} with description:New Classify Controller for handler method:selectClass
+2019-02-04 16:02:45.976 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectClass was new-classify-controller
+2019-02-04 16:02:45.976 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectClass belongs to groups: [[ResourceGroup{groupName='new-classify-controller', position=0}]] 
+2019-02-04 16:02:45.976 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='new-classify-controller', position=0} with description:New Classify Controller for handler method:selectClass
+2019-02-04 16:02:45.976 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detail was news-controller
+2019-02-04 16:02:45.976 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detail belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-02-04 16:02:45.976 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:detail
+2019-02-04 16:02:45.977 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addNews was news-controller
+2019-02-04 16:02:45.977 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addNews belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-02-04 16:02:45.977 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:addNews
+2019-02-04 16:02:45.977 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectNewsMain was news-controller
+2019-02-04 16:02:45.977 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectNewsMain belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-02-04 16:02:45.977 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:selectNewsMain
+2019-02-04 16:02:45.978 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteNewMain was news-controller
+2019-02-04 16:02:45.978 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteNewMain belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-02-04 16:02:45.978 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:deleteNewMain
+2019-02-04 16:02:45.979 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateNewMain was news-controller
+2019-02-04 16:02:45.979 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateNewMain belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-02-04 16:02:45.979 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:updateNewMain
+2019-02-04 16:02:45.979 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deletePhoto was photo-controller
+2019-02-04 16:02:45.980 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deletePhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-02-04 16:02:45.980 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:deletePhoto
+2019-02-04 16:02:45.980 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method beCover was photo-controller
+2019-02-04 16:02:45.980 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: beCover belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-02-04 16:02:45.980 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:beCover
+2019-02-04 16:02:45.981 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectPhoto was photo-controller
+2019-02-04 16:02:45.981 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectPhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-02-04 16:02:45.981 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:selectPhoto
+2019-02-04 16:02:45.981 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addPhoto was photo-controller
+2019-02-04 16:02:45.981 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addPhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-02-04 16:02:45.981 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:addPhoto
+2019-02-04 16:02:45.982 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method register was user-controller
+2019-02-04 16:02:45.982 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.982 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:register
+2019-02-04 16:02:45.982 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method getUserInfo was user-controller
+2019-02-04 16:02:45.982 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.982 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:getUserInfo
+2019-02-04 16:02:45.983 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method userInfo was user-controller
+2019-02-04 16:02:45.983 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: userInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.983 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:userInfo
+2019-02-04 16:02:45.983 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUser was user-controller
+2019-02-04 16:02:45.983 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.983 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:selectUser
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUser was user-controller
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:selectUser
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method notPassUser was user-controller
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: notPassUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:notPassUser
+2019-02-04 16:02:45.984 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method beAdmin was user-controller
+2019-02-04 16:02:45.985 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: beAdmin belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.985 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:beAdmin
+2019-02-04 16:02:45.985 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateUserImage was user-controller
+2019-02-04 16:02:45.985 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateUserImage belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.985 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:updateUserImage
+2019-02-04 16:02:45.985 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method bePlayer was user-controller
+2019-02-04 16:02:45.986 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: bePlayer belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.986 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:bePlayer
+2019-02-04 16:02:45.986 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateUserInfo was user-controller
+2019-02-04 16:02:45.986 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.986 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:updateUserInfo
+2019-02-04 16:02:45.987 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method login was user-controller
+2019-02-04 16:02:45.987 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-02-04 16:02:45.987 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:login
+2019-02-04 16:02:45.987 INFO  --- [main] com.mangofactory.swagger.core.RequestMappingEvaluator Line:74  - Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+2019-02-04 16:02:45.987 INFO  --- [main] com.mangofactory.swagger.core.RequestMappingEvaluator Line:74  - Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+2019-02-04 16:02:45.987 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method error was basic-error-controller
+2019-02-04 16:02:45.988 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0}]] 
+2019-02-04 16:02:45.988 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='basic-error-controller', position=0} with description:Basic Error Controller for handler method:error
+2019-02-04 16:02:45.988 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method errorHtml was basic-error-controller
+2019-02-04 16:02:45.988 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0}]] 
+2019-02-04 16:02:45.988 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='basic-error-controller', position=0} with description:Basic Error Controller for handler method:errorHtml
+2019-02-04 16:02:45.999 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/photo-controller Description: photo-controller Position: 0
+2019-02-04 16:02:45.999 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/announcement-c-ontroller Description: announcement-c-ontroller Position: 0
+2019-02-04 16:02:45.999 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/image-controller Description: image-controller Position: 0
+2019-02-04 16:02:45.999 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-02-04 16:02:46.000 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/news-controller Description: news-controller Position: 0
+2019-02-04 16:02:46.000 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2019-02-04 16:02:46.000 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/album-controller Description: album-controller Position: 0
+2019-02-04 16:02:46.000 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/new-classify-controller Description: new-classify-controller Position: 0
+2019-02-04 16:02:46.613 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:89  - Added a resource listing with (8) api resources: 
+2019-02-04 16:02:46.613 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Album Controller at location: /api-docs/default/album-controller
+2019-02-04 16:02:46.613 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Announcement C Ontroller at location: /api-docs/default/announcement-c-ontroller
+2019-02-04 16:02:46.613 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Basic Error Controller at location: /api-docs/default/basic-error-controller
+2019-02-04 16:02:46.613 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Image Controller at location: /api-docs/default/image-controller
+2019-02-04 16:02:46.613 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   New Classify Controller at location: /api-docs/default/new-classify-controller
+2019-02-04 16:02:46.614 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   News Controller at location: /api-docs/default/news-controller
+2019-02-04 16:02:46.614 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Photo Controller at location: /api-docs/default/photo-controller
+2019-02-04 16:02:46.614 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   user Controller at location: /api-docs/default/user-controller
+2019-02-04 16:02:46.619 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-9999"]
+2019-02-04 16:02:46.632 INFO  --- [main] org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+2019-02-04 16:02:46.661 INFO  --- [main] com.example.acm.AcmApplication Line:59  - Started AcmApplication in 8.687 seconds (JVM running for 10.445)
+2019-02-04 16:02:50.873 INFO  --- [http-nio-9999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-04 16:02:50.937 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:02:51.053 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-02-04 16:02:54.955 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:02:55.006 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-02-04 16:05:12.905 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:05:12.907 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:05:13.076 INFO  --- [http-nio-9999-exec-8] io.lettuce.core.EpollProvider Line:101 - Starting without optional epoll library
+2019-02-04 16:05:13.080 INFO  --- [http-nio-9999-exec-8] io.lettuce.core.KqueueProvider Line:101 - Starting without optional kqueue library
+2019-02-04 16:05:13.123 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:05:13.123 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 16:05:13.995 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:05:14.035 INFO  --- [http-nio-9999-exec-2] com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2019-02-04 16:05:14.273 INFO  --- [http-nio-9999-exec-2] com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2019-02-04 16:05:14.402 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:05:14.403 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:06:32.843 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:06:32.843 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:06:34.089 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:06:34.090 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 16:06:34.245 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:06:34.524 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:06:34.525 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:07:01.751 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:07:01.751 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:07:02.410 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:07:02.411 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 16:07:02.676 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:07:02.677 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:07:02.713 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:30.922 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:30.923 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:13:31.460 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:31.461 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 16:13:31.787 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:32.287 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:32.287 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:13:42.965 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:42.966 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:13:44.378 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:44.379 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 16:13:44.446 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:44.873 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:44.874 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:13:53.083 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:53.084 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 16:13:54.228 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:54.229 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 16:13:54.260 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:54.625 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 16:13:54.625 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 21:01:13.067 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:01:13.070 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 21:01:13.317 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:01:13.441 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:01:13.442 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 21:01:13.885 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:01:13.885 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 21:03:23.573 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:03:23.573 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 21:03:23.822 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:03:24.084 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:03:24.084 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 21:03:24.591 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:03:24.758 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 21:05:10.954 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:05:10.955 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb
+2019-02-04 21:05:11.250 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:05:11.326 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:05:11.327 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID3311cdbccd23406f89e637ed1ceafcc7
+2019-02-04 21:05:11.593 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-02-04 21:05:11.594 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.userController Line:91  - ----------------uIDadd1173a57f14aedaddb38788e1535eb

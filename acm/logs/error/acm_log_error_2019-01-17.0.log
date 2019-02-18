@@ -1,0 +1,16 @@
+2019-01-17 21:37:22.900 ERROR --- [http-nio-9999-exec-1] com.example.acm.service.deal.Impl.AnnounceDealImpl Line:135 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 27
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\AnnouncementMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.announceId,   a.announceTitle,   a.announceBody,   a.announceCreateUser,   a.announceCreateTime,   a.announceUpdateUser,   a.announceUpdateTime,   a.isEffective,   a.isFirst,   a.isPublic      FROM     announcement a    WHERE  a.announceTitle like CONCAT('%', ?, '%')                 AND a.isEffective=?        ORDER BY    a.isFirst DESC, a.announceCreateTime DESC               limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 27
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 27
+2019-01-17 21:37:26.958 ERROR --- [http-nio-9999-exec-5] com.example.acm.service.deal.Impl.AnnounceDealImpl Line:135 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 27
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\AnnouncementMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.announceId,   a.announceTitle,   a.announceBody,   a.announceCreateUser,   a.announceCreateTime,   a.announceUpdateUser,   a.announceUpdateTime,   a.isEffective,   a.isFirst,   a.isPublic      FROM     announcement a    WHERE  a.announceTitle like CONCAT('%', ?, '%')                 AND a.isEffective=?        ORDER BY    a.isFirst DESC, a.announceCreateTime DESC               limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 27
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 27

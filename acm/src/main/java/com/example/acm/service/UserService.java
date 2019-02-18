@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.acm.entity.User;
+import org.apache.ibatis.annotations.Param;
 
 /** 
  * user服务接口
@@ -138,5 +139,6 @@ public interface UserService{
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUserMapListByQuery(Map<String, Object> map);
-	
+
+    public List<User> findUserListByQueryMy(Map<String, Object> map);
 }

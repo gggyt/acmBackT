@@ -169,6 +169,20 @@
 		limit #{map.start},#{map.limit}
 		</if>
 	</select>
+
+	<select id="findNewsClasfication" resultType="com.example.acm.entity.Classification">
+		SELECT
+		<include refid="classification_field_list_alias"/>
+		FROM
+		classification a INNER JOIN newclass b
+		where a.classId=b.classId
+			<if test="map.newsId != null ">
+				AND b.newsId  = #{map.newsId}
+			</if>
+			<if test="map.isEffective != null ">
+				AND b.isEffective=#{map.isEffective}
+			</if>
+	</select>
 	
 	<select id="countClassificationMapListByQuery" resultType="java.lang.Integer">
 		SELECT

@@ -139,5 +139,7 @@ public interface UserMapper{
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUserMapListByQuery(@Param("map") Map<String, Object> map);
-	
+
+    public List<User> findUserListByQueryMy(@Param("map") Map<String, Object> map);
+
 }

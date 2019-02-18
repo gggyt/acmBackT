@@ -10,6 +10,7 @@ import com.example.acm.service.UserService;
 import com.example.acm.service.deal.AnnounceDealService;
 import com.example.acm.utils.DateUtils;
 import com.example.acm.utils.ListPage;
+import com.example.acm.utils.UUIDUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.beans.Transient;
+import java.math.BigInteger;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -38,6 +40,9 @@ public class AnnounceDealImpl implements AnnounceDealService{
     public ResultBean addAnnounce(User user, String announceTitle, String announceBody, int isPublic){
         try {
             Announcement announcement = new Announcement();
+            Long bigInteger = new Long(UUIDUtil.getNumUUID());
+
+            announcement.setAnnounceId(bigInteger);
             announcement.setAnnounceTitle(announceTitle);
             announcement.setAnnounceBody(announceBody);
             announcement.setAnnounceCreateTime(new Date());
@@ -49,18 +54,8 @@ public class AnnounceDealImpl implements AnnounceDealService{
             announcement.setIsPublic(isPublic);
 
             announcementService.addAnnouncement(announcement);
-            Map<String, Object> mapSearch = new HashMap<>();
-            mapSearch.put("announceTitle", announceTitle);
-            mapSearch.put("announceBody", announceBody);
-            mapSearch.put("announceCreateUser", user.getUserId());
-            mapSearch.put("isEffective", announcement.getIsEffective());
-            List<Announcement> announcements = announcementService.findAnnouncementListByQuery(mapSearch);
-            if (announcements.size()==0) {
-                LOG.error("添加公告后获取公告失败");
-                return new ResultBean(ResultCode.OTHER_FAIL);
-            }
 
-            return new ResultBean(ResultCode.SUCCESS, announcements.get(0).getAnnounceId());
+            return new ResultBean(ResultCode.SUCCESS, bigInteger);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error(e.getMessage());
@@ -166,6 +161,31 @@ public class AnnounceDealImpl implements AnnounceDealService{
             }
 
             return new ResultBean(ResultCode.SUCCESS, list.get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.OTHER_FAIL);
+        }
+    }
+
+    public ResultBean updateFirst(User user, long announceId){
+        try {
+            List<Announcement> list = announcementService.findAnnouncementListByAnnounceId(announceId);
+            if (list.size()==0) {
+                LOG.info("该id不存在");
+                return new ResultBean(ResultCode.PARAM_ERROR, "不存在该公告");
+            }
+            Announcement announcement = list.get(0);
+            if (announcement.getIsPublic()==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "该公告尚未发布，不能置顶");
+            }
+            int isFirst = 1;
+            if (announcement.getIsFirst()==1) {
+                isFirst=0;
+            }
+            announcement.setIsFirst(isFirst);
+            announcementService.updateAnnouncementByAnnounceId(announceId, announcement);
+            return new ResultBean(ResultCode.SUCCESS);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error(e.getMessage());

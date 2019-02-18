@@ -175,4 +175,7 @@ public class UserServiceImpl implements UserService {
     	return userMapper.findUserMapListByQuery(map);
     }
 
+    public List<User> findUserListByQueryMy(Map<String, Object> map){
+        return userMapper.findUserListByQueryMy(map);
+    }
 }

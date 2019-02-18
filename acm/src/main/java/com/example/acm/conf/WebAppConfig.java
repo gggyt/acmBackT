@@ -12,6 +12,7 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/image/**").addResourceLocations("file:D:/pic/");
+        registry.addResourceHandler("/image/photo/**").addResourceLocations("file:D:/pic/photo/");
         super.addResourceHandlers(registry);
     }
 

@@ -4,6 +4,7 @@ import com.example.acm.authorization.manager.TokenManager;
 import com.example.acm.authorization.model.TokenModel;
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.conf.RedisComponent;
 import com.example.acm.entity.User;
 import com.example.acm.service.UserService;
@@ -66,7 +67,7 @@ public class userController extends BaseController{
                 setUserSession(request, response, request.getSession(), user.get(0));
                 LOG.info(username);
                 LOG.info("userId-----------------"+user.get(0).getUserId());
-                if (user.get(0).getAuth()==0) {
+                if (user.get(0).getAuth()== SysConst.NOT_PASS) {
                     return new ResultBean(ResultCode.PARAM_ERROR, "用户尚未通过审核");
 
                 }
@@ -146,6 +147,208 @@ public class userController extends BaseController{
             e.printStackTrace();
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
+    }
 
+    @RequestMapping(value = "/selectUser", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean selectUser(@RequestParam(value = "name", defaultValue = "", required = false) String name,
+                                 @RequestParam(value="aOrs", defaultValue = "1", required = false) int aOrs,
+                                 @RequestParam(value = "pageNum", defaultValue = "1", required = false) int pageNum,
+                                 @RequestParam(value="order", defaultValue = "createDay", required = false) String order,
+                                 @RequestParam(value="pageSize", defaultValue="10", required = false) int pageSize,
+                                 HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.selectUsers(user, name, aOrs, order, pageNum, pageSize);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/passUser", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean selectUser(@RequestParam(value = "userId",  required = true) int userId,
+                                 HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.changeAuth(user, userId, SysConst.NEW_MAN);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/notPassUser", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean notPassUser(@RequestParam(value = "userId",  required = true) int userId,
+                                 HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.changeAuth(user, userId, SysConst.NOT_PASS);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/beAdmin", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean beAdmin(@RequestParam(value = "userId",  required = true) int userId,
+                                  HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.changeAuth(user, userId, SysConst.ADMIN);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/bePlayer", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean bePlayer(@RequestParam(value = "userId",  required = true) int userId,
+                              HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.changeAuth(user, userId, SysConst.PLAYER);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+    @RequestMapping(value = "/userInfo", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean userInfo(@RequestParam(value = "userId",  required = true) int userId,
+                               HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.userInfo(user, userId);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/updateUserImage", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean updateUserImage(@RequestParam(value = "userId",  required = true) int userId,
+                                      @RequestParam(value = "image",  required = true) String image,
+                               HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.updateUserImage(user, userId, image);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+    @RequestMapping(value = "/updateUserImageByMy", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean updateUserImageByMy(@RequestParam(value = "image",  required = true) String image,
+                                      HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.updateUserImage(user, user.getUserId(), image);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/updateUserInfo", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean updateUserInfo(@RequestParam("userId") int userId,
+                                     @RequestParam("username") String username,
+                                     @RequestParam("realname") String realname,
+                                     @RequestParam("password") String password,
+                               @RequestParam("mobile") String mobile,
+                               @RequestParam("studentId") long studentId,
+                               @RequestParam("grade") int grade,
+                               @RequestParam("classNum")int classNum,
+                               HttpServletRequest request) {
+        try {
+            if (StringUtils.isNull(realname)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入用户名");
+            }
+            if (realname.length()>10) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入正确的用户名");
+            }
+            if (!NumUtil.isPhone(mobile)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入正确的手机号");
+            }
+            if (StringUtils.isNull(username)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入用户名");
+            }
+            if (!NumUtil.isUserName(username)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入3-20字符的用户名");
+            }
+            if (StringUtils.isNull(password)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入密码");
+            }
+            if(!NumUtil.isPassword(password)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "请输入6-20字符的密码");
+            }
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.updateUserInfo(user, userId, username, realname, password, mobile, studentId, grade, classNum);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
     }
 }
+

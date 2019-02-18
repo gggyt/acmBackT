@@ -13,7 +13,7 @@ spring:
     port: 6379
     password:
   resources:
-    static-locations: classpath:/testStatic/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:D:/pic/
+    static-locations: classpath:/testStatic/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:D:/pic/,file:D:/pic/photo/
   http:
     encoding:
       charset: UTF-8

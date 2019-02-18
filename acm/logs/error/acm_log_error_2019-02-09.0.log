@@ -1,0 +1,276 @@
+2019-02-09 16:30:30.851 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:44  - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`acm`.`comment`, CONSTRAINT `invitationId` FOREIGN KEY (`invitationId`) REFERENCES `invitation` (`invitationId`))
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO comment     ( invitationId,    p_invitationId,    commentBody,    createUser,    createDate,    isEffective )    values    ( ?,    ?,    ?,    ?,    ?,    ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`acm`.`comment`, CONSTRAINT `invitationId` FOREIGN KEY (`invitationId`) REFERENCES `invitation` (`invitationId`))
+; ]; Cannot add or update a child row: a foreign key constraint fails (`acm`.`comment`, CONSTRAINT `invitationId` FOREIGN KEY (`invitationId`) REFERENCES `invitation` (`invitationId`)); nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`acm`.`comment`, CONSTRAINT `invitationId` FOREIGN KEY (`invitationId`) REFERENCES `invitation` (`invitationId`))
+2019-02-09 16:35:49.953 ERROR --- [http-nio-9999-exec-2] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:55  - nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'comment.pInvitationid != null'. Cause: org.apache.ibatis.ognl.NoSuchPropertyException: com.example.acm.entity.Comment.pInvitationid
+2019-02-09 16:36:21.279 ERROR --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:55  - nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'comment.pInvitationid != null'. Cause: org.apache.ibatis.ognl.NoSuchPropertyException: com.example.acm.entity.Comment.pInvitationid
+2019-02-09 16:37:17.227 ERROR --- [http-nio-9999-exec-1] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:55  - nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'comment.pInvitationid != null'. Cause: org.apache.ibatis.ognl.NoSuchPropertyException: com.example.acm.entity.Comment.pInvitationid
+2019-02-09 19:54:06.971 ERROR --- [http-nio-9999-exec-2] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:75  - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		 WHERE a.invitationId=b.invitationId
+			
+				AND a.invitationId=230990923462' at line 4
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, b.*   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser)    WHERE a.invitationId=b.invitationId         AND a.invitationId=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		 WHERE a.invitationId=b.invitationId
+			
+				AND a.invitationId=230990923462' at line 4
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		 WHERE a.invitationId=b.invitationId
+			
+				AND a.invitationId=230990923462' at line 4
+2019-02-09 19:55:07.504 ERROR --- [http-nio-9999-exec-2] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:75  - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		 WHERE a.invitationId=b.invitationId
+			
+				AND a.invitationId=230990923462' at line 4
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser)    WHERE a.invitationId=b.invitationId         AND a.invitationId=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		 WHERE a.invitationId=b.invitationId
+			
+				AND a.invitationId=230990923462' at line 4
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		 WHERE a.invitationId=b.invitationId
+			
+				AND a.invitationId=230990923462' at line 4
+2019-02-09 21:42:10.803 ERROR --- [http-nio-9999-exec-1] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:42:10.808 ERROR --- [http-nio-9999-exec-2] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:42:10.810 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:42:10.814 ERROR --- [http-nio-9999-exec-6] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:42:10.819 ERROR --- [http-nio-9999-exec-4] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:42:10.823 ERROR --- [http-nio-9999-exec-7] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:43:02.012 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:43:02.019 ERROR --- [http-nio-9999-exec-6] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:43:02.021 ERROR --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:43:02.023 ERROR --- [http-nio-9999-exec-7] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:43:02.032 ERROR --- [http-nio-9999-exec-5] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:43:02.036 ERROR --- [http-nio-9999-exec-10] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:44:04.848 ERROR --- [http-nio-9999-exec-5] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:44:04.852 ERROR --- [http-nio-9999-exec-6] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:44:04.854 ERROR --- [http-nio-9999-exec-4] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:44:04.864 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:44:04.868 ERROR --- [http-nio-9999-exec-7] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:44:04.871 ERROR --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:46:09.728 ERROR --- [http-nio-9999-exec-5] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:46:33.463 ERROR --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:48:09.319 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:48:54.418 ERROR --- [http-nio-9999-exec-8] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:49:11.347 ERROR --- [http-nio-9999-exec-7] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:52:19.544 ERROR --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:53:19.106 ERROR --- [http-nio-9999-exec-6] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:55:58.432 ERROR --- [http-nio-9999-exec-4] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 21:58:45.832 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 22:01:25.421 ERROR --- [http-nio-9999-exec-9] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+2019-02-09 22:01:34.571 ERROR --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.CommentDealServiceImpl Line:101 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*, c.userId, c.username, c.image   FROM   (comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser    WHERE  a.invitationId=?             AND a.p_commentId=?             AND a.isEffective=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 17

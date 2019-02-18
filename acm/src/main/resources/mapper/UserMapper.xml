@@ -179,7 +179,7 @@
 		SELECT
 		<include refid="user_field_list_alias"/>
 		FROM 
-			user a;		
+			user a;
 	</select>
 	
 	<select id="countUserListByQuery" resultType="java.lang.Integer">
@@ -224,17 +224,67 @@
 		limit #{map.start},#{map.limit}
 		</if>
 	</select>
-	
+
+	<select id="findUserListByQueryMy" resultType="com.example.acm.entity.User">
+    		SELECT
+    		<include refid="user_field_list_alias"/>
+    		FROM
+    			user a
+    		<trim prefix="WHERE" prefixOverrides="AND|OR">
+    			<if test="map.uId != null">
+    				AND a.userId=#{map.uId}
+    			</if>
+    			<if test="map.mobile != null">
+    				AND a.mobile=#{map.mobile}
+    			</if>
+    			<if test="map.username != null">
+    				AND a.username like CONCAT ('%', #{map.username}, '%')
+    			</if>
+    			<if test="map.studentId != null">
+    				AND a.studentId=#{map.studentId}
+    			</if>
+    			<if test="map.isEffective != null ">
+    				AND a.isEffective=#{map.isEffective}
+    			</if>
+    		</trim>
+    		<if test="map.order != null ">
+    		ORDER BY
+    			a.${map.order} ${map.aOrS}
+    		</if>
+    		<if test="map.start != null ">
+    		limit #{map.start},#{map.limit}
+    		</if>
+    	</select>
+
 	<select id="countUserMapListByQuery" resultType="java.lang.Integer">
 		SELECT
 			count(*)
 		FROM 
 			user a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
-			<if test="map.isEffective != null ">
-				AND a.isEffective=#{map.isEffective} 
-			</if>
-		</trim>
+                    			<if test="map.uId != null">
+                    				AND a.userId=#{map.uId}
+                    			</if>
+                    			<if test="map.mobile != null">
+                    				AND a.mobile=#{map.mobile}
+                    			</if>
+                    			<if test="map.username != null">
+                    				AND a.username like CONCAT ('%', #{map.username}, '%')
+                    			</if>
+                    			<if test="map.studentId != null">
+                    				AND a.studentId=#{map.studentId}
+                    			</if>
+                    			<if test="map.isEffective != null ">
+                    				AND a.isEffective=#{map.isEffective}
+                    			</if>
+                    		</trim>
+                    		<if test="map.order != null ">
+                    		ORDER BY
+                    			a.${map.order} ${map.aOrS}
+                    		</if>
+                    		<if test="map.start != null ">
+                    		limit #{map.start},#{map.limit}
+                    		</if>
 	</select>
 	
 	<select id="findUserMapListByQuery" resultType="java.util.Map">
@@ -243,17 +293,29 @@
 		FROM 
 			user a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
-			<if test="map.isEffective != null ">
-				AND a.isEffective=#{map.isEffective} 
-			</if>
-		</trim>
-		<if test="map.order != null ">
-		ORDER BY 
-			a.${map.order} ${map.aOrS} 
-		</if>
-		<if test="map.start != null ">
-		limit #{map.start},#{map.limit}
-		</if>
+            			<if test="map.uId != null">
+            				AND a.userId=#{map.uId}
+            			</if>
+            			<if test="map.mobile != null">
+            				AND a.mobile=#{map.mobile}
+            			</if>
+            			<if test="map.username != null">
+            				AND a.username like CONCAT ('%', #{map.username}, '%')
+            			</if>
+            			<if test="map.studentId != null">
+            				AND a.studentId=#{map.studentId}
+            			</if>
+            			<if test="map.isEffective != null ">
+            				AND a.isEffective=#{map.isEffective}
+            			</if>
+            		</trim>
+            		<if test="map.order != null ">
+            		ORDER BY
+            			a.${map.order} ${map.aOrS}
+            		</if>
+            		<if test="map.start != null ">
+            		limit #{map.start},#{map.limit}
+            		</if>
 	</select>
 	
 </mapper>

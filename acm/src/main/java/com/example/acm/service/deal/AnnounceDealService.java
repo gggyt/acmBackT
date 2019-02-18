@@ -17,4 +17,6 @@ public interface AnnounceDealService {
     public ResultBean deleteAnnounce(User user, long announceId);
 
     public ResultBean detail(User user, long announceId);
+
+    public ResultBean updateFirst(User user, long announceId);
 }

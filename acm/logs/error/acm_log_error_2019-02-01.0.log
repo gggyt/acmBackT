@@ -1,0 +1,8 @@
+2019-02-01 15:36:41.109 ERROR --- [http-nio-9999-exec-1] com.example.acm.service.deal.Impl.AlbumDealImpl Line:50  - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.albumNameE' in 'where clause'
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\AlbumMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.albumId,   a.albumName,   a.createUser,   a.createDate,   a.coverPhotoId,   a.description,   a.isPublic,   a.isEffective      FROM     album a    WHERE  a.albumNameE=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.albumNameE' in 'where clause'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.albumNameE' in 'where clause'

@@ -4,6 +4,7 @@ package com.example.acm.service.Impl;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -175,4 +176,7 @@ public class ClassificationServiceImpl implements ClassificationService {
     	return classificationMapper.findClassificationMapListByQuery(map);
     }
 
+    public List<Classification> findNewsClasfication(@Param("map") Map<String, Object> map){
+        return classificationMapper.findNewsClasfication(map);
+    }
 }

@@ -42,7 +42,9 @@ public class NewClassifyController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                return new ResultBean(ResultCode.SESSION_OUT);
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
             }
             return classificationDealService.addClassify(user, name);
         } catch (Exception e) {
@@ -63,7 +65,9 @@ public class NewClassifyController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                return new ResultBean(ResultCode.SESSION_OUT);
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
             }
 
             return classificationDealService.selectClass(user, className, aOrs, order, pageNum, pageSize);
@@ -81,7 +85,9 @@ public class NewClassifyController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-               return new ResultBean(ResultCode.SESSION_OUT);
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
             }
 
             return classificationDealService.deleteClass(user, classId);

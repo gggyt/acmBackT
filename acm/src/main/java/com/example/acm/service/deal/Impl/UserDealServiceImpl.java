@@ -6,6 +6,8 @@ import com.example.acm.common.SysConst;
 import com.example.acm.entity.User;
 import com.example.acm.service.UserService;
 import com.example.acm.service.deal.UserDealService;
+import com.example.acm.utils.DateUtils;
+import com.example.acm.utils.ListPage;
 import javafx.beans.binding.ObjectExpression;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +35,7 @@ public class UserDealServiceImpl implements UserDealService{
             Map<String, Object> map = new HashMap<>();
             map.put("username", username);
             List<User> user = userService.findUserListByQuery(map);
-            if (user==null) {
+            if (user.size()==0) {
                 return new ResultBean(ResultCode.HAS_NO_THIS_USER);
             }
             if (user.get(0).getPassword().equals(passwrod)) {
@@ -89,4 +91,137 @@ public class UserDealServiceImpl implements UserDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    public ResultBean selectUsers(User user, String name, int aOrs, String order, int pageNum, int pageSize){
+        try {
+            Map<String, Object> map = new HashMap<>();
+            map.put("username", name);
+
+            if (pageNum < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "页码不能小于0");
+            }
+            if (pageSize < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "一页展示数量不能小于0");
+            }
+            int start = (pageNum - 1) * pageSize;
+            int limit = pageSize;
+            map.put("start", start);
+            map.put("limit", limit);
+            map.put("order", order);
+            if (aOrs == 1) {
+                map.put("aOrS", "DESC");
+            } else {
+                map.put("aOrS", "ASC");
+            }
+            map.put("isEffective", 1);
+            List<Map<String, Object>> users = userService.findUserMapListByQuery(map);
+
+            int index = -1;
+            int num=0;
+            if (users.size() >0) {
+                for (Map<String, Object> mapTemp : users) {
+                    mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDay"), "yyyy/MM/dd HH:mm:ss"));
+                    mapTemp.remove("password");
+                    if (mapTemp.get("userId").equals(2L)) {
+                        index = num;
+                        break;
+                    }
+                    num++;
+                }
+            }
+            if (index!=-1) {
+                users.remove(index);
+            }
+            int allNum = userService.countUserMapListByQuery(map);
+
+            ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, users);
+
+            return new ResultBean(ResultCode.SUCCESS, listPage);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    public ResultBean changeAuth(User user, int userId, int auth){
+        try {
+            List<User> users = userService.findUserListByUserId(userId);
+            if (users.size()==0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+            User userN = users.get(0);
+
+            userN.setAuth(auth);
+
+            userService.updateUserByUserId(userId, userN);
+            return new ResultBean(ResultCode.SUCCESS);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    public ResultBean userInfo(User user, int userId){
+        try {
+            List<User> users = userService.findUserListByUserId(userId);
+            if (users.size()==0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+            User userN = users.get(0);
+
+            return new ResultBean(ResultCode.SUCCESS, userN);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+
+    public ResultBean updateUserImage(User user, int userId, String image){
+        try {
+            List<User> users = userService.findUserListByUserId(userId);
+            if (users.size()==0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+            User userN = users.get(0);
+            userN.setImage(image);
+            userService.updateUserByUserId(userId, userN);
+
+            return new ResultBean(ResultCode.SUCCESS);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    public ResultBean updateUserInfo(User user, int userId, String username, String realname, String password, String mobile,
+                                     long studentId, int grade, int classNum){
+        try {
+            List<User> users = userService.findUserListByUserId(userId);
+            if (users.size()==0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+            User userN = users.get(0);
+            userN.setUsername(username);
+            userN.setRealname(realname);
+            userN.setPassword(password);
+            userN.setMobile(mobile);
+            userN.setStudentId(studentId);
+            userN.setGrade(grade);
+            userN.setClassNum(classNum);
+
+            userService.updateUserByUserId(userId, userN);
+
+            return new ResultBean(ResultCode.SUCCESS);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
 }
