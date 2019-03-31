@@ -2,6 +2,7 @@ package com.example.acm.service.deal.Impl;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.entity.Album;
 import com.example.acm.entity.AlbumPhoto;
 import com.example.acm.entity.Photo;
@@ -65,7 +66,8 @@ public class PhotoDealImpl implements PhotoDealService{
             photo.setCreateDate(new Date());
             photo.setIsPublic(1);
             photo.setIsEffective(1);
-            photo.setPhotoUrl("http://localhost:9999/image/photo/" + fileName);
+            String url = "http://"+ SysConst.localhost+"/image/photo/";
+            photo.setPhotoUrl(url + fileName);
             photoService.addPhoto(photo);
 
             AlbumPhoto albumPhoto = new AlbumPhoto();

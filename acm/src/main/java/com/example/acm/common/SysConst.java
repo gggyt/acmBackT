@@ -23,4 +23,6 @@ public interface SysConst {
 
     int LIVE = 1;
     int NOT_LIVE = 0;
+
+    String localhost="192.168.31.69:9999";
 }

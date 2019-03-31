@@ -142,4 +142,11 @@ public interface UserMapper{
 
     public List<User> findUserListByQueryMy(@Param("map") Map<String, Object> map);
 
+    public List<Map<String,Object>> findUserByCompetitionId(@Param("map") Map<String, Object> map);
+
+    public Integer countUserByCompetitionId(@Param("map") Map<String, Object> map);
+
+    public List<Map<String,Object>> findUserByLectureId(@Param("map") Map<String, Object> map);
+
+    public Integer countUserByLectureId(@Param("map") Map<String, Object> map);
 }

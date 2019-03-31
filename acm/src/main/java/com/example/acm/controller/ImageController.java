@@ -1,5 +1,6 @@
 package com.example.acm.controller;
 
+import com.example.acm.common.SysConst;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -59,7 +60,8 @@ public class ImageController {
 
         Map<String, Object> map = new HashMap<>();
         map.put("errno", 0);
-        map.put("data", "http://localhost:9999/image/"+fileName);
+        String url = "http://"+ SysConst.localhost+"/image/";
+        map.put("data", url+fileName);
         //String jo = map;
         return map;
     }
@@ -85,9 +87,10 @@ public class ImageController {
         System.out.println("*************接收上传文件结束*************");
 
         Map<String, Object> map = new HashMap<>();
+        String url = "http://"+ SysConst.localhost+"/image/";
         map.put("uid", 1);
-        map.put("url", "http://localhost:9999/image/"+fileName);
-        map.put("name", "http://localhost:9999/image/"+fileName);
+        map.put("url", url+fileName);
+        map.put("name",url+fileName);
         map.put("status", "done");
         //String jo = map;
         return map;

@@ -117,6 +117,7 @@ public class userController extends BaseController{
                                @RequestParam("username") String username,
                                @RequestParam("number") String number,
                                @RequestParam("password") String password,
+                               @RequestParam(value = "openId", required = false, defaultValue = "") String openId,
                                HttpServletRequest request) {
         try {
             if (!NumUtil.isPhone(mobile)) {
@@ -141,7 +142,7 @@ public class userController extends BaseController{
                 return new ResultBean(ResultCode.PARAM_ERROR, "请输入6-20字符的密码");
 
             }
-            return userDealService.register(mobile, username, number, password);
+            return userDealService.register(mobile, username, number, password, openId);
         } catch(Exception e) {
             LOG.error(e.getMessage(), e);
             e.printStackTrace();

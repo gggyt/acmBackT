@@ -200,6 +200,9 @@
 		FROM 
 			user a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
+	    	<if test="map.openId != null">
+            				AND a.openId=#{map.openId}
+            			</if>
 			<if test="map.uId != null">
 				AND a.userId=#{map.uId}
 			</if>
@@ -231,9 +234,12 @@
     		FROM
     			user a
     		<trim prefix="WHERE" prefixOverrides="AND|OR">
-    			<if test="map.uId != null">
-    				AND a.userId=#{map.uId}
+    			<if test="map.openId != null">
+    				AND a.openId=#{map.openId}
     			</if>
+    			<if test="map.uId != null">
+                    AND a.userId=#{map.uId}
+                </if>
     			<if test="map.mobile != null">
     				AND a.mobile=#{map.mobile}
     			</if>
@@ -317,5 +323,106 @@
             		limit #{map.start},#{map.limit}
             		</if>
 	</select>
-	
+
+	<select id="findUserByCompetitionId" resultType="java.util.Map">
+    		SELECT
+    		a.*, b.createDate, b.competitionId, c.competitionTitle
+    		FROM
+    			(user a inner join applycompetition b on a.userId=b.joinUser)
+                INNER JOIN competition c on c.competitionId=b.competitionId
+    		<trim prefix="WHERE" prefixOverrides="AND|OR">
+                            <if test="map.competitionId != null ">
+                                 AND c.competitionId=#{map.competitionId}
+                            </if>
+                			<if test="map.isEffective != null ">
+                				AND a.isEffective=#{map.isEffective}
+                			</if>
+                			<if test="map.isEffective != null ">
+                                AND b.isEffective=#{map.isEffective}
+                            </if>
+                            <if test="map.isEffective != null ">
+                                AND c.isEffective=#{map.isEffective}
+                            </if>
+                		</trim>
+                		<if test="map.order != null ">
+                		ORDER BY
+                			b.${map.order} ${map.aOrS}
+                		</if>
+                		<if test="map.start != null ">
+                		limit #{map.start},#{map.limit}
+                		</if>
+    	</select>
+    	<select id="countUserByCompetitionId" resultType="java.lang.Integer">
+            		SELECT
+            		count(*)
+            		FROM
+            			(user a inner join applycompetition b on a.userId=b.joinUser)
+                        INNER JOIN competition c on c.competitionId=b.competitionId
+            		<trim prefix="WHERE" prefixOverrides="AND|OR">
+                                    <if test="map.competitionId != null ">
+                                         AND c.competitionId=#{map.competitionId}
+                                    </if>
+                        			<if test="map.isEffective != null ">
+                        				AND a.isEffective=#{map.isEffective}
+                        			</if>
+                        			<if test="map.isEffective != null ">
+                                        AND b.isEffective=#{map.isEffective}
+                                    </if>
+                                    <if test="map.isEffective != null ">
+                                        AND c.isEffective=#{map.isEffective}
+                                    </if>
+                        		</trim>
+
+            	</select>
+     <select id="findUserByLectureId" resultType="java.util.Map">
+         		SELECT
+         		a.*, b.createDate, b.LectureId, c.lectureTitle
+         		FROM
+         			(user a inner join applylecture b on a.userId=b.joinUser)
+                     INNER JOIN lecture c on c.lectureId=b.lectureId
+         		<trim prefix="WHERE" prefixOverrides="AND|OR">
+                                 <if test="map.lectureId != null ">
+                                      AND c.lectureId=#{map.lectureId}
+                                 </if>
+                     			<if test="map.isEffective != null ">
+                     				AND a.isEffective=#{map.isEffective}
+                     			</if>
+                     			<if test="map.isEffective != null ">
+                                     AND b.isEffective=#{map.isEffective}
+                                 </if>
+                                 <if test="map.isEffective != null ">
+                                     AND c.isEffective=#{map.isEffective}
+                                 </if>
+                     		</trim>
+                     		<if test="map.order != null ">
+                     		ORDER BY
+                     			b.${map.order} ${map.aOrS}
+                     		</if>
+                     		<if test="map.start != null ">
+                     		limit #{map.start},#{map.limit}
+                     		</if>
+     </select>
+     <select id="countUserByLectureId" resultType="java.lang.Integer">
+                 		SELECT
+                 		count(*)
+                 		FROM
+                 			(user a inner join applylecture b on a.userId=b.joinUser)
+                                                 INNER JOIN lecture c on c.lectureId=b.LectureId
+                 		<trim prefix="WHERE" prefixOverrides="AND|OR">
+                                         <if test="map.lectureId != null ">
+                                              AND c.lectureId=#{map.lectureId}
+                                         </if>
+                             			<if test="map.isEffective != null ">
+                             				AND a.isEffective=#{map.isEffective}
+                             			</if>
+                             			<if test="map.isEffective != null ">
+                                             AND b.isEffective=#{map.isEffective}
+                                         </if>
+                                         <if test="map.isEffective != null ">
+                                             AND c.isEffective=#{map.isEffective}
+                                         </if>
+                             		</trim>
+
+
+                 	</select>
 </mapper>

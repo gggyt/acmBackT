@@ -2,6 +2,7 @@ package com.example.acm.service.deal.Impl;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.entity.DayDuty;
 import com.example.acm.entity.User;
 import com.example.acm.service.DayDutyService;
 import com.example.acm.service.deal.DayDutyDealService;
@@ -43,5 +44,36 @@ public class DayDutyDealImpl implements DayDutyDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
 
+    }
+
+    public ResultBean updateDayDuty(User user, int dayDutyId, String dutyUserNames) {
+        List<DayDuty> dayDuties = dayDutyService.findDayDutyListByDayDutyId(dayDutyId);
+
+        if (dayDuties.size()<1) {
+            LOG.info("没有此id的值日:"+dayDutyId);
+            return new ResultBean(ResultCode.SYSTEM_FAILED, "没有此id的值日");
+        }
+
+        DayDuty dayDuty = dayDuties.get(0);
+        dayDuty.setDutyUserNames(dutyUserNames);
+        dayDuty.setUpdateUser(user.getUserId());
+        dayDuty.setUpdateData(new Date());
+
+        dayDutyService.updateDayDutyByDayDutyId(dayDutyId, dayDuty);
+
+        return new ResultBean(ResultCode.SUCCESS);
+    }
+
+    public ResultBean detailDayDuty(User user, int dayDutyId){
+        List<DayDuty> dayDuties = dayDutyService.findDayDutyListByDayDutyId(dayDutyId);
+
+        if (dayDuties.size()<1) {
+            LOG.info("没有此id的值日:"+dayDutyId);
+            return new ResultBean(ResultCode.SYSTEM_FAILED, "没有此id的值日");
+        }
+
+        DayDuty dayDuty = dayDuties.get(0);
+
+        return new ResultBean(ResultCode.SUCCESS, dayDuty);
     }
 }

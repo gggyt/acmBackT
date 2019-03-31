@@ -49,7 +49,7 @@ public class UserDealServiceImpl implements UserDealService{
         }
     }
 
-    public ResultBean register(String mobile, String username, String number, String password){
+    public ResultBean register(String mobile, String username, String number, String password, String openId){
         try {
             Map<String, Object> map = new HashMap<>();
             map.put("mobile", mobile);
@@ -81,6 +81,7 @@ public class UserDealServiceImpl implements UserDealService{
             user.setAuth(SysConst.NOT_PASS);
             user.setCreateDay(new Date());
             user.setIsEffective(SysConst.USE);
+            user.setOpenId(openId);
 
             userService.addUser(user);
             return new ResultBean(ResultCode.SUCCESS);

@@ -141,4 +141,12 @@ public interface UserService{
     public List<Map<String,Object>> findUserMapListByQuery(Map<String, Object> map);
 
     public List<User> findUserListByQueryMy(Map<String, Object> map);
+
+    public List<Map<String,Object>> findUserByCompetitionId(Map<String, Object> map);
+
+    public Integer countUserByCompetitionId(Map<String, Object> map);
+
+    public List<Map<String,Object>> findUserByLectureId(Map<String, Object> map);
+
+    public Integer countUserByLectureId(Map<String, Object> map);
 }

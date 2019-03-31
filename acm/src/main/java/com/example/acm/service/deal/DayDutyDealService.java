@@ -8,4 +8,8 @@ import com.example.acm.entity.User;
  */
 public interface DayDutyDealService {
     ResultBean selectDayDuty();
+
+    ResultBean updateDayDuty(User user, int dayDutyId, String dutyUserNames);
+
+    ResultBean detailDayDuty(User user, int dayDutyId);
 }

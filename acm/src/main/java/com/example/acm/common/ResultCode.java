@@ -24,7 +24,9 @@ public enum  ResultCode {
     ACCOUNT_NOTBIND(17, "用户未绑定"),
     SOURCE_EXIST(18, "素材已预处理"),
     SOURCE_INVALID(19, "素材不符合要求"),
-    TASK_IS_CONDUCTING(20, "关联任务进行中");
+    TASK_IS_CONDUCTING(20, "关联任务进行中"),
+    USER_NOT_ADMIN(21, "用户不是管理员");
+
 
     private final int code;
     private String msg;

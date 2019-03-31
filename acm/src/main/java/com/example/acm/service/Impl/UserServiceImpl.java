@@ -178,4 +178,19 @@ public class UserServiceImpl implements UserService {
     public List<User> findUserListByQueryMy(Map<String, Object> map){
         return userMapper.findUserListByQueryMy(map);
     }
+    public List<Map<String,Object>> findUserByCompetitionId(Map<String, Object> map){
+        return userMapper.findUserByCompetitionId(map);
+    }
+
+    public Integer countUserByCompetitionId(Map<String, Object> map){
+        return userMapper.countUserByCompetitionId(map);
+    }
+
+    public List<Map<String,Object>> findUserByLectureId(Map<String, Object> map){
+        return userMapper.findUserByLectureId(map);
+    }
+
+    public Integer countUserByLectureId(Map<String, Object> map){
+        return userMapper.countUserByLectureId(map);
+    }
 }

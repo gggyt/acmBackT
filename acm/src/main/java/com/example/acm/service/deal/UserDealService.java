@@ -10,7 +10,7 @@ public interface UserDealService {
 
     public ResultBean webLogin(String username, String password);
 
-    public ResultBean register(String mobile, String username, String number, String password);
+    public ResultBean register(String mobile, String username, String number, String password, String openId);
 
     public ResultBean selectUsers(User user, String name, int aOrs, String order, int pageNum, int pageSize);
 
