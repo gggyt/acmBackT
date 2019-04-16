@@ -61,6 +61,21 @@ public class CommentDealServiceImpl implements CommentDealService{
         }
     }
 
+    public ResultBean deleteComment(User user,long commentId) {
+        List<Comment> comments = commentService.findCommentListByCommentId(commentId);
+        if (comments.size()==0) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该评论");
+        }
+        Comment comment = comments.get(0);
+        if (comment.getIsEffective()==SysConst.NOT_LIVE) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "该评论已删除");
+        }
+
+        comment.setIsEffective(SysConst.NOT_LIVE);
+        commentService.updateCommentByCommentId(commentId, comment);
+
+        return new ResultBean(ResultCode.SUCCESS);
+    }
     public ResultBean selectCommend(User user,long invitationId, long p_commentId, int aOrs, int pageNum, String order, int pageSize) {
         try{
 
@@ -84,6 +99,46 @@ public class CommentDealServiceImpl implements CommentDealService{
             }
             map.put("p_commentId", p_commentId);
             map.put("invitationId", invitationId);
+            map.put("isEffective", SysConst.LIVE);
+            List<Map<String, Object>> comments = commentService.finfCommentAndSonCommtne(map);
+            if (comments.size() >0) {
+                for (Map<String, Object> mapTemp : comments) {
+                    mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDate"), "yyyy-MM-dd HH:mm:ss"));
+
+                }
+            }
+            int allNum = commentService.countCommentAndSonCommtne(map);
+            ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, comments);
+            return new ResultBean(ResultCode.SUCCESS, listPage);
+        } catch (Exception e){
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+    public ResultBean selectUserCommend(User user, long p_commentId, int aOrs, int pageNum, String order, int pageSize) {
+        try{
+
+            Map<String, Object> map = new HashMap<>();
+            if (pageNum <= 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "页码不能小于0");
+            }
+            if (pageSize < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "一页展示数量不能小于0");
+            }
+            int start = (pageNum - 1) * pageSize;
+            int limit = pageSize;
+            map.put("start", start);
+            map.put("limit", limit);
+            map.put("order", order);
+            map.put("createUser", user.getUserId());
+            //  map.put("isPublic", isPublic);
+            if (aOrs == 1) {
+                map.put("aOrS", "DESC");
+            } else {
+                map.put("aOrS", "ASC");
+            }
+          //  map.put("p_commentId", p_commentId);
             map.put("isEffective", SysConst.LIVE);
             List<Map<String, Object>> comments = commentService.finfCommentAndSonCommtne(map);
             if (comments.size() >0) {

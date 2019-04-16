@@ -157,9 +157,6 @@ public class CompetitionController extends BaseController {
             if (user == null) {
                 return new ResultBean(ResultCode.SESSION_OUT);
             }
-            if (user.getAuth()<SysConst.ADMIN) {
-                return new ResultBean(ResultCode.USER_NOT_ADMIN);
-            }
             return competitionDealService.detailCompetition(user, competition);
         } catch (Exception e) {
             e.printStackTrace();
@@ -205,6 +202,27 @@ public class CompetitionController extends BaseController {
                 return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
             return competitionDealService.personCompetition(user, competition, aOrs, order, pageNum, pageSize);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping("userCompetition")
+    @ResponseBody
+    public ResultBean userCompetition(@RequestParam(value = "userId",defaultValue = "-1", required = false) int userId,
+                                        @RequestParam(value="aOrs", defaultValue = "1", required = false) int aOrs,
+                                        @RequestParam(value = "pageNum", defaultValue = "1", required = false) int pageNum,
+                                        @RequestParam(value="order", defaultValue = "createDate", required = false) String order,
+                                        @RequestParam(value="pageSize", defaultValue="10", required = false) int pageSize,
+                                        HttpServletRequest request, HttpServletResponse response) {
+        try{
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            return competitionDealService.userCompetition(user, userId, aOrs, order, pageNum, pageSize);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error(e.getMessage());

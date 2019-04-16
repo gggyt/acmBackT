@@ -46,6 +46,23 @@ public class CommentController extends BaseController{
         }
     }
 
+    @RequestMapping("/deleteComment")
+    @ResponseBody
+    public ResultBean deleteComment(@RequestParam(value = "commentId", required = true) long commentId,
+                                 HttpServletRequest request, HttpServletResponse response){
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            return commentDealService.deleteComment(user, commentId);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
     @RequestMapping("/selectComment")
     @ResponseBody
     public ResultBean selectComment(@RequestParam(value = "invitationId",  required = true) long invitationId,
@@ -61,6 +78,27 @@ public class CommentController extends BaseController{
                 return new ResultBean(ResultCode.SESSION_OUT);
             }
             return commentDealService.selectCommend(user, invitationId,p_commentId, aOrs, pageNum, order, pageSize);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping("/selectUserComment")
+    @ResponseBody
+    public ResultBean selectUserComment(@RequestParam(value = "p_commentId",defaultValue = "0", required = false) long p_commentId,
+                                    @RequestParam(value="aOrs", defaultValue = "1", required = false) int aOrs,
+                                    @RequestParam(value = "pageNum", defaultValue = "1", required = false) int pageNum,
+                                    @RequestParam(value="order", defaultValue = "createDate", required = false) String order,
+                                    @RequestParam(value="pageSize", defaultValue="10", required = false) int pageSize,
+                                    HttpServletRequest request, HttpServletResponse response){
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            return commentDealService.selectUserCommend(user,p_commentId, aOrs, pageNum, order, pageSize);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error(e.getMessage());

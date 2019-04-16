@@ -139,5 +139,7 @@ public interface LectureService{
      * @date 2019-03-11 22:19:56
      */
     public List<Map<String,Object>> findLectureMapListByQuery(Map<String, Object> map);
+
+    public List<Map<String,Object>> findLectureMapListByUser(Map<String, Object> map);
 	
 }

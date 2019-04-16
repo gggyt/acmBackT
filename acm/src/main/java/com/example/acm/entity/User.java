@@ -26,6 +26,7 @@ public class User implements Serializable {
 	private Long studentId;//
 	private Integer userId;//
 	private String username;//手机号
+	private String unionid;//
 
 	public void setAuth(Integer auth) {
 		this.auth = auth;
@@ -104,6 +105,14 @@ public class User implements Serializable {
 	}
 	public String getUsername() {
 		return this.username;
+	}
+
+	public void setUnionid(String unionid) {
+		this.unionid = unionid;
+	}
+
+	public String getUnionid() {
+		return unionid;
 	}
 }
 

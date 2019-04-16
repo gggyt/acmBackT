@@ -6,6 +6,7 @@ import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
 import com.example.acm.common.SysConst;
 import com.example.acm.entity.User;
+import com.example.acm.entity.WeiEntity;
 import com.example.acm.service.UserService;
 import com.example.acm.utils.StringUtils;
 import com.sun.deploy.net.HttpResponse;
@@ -79,6 +80,28 @@ public class test {
             if (openId.equals("")) {
                 return new ResultBean(ResultCode.READ_MYSQL_FAILED, "获取openid失败");
             }
+            /**/
+            //https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN
+            String url1 = "https://api.weixin.qq.com/sns/userinfo?access_token="+jsStr.get("access_token")
+                    +"&openid="+openId+"&lang=zh_CN";
+            StringBuilder json1 = new StringBuilder();
+            try {
+                 urlObject = new URL(url1);
+                 uc = urlObject.openConnection();
+                 in = new BufferedReader(new InputStreamReader(uc.getInputStream(),"UTF-8"));
+                 inputLine = null;
+                while ( (inputLine = in.readLine()) != null) {
+                    json1.append(inputLine);
+                }
+                in.close();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.out.println(json1.toString());
+            JSONObject jsStr2 = JSONObject.parseObject(json1.toString());
+            /**/
             Map<String, Object> map = new HashMap<>();
             map.put("openId", openId);
             map.put("isEffective", SysConst.LIVE);
@@ -86,14 +109,18 @@ public class test {
             List<User> users = userService.findUserListByQuery(map);
             if (users.size()>0) {
                 User user = users.get(0);
-                if (user.getAuth()==0) {
-                    return new ResultBean(ResultCode.NO_OAUTH, "尚未授权");
-                }
-                return new ResultBean(ResultCode.SUCCESS);
-            }
+                TokenModel model = tokenManager.createToken(user.getUserId());
+                ResultBean b = new ResultBean(ResultCode.SUCCESS, model);
+                b.setMsg(openId);
 
+                return b;
+            }
+            String image = (String)jsStr2.get("headimgurl");
+            LOG.info("image:"+image);
+            image = image.replace("\\","");
             LOG.info("未存在openid为"+openId+"的用户");
-            return new ResultBean(ResultCode.HAS_NO_THIS_USER, openId+"");
+            WeiEntity weiEntity = new WeiEntity(image, openId);
+            return new ResultBean(ResultCode.HAS_NO_THIS_USER, weiEntity);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -108,7 +135,7 @@ public class test {
     @ResponseBody
     public ResultBean wInfo(@RequestParam(value = "openId") String openId,
                              HttpServletRequest request, HttpServletResponse response) {
-
+        LOG.info(openId);
         Map<String, Object> map = new HashMap<>();
         map.put("openId", openId);
         map.put("isEffective", SysConst.LIVE);
@@ -120,9 +147,6 @@ public class test {
 
         }
         User user = users.get(0);
-        if (user.getAuth()==0) {
-            return new ResultBean(ResultCode.NO_OAUTH, "尚未授权");
-        }
         TokenModel model = tokenManager.createToken(user.getUserId());
         return new ResultBean(ResultCode.SUCCESS, model);
 
@@ -293,7 +317,8 @@ public class test {
         }
         System.out.println(json.toString());
         JSONObject jsStr = JSONObject.parseObject(json.toString());
-        String menu = "{\"button\":[{\"name\":\"菜单\",\"sub_button\":[{\"type\":\"view\",\"name\":\"首页\",\"url\":\"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5418ed8c3ec757dd&redirect_uri=http://gyt.easy.echosite.cn/mobileIndex&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect\"}]},{\"name\":\"加入我们\",\"sub_button\":[{\"type\":\"view\",\"name\":\"加入\",\"url\":\"http://gyt.easy.echosite.cn/mobile/home\"}]}]}";
+        //String menu = "{\"button\":[{\"name\":\"菜单\",\"sub_button\":[{\"type\":\"view\",\"name\":\"首页\",\"url\":\"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5418ed8c3ec757dd&redirect_uri=http://gyt.easy.echosite.cn/mobileIndex&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect\"}]},{\"name\":\"加入我们\",\"sub_button\":[{\"type\":\"view\",\"name\":\"加入\",\"url\":\"http://gyt.easy.echosite.cn/mobile/home\"}]}]}";
+        String menu = "{\"button\":[{\"name\":\"菜单\",\"sub_button\":[{\"type\":\"view\",\"name\":\"首页\",\"url\":\"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5418ed8c3ec757dd&redirect_uri=http://gyt.easy.echosite.cn/mobilelogin&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect\"}]}]}";
         String url1 = " https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+jsStr.get("access_token");
         StringBuilder json1 = new StringBuilder();
         PrintWriter out = null;

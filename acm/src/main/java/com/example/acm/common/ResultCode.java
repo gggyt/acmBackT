@@ -25,7 +25,8 @@ public enum  ResultCode {
     SOURCE_EXIST(18, "素材已预处理"),
     SOURCE_INVALID(19, "素材不符合要求"),
     TASK_IS_CONDUCTING(20, "关联任务进行中"),
-    USER_NOT_ADMIN(21, "用户不是管理员");
+    USER_NOT_ADMIN(21, "用户不是管理员"),
+    USER_EXEIST(22, "该用户已存在");
 
 
     private final int code;

@@ -179,4 +179,48 @@ public class PhotoDealImpl implements PhotoDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    public ResultBean selectUserPhoto(User user, int userId, int aOrs, int pageNum, String order, int pageSize){
+        try {
+            Map<String , Object> map = new HashMap<>();
+            if (pageNum < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "页码不能小于0");
+            }
+            if (pageSize < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "一页展示数量不能小于0");
+            }
+            int start = (pageNum - 1) * pageSize;
+            int limit = pageSize;
+            map.put("start", start);
+            map.put("limit", limit);
+            map.put("order", order);
+            if (aOrs == 1) {
+                map.put("aOrS", "DESC");
+            } else {
+                map.put("aOrS", "ASC");
+            }
+            map.put("isEffective", 1);
+            map.put("createUser", userId);
+            if (userId==-1) {
+                map.put("createUser", user.getUserId());
+            }
+            List<Map<String, Object>> list = photoMapper.findPhotoMapListByAlbumId(map);
+            if (list.size() >0) {
+                for (Map<String, Object> mapTemp : list) {
+                    mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDate"), "yyyy/MM/dd HH:mm:ss"));
+                }
+            }
+
+            int allNum = photoMapper.countPhotoMapListByAlbumId(map);
+
+            ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, list);
+
+            return new ResultBean(ResultCode.SUCCESS, listPage);
+        } catch (Exception e) {
+            LOG.error(e.getMessage());
+
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+
+        }
+    }
 }

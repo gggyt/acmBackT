@@ -15,8 +15,10 @@
 		<result column="realname" property="realname"/>   
 		<result column="studentId" property="studentId"/>   
 		<result column="userId" property="userId"/>   
-		<result column="username" property="username"/>   
+		<result column="username" property="username"/>
+		<result column="unionid" property="unionid"/>
 	</resultMap>
+
 
 	<sql id="user_field_list_alias">
 		a.auth,
@@ -31,7 +33,8 @@
 		a.realname,
 		a.studentId,
 		a.userId,
-		a.username
+		a.username,
+		a.unionid
 	</sql>
 
 	<insert id="addUser" useGeneratedKeys="true">
@@ -50,6 +53,7 @@
 			<if test="user.studentId != null">studentId,</if>
 			<if test="user.userId != null">userId,</if>
 			<if test="user.username != null">username,</if>
+			<if test="user.unionid != null">unionid,</if>
 		</trim>
 		values
 		<trim prefix="(" suffix=")" suffixOverrides=",">
@@ -66,6 +70,7 @@
 			<if test="user.studentId != null">#{user.studentId},</if>
 			<if test="user.userId != null">#{user.userId},</if>
 			<if test="user.username != null">#{user.username},</if>
+			<if test="user.unionid != null">#{user.unionid},</if>
 		</trim>
 	</insert>
 	
@@ -85,6 +90,7 @@
 			studentId,
 			userId,
 			username,
+			unionid,
 		</trim>
 		values
 		<foreach collection="list" item="item" index="index" separator=",">
@@ -102,6 +108,7 @@
 			#{item.studentId},
 			#{item.userId},
 			#{item.username},
+			#{item.unionid},
 		</trim>
 		</foreach>
 		ON DUPLICATE KEY UPDATE 
@@ -130,6 +137,7 @@
 			<if test="user.studentId != null">studentId=#{user.studentId},</if>
 			<if test="user.userId != null">userId=#{user.userId},</if>
 			<if test="user.username != null">username=#{user.username},</if>
+			<if test="user.unionid != null">unionid=#{user.unionid},</if>
 		</set>
 		WHERE userId = #{userId};	
 	</update>
@@ -202,6 +210,9 @@
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 	    	<if test="map.openId != null">
             				AND a.openId=#{map.openId}
+            			</if>
+            <if test="map.unionid != null">
+            				AND a.unionid=#{map.unionid}
             			</if>
 			<if test="map.uId != null">
 				AND a.userId=#{map.uId}
@@ -425,4 +436,21 @@
 
 
                  	</select>
+
+       <select id="findUserBuImpressionSort" resultType="java.util.Map">
+               		select aa.* from user aa LEFT JOIN impression bb on aa.userId=bb.imUser
+               		<trim prefix="WHERE" prefixOverrides="AND|OR">
+                                                             <if test="map.isEffective != null ">
+                                                                  AND aa.isEffective=#{map.isEffective}
+                                                             </if>
+                                                 			<if test="map.username != null ">
+                                                 				AND aa.username like CONCAT ('%', #{map.username}, '%')
+                                                 			</if>
+
+                     </trim>
+                    group by aa.userId order by (COALESCE(sum(bb.agreeNum),0)+count(bb.agreeNum)*0.1) DESC
+                    <if test="map.start != null ">
+                                         		limit #{map.start},#{map.limit}
+                    </if>
+           </select>
 </mapper>

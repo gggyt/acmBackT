@@ -89,9 +89,9 @@ public class AnnouncementCOntroller extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+               // user = new User();
+              //  user.setUserId(2);
             }
 
             return announceDealService.selectAnnounce(announceTitle,  aOrs,  order,  pageNum,  pageSize);

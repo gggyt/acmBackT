@@ -59,7 +59,23 @@ public class InvitationDealImpl implements InvitationDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+    public ResultBean updateInvitation(User user, long invitationId, String invitationTitle, String invitationBody) {
+        List<Invitation> invitations= invitationService.findInvitationListByInvitationId(invitationId);
+        if (invitations.size()==0) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该帖子");
+        }
+        Invitation invitation = invitations.get(0);
+        if (invitation.getIsEffective()==SysConst.NOT_LIVE) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该帖子");
+        }
+        invitation.setInvitationTitle(invitationTitle);
+        invitation.setInvitationBody(invitationBody);
+        invitation.setUpdateDate(new Date());
+        invitation.setUpdateUser(user.getUserId());
+        invitationService.updateInvitationByInvitationId(invitationId, invitation);
 
+        return new ResultBean(ResultCode.SUCCESS);
+    }
     public ResultBean selectInvitation(User user, String invitationTitle, int aOrs, int pageNum, String order, int pageSize, int getMy){
         try{
             Map<String, Object> map = new HashMap<>();
@@ -146,5 +162,55 @@ public class InvitationDealImpl implements InvitationDealService{
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
+    }
+
+
+    public ResultBean firstInvitation(User user, long invitationId, int isFirst){
+        List<Invitation> invitations= invitationService.findInvitationListByInvitationId(invitationId);
+        if (invitations.size()==0) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该帖子");
+        }
+        Invitation invitation = invitations.get(0);
+        if (invitation.getIsEffective()==SysConst.NOT_LIVE) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该帖子");
+        }
+
+        if (invitation.getIsFirst()==isFirst) {
+            if (isFirst==1) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "帖子已置顶");
+            }
+            if (isFirst==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "帖子已取消置顶");
+            }
+        }
+
+        invitation.setIsFirst(isFirst);
+        invitationService.updateInvitationByInvitationId(invitationId, invitation);
+
+        return new ResultBean(ResultCode.SUCCESS);
+    }
+
+    public ResultBean greateInvitation(User user, long invitationId, int isGreate){
+        List<Invitation> invitations= invitationService.findInvitationListByInvitationId(invitationId);
+        if (invitations.size()==0) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该帖子");
+        }
+        Invitation invitation = invitations.get(0);
+        if (invitation.getIsEffective()==SysConst.NOT_LIVE) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该帖子");
+        }
+        if (invitation.getIsGreate()==isGreate) {
+            if (isGreate==1) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "帖子已加精");
+            }
+            if (isGreate==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "帖子已取消加精");
+            }
+        }
+
+        invitation.setIsGreate(isGreate);
+        invitationService.updateInvitationByInvitationId(invitationId, invitation);
+
+        return new ResultBean(ResultCode.SUCCESS);
     }
 }

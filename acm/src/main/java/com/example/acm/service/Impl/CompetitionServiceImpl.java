@@ -175,4 +175,8 @@ public class CompetitionServiceImpl implements CompetitionService {
     	return competitionMapper.findCompetitionMapListByQuery(map);
     }
 
+
+    public List<Map<String, Object>> findCompetitionMapListByUser(Map<String, Object> map) {
+        return competitionMapper.findCompetitionMapListByUser(map);
+    }
 }

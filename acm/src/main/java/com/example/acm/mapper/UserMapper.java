@@ -149,4 +149,6 @@ public interface UserMapper{
     public List<Map<String,Object>> findUserByLectureId(@Param("map") Map<String, Object> map);
 
     public Integer countUserByLectureId(@Param("map") Map<String, Object> map);
+
+    public  List<Map<String,Object>> findUserBuImpressionSort(@Param("map") Map<String, Object> map);
 }

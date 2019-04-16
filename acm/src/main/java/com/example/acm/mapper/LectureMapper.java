@@ -139,5 +139,8 @@ public interface LectureMapper{
      * @date 2019-03-11 22:19:56
      */
     public List<Map<String,Object>> findLectureMapListByQuery(@Param("map") Map<String, Object> map);
+
+
+    public List<Map<String,Object>> findLectureMapListByUser(@Param("map") Map<String, Object> map);
 	
 }

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.acm.entity.Competition;
+import org.apache.ibatis.annotations.Param;
 
 /** 
  * 比赛服务接口
@@ -139,5 +140,6 @@ public interface CompetitionService{
      * @date 2019-02-18 21:04:49
      */
     public List<Map<String,Object>> findCompetitionMapListByQuery(Map<String, Object> map);
-	
+
+    public List<Map<String, Object>> findCompetitionMapListByUser(Map<String, Object> map);
 }

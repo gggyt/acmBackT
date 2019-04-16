@@ -8,11 +8,13 @@ import com.example.acm.entity.User;
  */
 public interface LectureDealService {
 
-    ResultBean addLecture(User user, String lectureTitle, String lectureBody);
+    ResultBean addLecture(User user, String lectureTitle, String lectureBody, String date);
 
-    ResultBean updateLecture(User user, long lectureId, String lectureTitle, String lectureBody);
+    ResultBean updateLecture(User user, long lectureId, String lectureTitle, String lectureBody, String date);
 
     ResultBean selectLecture(User user, String lectureTitle, int aOrs, int pageNum,String order, int pageSize);
+
+    ResultBean selectUserLecture(User user, int userId, int aOrs, int pageNum,String order, int pageSize);
 
     ResultBean selectLecturePerson(User user, long lectureId, int aOrs, int pageNum,String order, int pageSize);
 
@@ -23,4 +25,6 @@ public interface LectureDealService {
     ResultBean doneLecture(User user, long lectureId);
 
     ResultBean deleteLecture(User user, long lectureId);
+
+    ResultBean applyOrNot(User user, long lectureId);
 }

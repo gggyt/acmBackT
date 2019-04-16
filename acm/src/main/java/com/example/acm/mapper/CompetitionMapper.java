@@ -139,5 +139,6 @@ public interface CompetitionMapper{
      * @date 2019-02-18 21:04:49
      */
     public List<Map<String,Object>> findCompetitionMapListByQuery(@Param("map") Map<String, Object> map);
-	
+
+    public List<Map<String, Object>> findCompetitionMapListByUser(@Param("map") Map<String, Object> map);
 }

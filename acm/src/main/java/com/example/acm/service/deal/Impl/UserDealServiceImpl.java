@@ -1,5 +1,7 @@
 package com.example.acm.service.deal.Impl;
 
+import com.example.acm.authorization.manager.TokenManager;
+import com.example.acm.authorization.model.TokenModel;
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
 import com.example.acm.common.SysConst;
@@ -30,6 +32,8 @@ public class UserDealServiceImpl implements UserDealService{
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private TokenManager tokenManager;
     public ResultBean webLogin(String username, String passwrod) {
         try {
             Map<String, Object> map = new HashMap<>();
@@ -49,8 +53,9 @@ public class UserDealServiceImpl implements UserDealService{
         }
     }
 
-    public ResultBean register(String mobile, String username, String number, String password, String openId){
+    public ResultBean register(String mobile, String username, String number, String password, String openId, String image){
         try {
+            image = image.replace("\\", "");
             Map<String, Object> map = new HashMap<>();
             map.put("mobile", mobile);
             map.put("isEffective", SysConst.USE);
@@ -82,9 +87,16 @@ public class UserDealServiceImpl implements UserDealService{
             user.setCreateDay(new Date());
             user.setIsEffective(SysConst.USE);
             user.setOpenId(openId);
+            user.setImage(image);
 
             userService.addUser(user);
-            return new ResultBean(ResultCode.SUCCESS);
+
+            Map<String, Object> map1 = new HashMap<>();
+            map1.put("mobile", mobile);
+            map1.put("isEffective", 1);
+            List<Map<String, Object>> users = userService.findUserMapListByQuery(map1);
+            TokenModel model = tokenManager.createToken((long)users.get(0).get("userId"));
+            return new ResultBean(ResultCode.SUCCESS, model);
 
         } catch(Exception e) {
             LOG.error(e.getMessage(), e);
@@ -104,6 +116,8 @@ public class UserDealServiceImpl implements UserDealService{
             if (pageSize < 0) {
                 return new ResultBean(ResultCode.PARAM_ERROR, "一页展示数量不能小于0");
             }
+            map.put("isEffective", 1);
+            int allNum = userService.countUserMapListByQuery(map);
             int start = (pageNum - 1) * pageSize;
             int limit = pageSize;
             map.put("start", start);
@@ -114,7 +128,6 @@ public class UserDealServiceImpl implements UserDealService{
             } else {
                 map.put("aOrS", "ASC");
             }
-            map.put("isEffective", 1);
             List<Map<String, Object>> users = userService.findUserMapListByQuery(map);
 
             int index = -1;
@@ -133,8 +146,6 @@ public class UserDealServiceImpl implements UserDealService{
             if (index!=-1) {
                 users.remove(index);
             }
-            int allNum = userService.countUserMapListByQuery(map);
-
             ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, users);
 
             return new ResultBean(ResultCode.SUCCESS, listPage);

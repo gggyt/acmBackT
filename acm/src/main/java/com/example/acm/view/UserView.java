@@ -9,6 +9,7 @@ public class UserView {
     private int grade;
     private int classNum;
     private String image;
+    private int auth;
 
     public UserView(User user) {
         this.uId = user.getUserId();
@@ -23,6 +24,7 @@ public class UserView {
         if (user.getImage()!=null) {
             this.image = user.getImage();
         }
+        this.auth = user.getAuth();
     }
     public int getuId() {
         return uId;
@@ -70,5 +72,13 @@ public class UserView {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public void setAuth(int auth) {
+        this.auth = auth;
+    }
+
+    public int getAuth() {
+        return auth;
     }
 }

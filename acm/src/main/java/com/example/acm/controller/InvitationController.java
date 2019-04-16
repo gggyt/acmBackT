@@ -57,6 +57,36 @@ public class InvitationController extends BaseController{
         }
     }
 
+    @RequestMapping("/updateInvitation")
+    @ResponseBody
+    public ResultBean updateInvitation(@RequestParam(value = "invitationId", required = true) long invitationId,
+                                       @RequestParam(value="invitationTitle", required = true) String invitationTitle,
+                                    @RequestParam(value="invitationBody", required = true) String invitationBody,
+                                    HttpServletRequest request, HttpServletResponse response) {
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            if (StringUtils.isNull(invitationTitle)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "标题不为空");
+            }
+            if (invitationTitle.length()>30) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "标题过长");
+            }
+            if (StringUtils.isNull(invitationBody)) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "内容不为空");
+            }
+            return invitationDealService.updateInvitation(user, invitationId, invitationTitle, invitationBody);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
     @RequestMapping("/selectInvitation")
     @ResponseBody
     public ResultBean selectInvitation(@RequestParam(value="invitationTitle", defaultValue = "", required = false) String invitationTitle,
@@ -120,5 +150,39 @@ public class InvitationController extends BaseController{
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
+    }
+
+    @RequestMapping("/firstInvitation")
+    @ResponseBody
+    public ResultBean firstInvitation(@RequestParam(value = "invitationId", required = true) long invitationId,
+                                      @RequestParam(value="isFirst", required = true) int isFirst,
+                                      HttpServletRequest request, HttpServletResponse response) {
+        if (isFirst!=0 && isFirst!=1) {
+            return new ResultBean(ResultCode.PARAM_ERROR);
+        }
+        User user = getUserIdFromSession(request);
+        if (user == null) {
+            //return new ResultBean(ResultCode.SESSION_OUT);
+            user = new User();
+            user.setUserId(2);
+        }
+        return invitationDealService.firstInvitation(user, invitationId, isFirst);
+    }
+
+    @RequestMapping("/greateInvitation")
+    @ResponseBody
+    public ResultBean greateInvitation(@RequestParam(value = "invitationId", required = true) long invitationId,
+                                      @RequestParam(value="isGreate", required = true) int isGreate,
+                                      HttpServletRequest request, HttpServletResponse response) {
+        if (isGreate!=0 && isGreate!=1) {
+            return new ResultBean(ResultCode.PARAM_ERROR);
+        }
+        User user = getUserIdFromSession(request);
+        if (user == null) {
+            //return new ResultBean(ResultCode.SESSION_OUT);
+            user = new User();
+            user.setUserId(2);
+        }
+        return invitationDealService.greateInvitation(user, invitationId, isGreate);
     }
 }

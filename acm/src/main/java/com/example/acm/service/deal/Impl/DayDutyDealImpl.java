@@ -56,7 +56,7 @@ public class DayDutyDealImpl implements DayDutyDealService{
 
         DayDuty dayDuty = dayDuties.get(0);
         dayDuty.setDutyUserNames(dutyUserNames);
-        dayDuty.setUpdateUser(user.getUserId());
+        dayDuty.setUpdateUser(user.getUserId().intValue());
         dayDuty.setUpdateData(new Date());
 
         dayDutyService.updateDayDutyByDayDutyId(dayDutyId, dayDuty);

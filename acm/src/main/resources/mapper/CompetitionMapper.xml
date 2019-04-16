@@ -162,6 +162,9 @@
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
 			</if>
+			<if test="map.isDone != null ">
+				AND a.isDone=#{map.isDone}
+			</if>
 		</trim>
 	</select>
 	
@@ -220,5 +223,30 @@
 		limit #{map.start},#{map.limit}
 		</if>
 	</select>
-	
+
+	<select id="findCompetitionMapListByUser" resultType="java.util.Map">
+		SELECT
+		a.*, b.*
+		FROM
+		competition a inner join applycompetition b
+		<trim prefix="WHERE" prefixOverrides="AND|OR">
+			AND a.competitionId = b.competitionId
+			<if test="map.isEffective != null ">
+				AND a.isEffective=#{map.isEffective}
+				AND b.isEffective=#{map.isEffective}
+			</if>
+			<if test="map.joinUser != null ">
+				AND b.joinUser=#{map.joinUser}
+			</if>
+		</trim>
+		<if test="map.order != null ">
+			ORDER BY
+			a.${map.order} ${map.aOrS}
+		</if>
+		<if test="map.start != null ">
+			limit #{map.start},#{map.limit}
+		</if>
+	</select>
+
+
 </mapper>

@@ -118,4 +118,28 @@ public class PhotoController extends BaseController{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    @RequestMapping("/selectUserPhoto")
+    @ResponseBody
+    public ResultBean selectUserPhoto(@RequestParam(value = "userId", defaultValue = "-1", required = false) int userId,
+                                  @RequestParam(value="aOrs", defaultValue = "1", required = false) int aOrs,
+                                  @RequestParam(value = "pageNum", defaultValue = "1", required = false) int pageNum,
+                                  @RequestParam(value="order", defaultValue = "createDate", required = false) String order,
+                                  @RequestParam(value="pageSize", defaultValue="10", required = false) int pageSize,
+                                  HttpServletRequest request, HttpServletResponse response) {
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+
+
+            return photoDealService.selectUserPhoto(user, userId, aOrs, pageNum, order, pageSize);
+        } catch (Exception e) {
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
 }

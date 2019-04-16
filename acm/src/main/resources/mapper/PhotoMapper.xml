@@ -204,7 +204,7 @@
 
 	<select id="findPhotoMapListByAlbumId" resultType="java.util.Map">
 		SELECT
-		<include refid="photo_field_list_alias"/>
+		a.*
 		FROM
 		photo a INNER JOIN album_photo b
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
@@ -214,6 +214,9 @@
 			</if>
 			<if test="map.albumId != null ">
 				AND b.albumId=#{map.albumId}
+			</if>
+			<if test="map.createUser != null ">
+				AND a.createUser=#{map.createUser}
 			</if>
 		</trim>
 		<if test="map.order != null ">
@@ -237,6 +240,9 @@
 			</if>
 			<if test="map.isEffective != null ">
 				AND b.isEffective=#{map.isEffective}
+			</if>
+			<if test="map.createUser != null ">
+				AND a.createUser=#{map.createUser}
 			</if>
 			<if test="map.albumId != null ">
 				AND b.albumId=#{map.albumId}

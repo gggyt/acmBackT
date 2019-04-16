@@ -196,6 +196,9 @@
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
 			</if>
+			<if test="map.joinUser != null ">
+				AND a.joinUser=#{map.joinUser}
+			</if>
 		</trim>
 	</select>
 	
@@ -207,6 +210,9 @@
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
+			</if>
+			<if test="map.joinUser != null ">
+				AND a.joinUser=#{map.joinUser}
 			</if>
 		</trim>
 		<if test="map.order != null ">

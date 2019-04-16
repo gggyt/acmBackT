@@ -228,18 +228,24 @@
 
 	<select id="finfCommentAndSonCommtne" resultType="java.util.Map">
 		SELECT
-		a.*, c.userId, c.username, c.image
+		a.*, c.userId, c.username, c.image, b.*
 		FROM
 		(comment a INNER JOIN  invitation b on a.invitationId=b.invitationId) INNER JOIN user c on c.userId=a.createUser
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.invitationId != null ">
 				AND a.invitationId=#{map.invitationId}
 			</if>
+			<if test="map.createUser != null ">
+				AND a.createUser=#{map.createUser}
+			</if>
 			<if test="map.p_commentId != null ">
 				AND a.p_commentId=#{map.p_commentId}
 			</if>
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective}
+				AND b.isEffective=#{map.isEffective}
+				AND c.isEffective=#{map.isEffective}
+
 			</if>
 		</trim>
 		<if test="map.order != null ">

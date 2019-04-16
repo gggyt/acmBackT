@@ -175,4 +175,8 @@ public class LectureServiceImpl implements LectureService {
     	return lectureMapper.findLectureMapListByQuery(map);
     }
 
+
+    public List<Map<String,Object>> findLectureMapListByUser(Map<String, Object> map) {
+        return lectureMapper.findLectureMapListByUser(map);
+    }
 }

@@ -19,6 +19,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -41,16 +42,17 @@ public class LectureDealImpl implements LectureDealService {
     @Autowired
     private UserService userService;
 
-    public ResultBean addLecture(User user, String lectureTitle, String lectureBody){
+    public ResultBean addLecture(User user, String lectureTitle, String lectureBody, String date){
         try {
             Long bigInteger = new Long(UUIDUtil.getNumUUID());
             Lecture lecture = new Lecture();
-
+            LOG.info(date);
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             lecture.setLectureId(bigInteger);
             lecture.setLectureTitle(lectureTitle);
             lecture.setLectureBody(lectureBody);
             lecture.setCreateUser(user.getUserId());
-            lecture.setCreateDate(new Date());
+            lecture.setCreateDate(sdf.parse(date)); //createDate变为开始时间
             lecture.setIsDone(SysConst.LIVE);
             lecture.setUpdateUser(user.getUserId());
             lecture.setUpdateDate(new Date());
@@ -68,8 +70,9 @@ public class LectureDealImpl implements LectureDealService {
 
     }
 
-    public ResultBean updateLecture(User user, long lectureId, String lectureTitle, String lectureBody){
+    public ResultBean updateLecture(User user, long lectureId, String lectureTitle, String lectureBody, String date){
         try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             List<Lecture> lectures = lectureService.findLectureListByLectureId(lectureId);
             if (lectures.size()<1) {
                 return new ResultBean(ResultCode.PARAM_ERROR, "不存在的讲座id");
@@ -80,6 +83,7 @@ public class LectureDealImpl implements LectureDealService {
             }
             lec.setLectureTitle(lectureTitle);
             lec.setLectureBody(lectureBody);
+            lec.setCreateDate(sdf.parse(date));
             lectureService.updateLectureByLectureId(lectureId, lec);
 
             return new ResultBean(ResultCode.SUCCESS);
@@ -115,6 +119,52 @@ public class LectureDealImpl implements LectureDealService {
             List<Map<String, Object>> list = lectureService.findLectureMapListByQuery(map);
 
             int allNum = lectureService.countLectureListByQuery(map);
+            if (list.size() >0) {
+                for (Map<String, Object> mapTemp : list) {
+                    mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDate"), "yyyy-MM-dd HH:mm:ss"));
+
+
+                }
+            }
+            ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, list);
+
+            return new ResultBean(ResultCode.SUCCESS, listPage);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.OTHER_FAIL);
+        }
+    }
+
+    public ResultBean selectUserLecture(User user, int userId, int aOrs, int pageNum,String order, int pageSize){
+        try {
+            Map<String, Object> map = new HashMap<>();
+            if (pageNum < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "页码不能小于0");
+            }
+            if (pageSize < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "一页展示数量不能小于0");
+            }
+            int start = (pageNum - 1) * pageSize;
+            int limit = pageSize;
+            map.put("joinUser", userId);
+            map.put("isEffective", 1);
+            if (userId==-1) {
+                map.put("joinUser", user.getUserId());
+            }
+            List<Map<String, Object>> listTmp = lectureService.findLectureMapListByUser(map);
+            int allNum = listTmp.size();
+            map.put("start", start);
+            map.put("limit", limit);
+            map.put("order", order);
+            //  map.put("isPublic", isPublic);
+            if (aOrs == 1) {
+                map.put("aOrS", "DESC");
+            } else {
+                map.put("aOrS", "ASC");
+            }
+            List<Map<String, Object>> list = lectureService.findLectureMapListByUser(map);
+
             if (list.size() >0) {
                 for (Map<String, Object> mapTemp : list) {
                     mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDate"), "yyyy-MM-dd HH:mm:ss"));
@@ -279,5 +329,33 @@ public class LectureDealImpl implements LectureDealService {
 
         return new ResultBean(ResultCode.SUCCESS);
 
+    }
+
+    public ResultBean applyOrNot(User user, long lectureId){
+        try {
+            List<Lecture> lectures = lectureService.findLectureListByLectureId(lectureId);
+            if (lectures.size()<1) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "不存在的讲座id");
+            }
+            Lecture lec = lectures.get(0);
+            if (lec.getIsDone()==SysConst.NOT_LIVE) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "该讲座已结束");
+            }
+            Map<String, Object> map = new HashMap<>();
+            map.put("isEffective", SysConst.LIVE);
+            map.put("lectureId", lectureId);
+            map.put("joinUser",user.getUserId());
+            List<Applylecture> applylectures = applylectureService.findApplylectureListByQuery(map);
+            if (applylectures.size()>0) {
+                return new ResultBean(ResultCode.SYSTEM_FAILED, "你已申请该讲座");
+            }
+
+
+            return new ResultBean(ResultCode.SUCCESS);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.OTHER_FAIL);
+        }
     }
 }

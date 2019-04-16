@@ -32,6 +32,7 @@ public class LectureController  extends BaseController{
     @ResponseBody
     public ResultBean addLecture(@RequestParam(value = "lectureTitle", required = true) String lectureTitle,
                                  @RequestParam(value = "lectureBody", required = true) String lectureBody,
+                                 @RequestParam(value = "date", required = true) String date,
                                  HttpServletRequest request, HttpServletResponse response) {
         try{
             User user = getUserIdFromSession(request);
@@ -41,7 +42,7 @@ public class LectureController  extends BaseController{
                 user.setUserId(2);
             }
 
-            return lectureDealService.addLecture(user, lectureTitle, lectureBody);
+            return lectureDealService.addLecture(user, lectureTitle, lectureBody, date);
         } catch (Exception e) {
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.SYSTEM_FAILED);
@@ -53,6 +54,7 @@ public class LectureController  extends BaseController{
     public ResultBean updateLecture(@RequestParam(value = "lectureId", required = true) long lectureId,
                                     @RequestParam(value = "lectureTitle", required = true) String lectureTitle,
                                     @RequestParam(value = "lectureBody", required = true) String lectureBody,
+                                    @RequestParam(value = "date", required = true) String date,
                                     HttpServletRequest request, HttpServletResponse response) {
         try{
             User user = getUserIdFromSession(request);
@@ -62,7 +64,7 @@ public class LectureController  extends BaseController{
                 user.setUserId(2);
             }
 
-            return lectureDealService.updateLecture(user, lectureId, lectureTitle, lectureBody);
+            return lectureDealService.updateLecture(user, lectureId, lectureTitle, lectureBody,  date);
         } catch (Exception e) {
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.SYSTEM_FAILED);
@@ -86,6 +88,29 @@ public class LectureController  extends BaseController{
             }
 
             return lectureDealService.selectLecture(user, lectureTitle, aOrs, pageNum, order, pageSize);
+        } catch (Exception e) {
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.OTHER_FAIL, "系统异常");
+        }
+    }
+
+    @RequestMapping("/selectUserLecture")
+    @ResponseBody
+    public ResultBean selectUserLecture(@RequestParam(value="userId", defaultValue = "-1",required = false) int userId,
+                                    @RequestParam(value="aOrs", defaultValue = "1", required = false) int aOrs,
+                                    @RequestParam(value = "pageNum", defaultValue = "1", required = false) int pageNum,
+                                    @RequestParam(value="order", defaultValue = "createDate", required = false) String order,
+                                    @RequestParam(value="pageSize", defaultValue="10", required = false) int pageSize,
+                                    HttpServletRequest request, HttpServletResponse response) {
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+
+            return lectureDealService.selectUserLecture(user, userId, aOrs, pageNum, order, pageSize);
         } catch (Exception e) {
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.OTHER_FAIL, "系统异常");
@@ -188,6 +213,23 @@ public class LectureController  extends BaseController{
             e.printStackTrace();
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping("/applyOrNot")
+    @ResponseBody
+    public ResultBean applyOrNot(@RequestParam(value="lectureId", defaultValue = "",required = false) long lectureId,
+                                   HttpServletRequest request, HttpServletResponse response) {
+        try {
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+
+            return lectureDealService.applyOrNot(user, lectureId);
+        } catch (Exception e) {
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.OTHER_FAIL, "系统异常");
         }
     }
 }

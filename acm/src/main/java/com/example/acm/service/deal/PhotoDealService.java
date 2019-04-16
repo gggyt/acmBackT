@@ -13,6 +13,8 @@ public interface PhotoDealService {
 
     ResultBean selectPhoto(User user, int albumId, int aOrs, int pageNum, String order, int pageSize);
 
+    ResultBean selectUserPhoto(User user, int userId, int aOrs, int pageNum, String order, int pageSize);
+
     ResultBean deletePhoto(User user, long photoId);
 
     ResultBean beCover(User user, int albumId, long photoId);

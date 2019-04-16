@@ -284,4 +284,54 @@ public class CompetitionDealImpl implements CompetitionDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    public ResultBean userCompetition(User user, int userId, int aOrs, String order, int pageNum, int pageSize){
+        try {
+            Map<String, Object> map = new HashMap<>();
+            if (pageNum < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "页码不能小于0");
+            }
+            if (pageSize < 0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "一页展示数量不能小于0");
+            }
+            int start = (pageNum - 1) * pageSize;
+            int limit = pageSize;
+            map.put("joinUser", userId);
+            if (userId==-1) {
+                map.put("joinUser", user.getUserId());
+            }
+            map.put("isEffective", SysConst.LIVE);
+            List<Map<String, Object>> list1 = competitionService.findCompetitionMapListByUser(map);
+            int allNum = list1.size();
+            map.put("start", start);
+            map.put("limit", limit);
+            map.put("order", order);
+            if (aOrs == 1) {
+                map.put("aOrS", "DESC");
+            } else {
+                map.put("aOrS", "ASC");
+            }
+            List<Map<String, Object>> list = competitionService.findCompetitionMapListByUser(map);
+
+            if (list.size() >0) {
+                for (Map<String, Object> mapTemp : list) {
+                    mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDate"), "yyyy-MM-dd HH:mm:ss"));
+                    mapTemp.put("updateDate", DateUtils.convDateToStr((Date) mapTemp.get("updateDate"), "yyyy-MM-dd HH:mm:ss"));
+                    List<User> users = userService.findUserListByUserId(Integer.parseInt(mapTemp.get("createUser").toString()));
+                    mapTemp.put("createUser", users.get(0).getUsername());;
+                    List<User> users1 = userService.findUserListByUserId(Integer.parseInt(mapTemp.get("updateUser").toString()));
+                    mapTemp.put("updateUser", users1.get(0).getUsername());;
+                }
+            }
+
+
+            ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, list);
+
+            return new ResultBean(ResultCode.SUCCESS, listPage);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error((e.getMessage()));
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
 }

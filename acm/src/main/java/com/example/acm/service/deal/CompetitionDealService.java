@@ -23,4 +23,6 @@ public interface CompetitionDealService {
     ResultBean doneCompetition(User user, long competitionId);
 
     ResultBean personCompetition(User user, long competitionId, int aOrs, String order, int pageNum, int pageSize);
+
+    ResultBean userCompetition(User user, int userId, int aOrs, String order, int pageNum, int pageSize);
 }
