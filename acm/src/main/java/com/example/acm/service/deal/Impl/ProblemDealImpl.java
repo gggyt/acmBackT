@@ -55,7 +55,7 @@ public class ProblemDealImpl implements ProblemDealService {
         return new ResultBean(ResultCode.SUCCESS, bigInteger);
     }
 
-    public ResultBean updateProblem(long problemId, String problemTitle, String problemBody, String myAns, User user) {
+    public ResultBean updateProblem(long problemId, String problemTitle, String problemBody, User user) {
 
         List<Problem> problems = problemService.findProblemListByProblemId(problemId);
         if (problems.size()==0 || problems.get(0).getIsEffective()==SysConst.NOT_LIVE) {
@@ -69,7 +69,7 @@ public class ProblemDealImpl implements ProblemDealService {
         problem.setUpdateUser(user.getUserId());
         problem.setUpdateDate(new Date());
 
-        problemService.addProblem(problem);
+        problemService.updateProblemByProblemId(problemId, problem);
 
         return new ResultBean(ResultCode.SUCCESS);
     }
@@ -150,7 +150,7 @@ public class ProblemDealImpl implements ProblemDealService {
         return new ResultBean(ResultCode.SUCCESS);
     }
 
-    public ResultBean selectProblem(User user, String problemTitle, int aOrs, int pageNum,String order, int pageSize) {
+    public ResultBean selectProblem(User user, String problemTitle, int aOrs, int pageNum,String order, int pageSize, int my) {
         Map<String, Object> map = new HashMap<>();
         if (pageNum < 0) {
             return new ResultBean(ResultCode.PARAM_ERROR, "页码不能小于0");
@@ -161,6 +161,9 @@ public class ProblemDealImpl implements ProblemDealService {
         int start = (pageNum - 1) * pageSize;
         int limit = pageSize;
         map.put("problemTitle", problemTitle);
+        if (my!=-1) {
+            map.put("createUser", user.getUserId());
+        }
         map.put("start", start);
         map.put("limit", limit);
         map.put("order", order);
@@ -205,6 +208,7 @@ public class ProblemDealImpl implements ProblemDealService {
             map.put("aOrS", "ASC");
         }
         map.put("isEffective", 1);
+
         List<Map<String, Object>> list = replyproblemService.findReplyproblemMapListByQuery(map);
 
         int allNum = replyproblemService.countReplyproblemMapListByQuery(map);

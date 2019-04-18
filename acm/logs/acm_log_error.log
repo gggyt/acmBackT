@@ -1,0 +1,8 @@
+2019-04-17 10:14:03.235 ERROR --- [http-nio-9999-exec-1] com.example.acm.service.deal.Impl.PhotoDealImpl Line:124 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 16
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\PhotoMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   a.*   FROM   photo a INNER JOIN album_photo b    WHERE  a.photoId=b.photoId         AND a.isEffective=?             AND b.albumId=?         ORDER BY    a.createDate DESC            limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 16
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 16

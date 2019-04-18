@@ -47,6 +47,29 @@ public class problemController extends BaseController{
         return problemDealService.addProblem(problemTitle, problemBody, myAns, user);
     }
 
+    @RequestMapping("/updateProblem")
+    @ResponseBody
+    public ResultBean updateProblem(@RequestParam(value = "problemId", required = true) long problemId,
+                                    @RequestParam(value = "problemTitle", required = true) String problemTitle,
+                                     @RequestParam(value = "problemBody", required = true) String problemBody,
+                                     HttpServletRequest request, HttpServletResponse response) {
+        User user = getUserIdFromSession(request);
+        if (user == null) {
+            //return new ResultBean(ResultCode.SESSION_OUT);
+            user = new User();
+            user.setUserId(2);
+        }
+
+        if (StringUtils.isNull(problemTitle)) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "标题不能为空");
+        }
+        if (StringUtils.isNull(problemBody)) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "题目内容不能为空");
+        }
+
+        return problemDealService.updateProblem(problemId, problemTitle, problemBody, user);
+    }
+
     @RequestMapping("/addAns")
     @ResponseBody
     public ResultBean addAns(@RequestParam(value = "problemId", required = true) long problemId,
@@ -98,6 +121,7 @@ public class problemController extends BaseController{
                                     @RequestParam(value = "pageNum", defaultValue = "1", required = false) int pageNum,
                                     @RequestParam(value="order", defaultValue = "updateDate", required = false) String order,
                                     @RequestParam(value="pageSize", defaultValue="10", required = false) int pageSize,
+                                    @RequestParam(value = "my", defaultValue = "-1", required = true) int my,
                                     HttpServletRequest request, HttpServletResponse response) {
 
         User user = getUserIdFromSession(request);
@@ -107,7 +131,7 @@ public class problemController extends BaseController{
             user.setUserId(2);
         }
 
-        return problemDealService.selectProblem(user,  problemTitle,  aOrs,  pageNum, order,  pageSize);
+        return problemDealService.selectProblem(user,  problemTitle,  aOrs,  pageNum, order,  pageSize, my);
     }
 
     @RequestMapping("/replyProblem")

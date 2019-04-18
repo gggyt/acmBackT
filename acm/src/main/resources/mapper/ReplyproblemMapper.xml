@@ -187,14 +187,16 @@
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
 			</if>
+			<if test="map.problemId != null ">
+				AND a.problemId=#{map.problemId}
+			</if>
 		</trim>
 	</select>
 	
 	<select id="findReplyproblemMapListByQuery" resultType="java.util.Map">
-		SELECT
-		<include refid="replyproblem_field_list_alias"/>
-		FROM 
-			replyproblem a
+		select a.*, b.userId, b.username, b.image
+		from replyproblem a inner join user b
+		on a.ansUser=b.userId
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 

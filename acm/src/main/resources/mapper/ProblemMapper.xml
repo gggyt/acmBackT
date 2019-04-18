@@ -125,9 +125,9 @@
 
 	<select id="findProblemListByProblemId" resultType="com.example.acm.entity.Problem">
 		SELECT
-		<include refid="problem_field_list_alias"/>
+		a.*, b.username
 		FROM 
-			problem a
+			problem a inner join user b on a.createUser = b.userId
 		<where>
 			<if test="problemId != null">
 				a.problemId = #{problemId}
@@ -137,9 +137,9 @@
 	
 	<select id="findProblem2MapListByProblemId" resultType="java.util.Map">
 		SELECT
-		<include refid="problem_field_list_alias"/>
-		FROM 
-			problem a
+		a.*, b.username
+		FROM
+		problem a inner join user b on a.createUser = b.userId
 		<where>
 			<if test="problemId != null">
 				a.problemId = #{problemId}
@@ -210,6 +210,9 @@
 			<if test="map.problemTitle != null ">
 				AND a.problemTitle like CONCAT('%', #{map.problemTitle}, '%')
 			</if>
+			<if test="map.createUser != null ">
+				AND a.createUser=#{map.createUser}
+			</if>
 		</trim>
 	</select>
 	
@@ -224,6 +227,9 @@
 			</if>
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
+			</if>
+			<if test="map.createUser != null ">
+				AND a.createUser=#{map.createUser}
 			</if>
 		</trim>
 		<if test="map.order != null ">

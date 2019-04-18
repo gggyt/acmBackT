@@ -10,7 +10,7 @@ public interface ProblemDealService {
 
     ResultBean addProblem(String problemTitle, String problemBody, String myAns, User user);
 
-    ResultBean updateProblem(long problemId, String problemTitle, String problemBody, String myAns, User user);
+    ResultBean updateProblem(long problemId, String problemTitle, String problemBody,  User user);
 
     ResultBean addAns(User user, long problemId, String ans, int my);
 
@@ -20,7 +20,7 @@ public interface ProblemDealService {
 
     ResultBean deleteProblem(long problemId, User user);
 
-    ResultBean selectProblem(User user, String problemTitle, int aOrs, int pageNum,String order, int pageSize);
+    ResultBean selectProblem(User user, String problemTitle, int aOrs, int pageNum,String order, int pageSize, int my);
 
     ResultBean selectReply(User user, long problemId, int aOrs, int pageNum,String order, int pageSize);
 }

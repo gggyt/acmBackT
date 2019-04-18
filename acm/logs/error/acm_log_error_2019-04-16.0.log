@@ -1,0 +1,56 @@
+2019-04-16 16:30:19.447 ERROR --- [http-nio-9999-exec-5] com.example.acm.conf.MyControllerAdvice Line:25  - /wInfo--
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.auth,   a.classNum,   a.createDay,   a.grade,   a.image,   a.isEffective,   a.mobile,   a.openId,   a.password,   a.realname,   a.studentId,   a.userId,   a.username,   a.unionid      FROM     user a    WHERE  a.openId=?                                                      AND a.isEffective=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+2019-04-16 16:30:27.094 ERROR --- [http-nio-9999-exec-7] com.example.acm.service.deal.Impl.InvitationDealImpl Line:121 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.auth,   a.classNum,   a.createDay,   a.grade,   a.image,   a.isEffective,   a.mobile,   a.openId,   a.password,   a.realname,   a.studentId,   a.userId,   a.username,   a.unionid      FROM     user a    WHERE a.userId = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+2019-04-16 16:30:40.868 ERROR --- [http-nio-9999-exec-6] com.example.acm.conf.MyControllerAdvice Line:25  - /wInfo--
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.auth,   a.classNum,   a.createDay,   a.grade,   a.image,   a.isEffective,   a.mobile,   a.openId,   a.password,   a.realname,   a.studentId,   a.userId,   a.username,   a.unionid      FROM     user a    WHERE  a.openId=?                                                      AND a.isEffective=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+2019-04-16 16:30:43.270 ERROR --- [http-nio-9999-exec-4] com.example.acm.service.deal.Impl.InvitationDealImpl Line:121 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+### The error may exist in file [D:\ACM\acmBackT\acm\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT       a.auth,   a.classNum,   a.createDay,   a.grade,   a.image,   a.isEffective,   a.mobile,   a.openId,   a.password,   a.realname,   a.studentId,   a.userId,   a.username,   a.unionid      FROM     user a    WHERE a.userId = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'a.unionid' in 'field list'
+2019-04-16 21:00:15.151 ERROR --- [http-nio-9999-exec-6] com.example.acm.conf.MyControllerAdvice Line:25  - /invitation/deleteInvitation--Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2019-04-16 21:02:41.850 ERROR --- [http-nio-9999-exec-9] com.example.acm.conf.MyControllerAdvice Line:25  - /invitation/deleteInvitation--Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2019-04-16 21:34:18.922 ERROR --- [http-nio-9999-exec-3] com.example.acm.conf.MyControllerAdvice Line:25  - /problem/updateProblem--Required long parameter 'problemId' is not present
+2019-04-16 21:34:57.557 ERROR --- [http-nio-9999-exec-5] com.example.acm.conf.MyControllerAdvice Line:25  - /problem/updateProblem--
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO problem     ( problemId,    problemTitle,    problemBody,    myAns,    createUser,    createDate,    updateDate,    updateUser,    readNum,    isEffective )    values    ( ?,    ?,    ?,    ?,    ?,    ?,    ?,    ?,    ?,    ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+; ]; Duplicate entry '7243000840389260' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+2019-04-16 21:36:24.497 ERROR --- [http-nio-9999-exec-3] com.example.acm.conf.MyControllerAdvice Line:25  - /problem/updateProblem--
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO problem     ( problemId,    problemTitle,    problemBody,    myAns,    createUser,    createDate,    updateDate,    updateUser,    readNum,    isEffective )    values    ( ?,    ?,    ?,    ?,    ?,    ?,    ?,    ?,    ?,    ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+; ]; Duplicate entry '7243000840389260' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+2019-04-16 21:36:38.405 ERROR --- [http-nio-9999-exec-4] com.example.acm.conf.MyControllerAdvice Line:25  - /problem/updateProblem--
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO problem     ( problemId,    problemTitle,    problemBody,    myAns,    createUser,    createDate,    updateDate,    updateUser,    readNum,    isEffective )    values    ( ?,    ?,    ?,    ?,    ?,    ?,    ?,    ?,    ?,    ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'
+; ]; Duplicate entry '7243000840389260' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '7243000840389260' for key 'PRIMARY'

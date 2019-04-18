@@ -1,0 +1,741 @@
+2019-04-17 08:53:14.527 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 08:56:29.496 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 08:56:29.520 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 08:56:32.977 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 08:56:34.881 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 08:56:37.055 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 08:59:28.802 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:01:21.770 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:01:21.869 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:01:21.875 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:01:21.902 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:01:21.905 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:05:26.065 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:05:26.090 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:05:26.091 INFO  --- [http-nio-9999-exec-4] com.example.acm.weiController.test Line:138 - undefined
+2019-04-17 09:05:26.092 INFO  --- [http-nio-9999-exec-4] com.example.acm.weiController.test Line:142 - undefined
+2019-04-17 09:05:27.105 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:08:53.784 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:10:01.654 INFO  --- [main] com.example.acm.AcmApplication Line:50  - Starting AcmApplication on DESKTOP-03CDSMO with PID 6372 (D:\ACM\acmBackT\acm\target\classes started by ggg in D:\ACM\acmBackT\acm)
+2019-04-17 09:10:01.655 INFO  --- [main] com.example.acm.AcmApplication Line:659 - No active profile set, falling back to default profiles: default
+2019-04-17 09:10:04.883 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-9999"]
+2019-04-17 09:10:04.893 INFO  --- [main] org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-04-17 09:10:04.893 INFO  --- [main] org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-04-17 09:10:04.898 INFO  --- [localhost-startStop-1] org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\ggg\tomcat\apache-tomcat-7.0.82\lib;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\ggg\apache-maven-3.5.2\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\sbin;C:\Program Files\hadoop\hadoop-2.7.4\bin;C:\Program Files\hadoop\hadoop-2.7.4\sbin;C:\Python27;C:\Program Files\PuTTY\;C:\Python27\Lib\site-packages\django\bin;C:\Python27\Scripts;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\ggg\SDK\tools;C:\Users\ggg\SDK\platform-tools;D:\Git\cmd;D:\nodej\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\ggg\AppData\Local\Microsoft\WindowsApps;C:\Users\ggg\SSH Secure Shell;D:\GO\bin;C:\Users\ggg\AppData\Roaming\npm;D:\Microsoft VS Code\bin;;.]
+2019-04-17 09:10:05.034 INFO  --- [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-04-17 09:10:09.027 INFO  --- [main] com.mangofactory.swagger.plugin.SwaggerPluginAdapter Line:33  - Context refreshed
+2019-04-17 09:10:09.028 INFO  --- [main] com.mangofactory.swagger.plugin.SwaggerPluginAdapter Line:46  - Found custom SwaggerSpringMvcPlugins
+2019-04-17 09:10:09.028 INFO  --- [main] com.mangofactory.swagger.plugin.SwaggerPluginAdapter Line:50  - initializing plugin bean customImplementation
+2019-04-17 09:10:09.037 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:55  - Scanning for api listing references
+2019-04-17 09:10:09.042 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectAlbum was album-controller
+2019-04-17 09:10:09.044 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectAlbum belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-04-17 09:10:09.045 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:selectAlbum
+2019-04-17 09:10:09.045 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteAlbum was album-controller
+2019-04-17 09:10:09.045 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteAlbum belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-04-17 09:10:09.046 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:deleteAlbum
+2019-04-17 09:10:09.046 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method AlbumDetail was album-controller
+2019-04-17 09:10:09.046 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: AlbumDetail belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-04-17 09:10:09.046 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:AlbumDetail
+2019-04-17 09:10:09.047 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addAlbum was album-controller
+2019-04-17 09:10:09.047 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addAlbum belongs to groups: [[ResourceGroup{groupName='album-controller', position=0}]] 
+2019-04-17 09:10:09.048 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='album-controller', position=0} with description:Album Controller for handler method:addAlbum
+2019-04-17 09:10:09.048 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detail was announcement-c-ontroller
+2019-04-17 09:10:09.049 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detail belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-04-17 09:10:09.640 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:detail
+2019-04-17 09:10:09.640 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addNews was announcement-c-ontroller
+2019-04-17 09:10:09.641 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addNews belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-04-17 09:10:09.641 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:addNews
+2019-04-17 09:10:09.641 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectAnnounce was announcement-c-ontroller
+2019-04-17 09:10:09.642 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectAnnounce belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-04-17 09:10:09.642 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:selectAnnounce
+2019-04-17 09:10:09.642 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectClass was announcement-c-ontroller
+2019-04-17 09:10:09.642 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectClass belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-04-17 09:10:09.642 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:selectClass
+2019-04-17 09:10:09.643 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateFirst was announcement-c-ontroller
+2019-04-17 09:10:09.643 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateFirst belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-04-17 09:10:09.643 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:updateFirst
+2019-04-17 09:10:09.643 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateAnnounce was announcement-c-ontroller
+2019-04-17 09:10:09.644 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateAnnounce belongs to groups: [[ResourceGroup{groupName='announcement-c-ontroller', position=0}]] 
+2019-04-17 09:10:09.644 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='announcement-c-ontroller', position=0} with description:Announcement C Ontroller for handler method:updateAnnounce
+2019-04-17 09:10:09.645 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addAttandence was attendance-controller
+2019-04-17 09:10:09.645 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addAttandence belongs to groups: [[ResourceGroup{groupName='attendance-controller', position=0}]] 
+2019-04-17 09:10:09.645 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='attendance-controller', position=0} with description:Attendance Controller for handler method:addAttandence
+2019-04-17 09:10:09.645 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addComment was comment-controller
+2019-04-17 09:10:09.646 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addComment belongs to groups: [[ResourceGroup{groupName='comment-controller', position=0}]] 
+2019-04-17 09:10:09.646 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='comment-controller', position=0} with description:Comment Controller for handler method:addComment
+2019-04-17 09:10:09.646 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteComment was comment-controller
+2019-04-17 09:10:09.646 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteComment belongs to groups: [[ResourceGroup{groupName='comment-controller', position=0}]] 
+2019-04-17 09:10:09.646 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='comment-controller', position=0} with description:Comment Controller for handler method:deleteComment
+2019-04-17 09:10:09.646 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectComment was comment-controller
+2019-04-17 09:10:09.647 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectComment belongs to groups: [[ResourceGroup{groupName='comment-controller', position=0}]] 
+2019-04-17 09:10:09.647 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='comment-controller', position=0} with description:Comment Controller for handler method:selectComment
+2019-04-17 09:10:09.647 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUserComment was comment-controller
+2019-04-17 09:10:09.648 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUserComment belongs to groups: [[ResourceGroup{groupName='comment-controller', position=0}]] 
+2019-04-17 09:10:09.648 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='comment-controller', position=0} with description:Comment Controller for handler method:selectUserComment
+2019-04-17 09:10:09.648 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addCompetition was competition-controller
+2019-04-17 09:10:09.649 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.649 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:addCompetition
+2019-04-17 09:10:09.649 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method userCompetition was competition-controller
+2019-04-17 09:10:09.650 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: userCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.650 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:userCompetition
+2019-04-17 09:10:09.650 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method doneCompetition was competition-controller
+2019-04-17 09:10:09.650 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: doneCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.651 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:doneCompetition
+2019-04-17 09:10:09.651 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method joinCompetition was competition-controller
+2019-04-17 09:10:09.651 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: joinCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.652 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:joinCompetition
+2019-04-17 09:10:09.652 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteCompetition was competition-controller
+2019-04-17 09:10:09.652 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.652 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:deleteCompetition
+2019-04-17 09:10:09.653 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method personCompetition was competition-controller
+2019-04-17 09:10:09.653 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: personCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.653 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:personCompetition
+2019-04-17 09:10:09.653 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detailCompetition was competition-controller
+2019-04-17 09:10:09.654 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detailCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.654 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:detailCompetition
+2019-04-17 09:10:09.654 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateCompetition was competition-controller
+2019-04-17 09:10:09.654 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.654 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:updateCompetition
+2019-04-17 09:10:09.655 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectCompetition was competition-controller
+2019-04-17 09:10:09.655 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectCompetition belongs to groups: [[ResourceGroup{groupName='competition-controller', position=0}]] 
+2019-04-17 09:10:09.655 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='competition-controller', position=0} with description:Competition Controller for handler method:selectCompetition
+2019-04-17 09:10:09.655 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectDayDuty was day-duty-controller
+2019-04-17 09:10:09.656 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectDayDuty belongs to groups: [[ResourceGroup{groupName='day-duty-controller', position=0}]] 
+2019-04-17 09:10:09.656 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='day-duty-controller', position=0} with description:Day Duty Controller for handler method:selectDayDuty
+2019-04-17 09:10:09.656 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateDayDuty was day-duty-controller
+2019-04-17 09:10:09.656 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateDayDuty belongs to groups: [[ResourceGroup{groupName='day-duty-controller', position=0}]] 
+2019-04-17 09:10:09.656 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='day-duty-controller', position=0} with description:Day Duty Controller for handler method:updateDayDuty
+2019-04-17 09:10:09.657 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detailDayDuty was day-duty-controller
+2019-04-17 09:10:09.657 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detailDayDuty belongs to groups: [[ResourceGroup{groupName='day-duty-controller', position=0}]] 
+2019-04-17 09:10:09.657 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='day-duty-controller', position=0} with description:Day Duty Controller for handler method:detailDayDuty
+2019-04-17 09:10:09.658 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addFriendurl was friendurl-controller
+2019-04-17 09:10:09.658 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addFriendurl belongs to groups: [[ResourceGroup{groupName='friendurl-controller', position=0}]] 
+2019-04-17 09:10:09.658 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='friendurl-controller', position=0} with description:Friendurl Controller for handler method:addFriendurl
+2019-04-17 09:10:09.658 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateFriendurl was friendurl-controller
+2019-04-17 09:10:09.658 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateFriendurl belongs to groups: [[ResourceGroup{groupName='friendurl-controller', position=0}]] 
+2019-04-17 09:10:09.659 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='friendurl-controller', position=0} with description:Friendurl Controller for handler method:updateFriendurl
+2019-04-17 09:10:09.659 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteFriendurl was friendurl-controller
+2019-04-17 09:10:09.659 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteFriendurl belongs to groups: [[ResourceGroup{groupName='friendurl-controller', position=0}]] 
+2019-04-17 09:10:09.659 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='friendurl-controller', position=0} with description:Friendurl Controller for handler method:deleteFriendurl
+2019-04-17 09:10:09.659 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detailFriendurl was friendurl-controller
+2019-04-17 09:10:09.660 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detailFriendurl belongs to groups: [[ResourceGroup{groupName='friendurl-controller', position=0}]] 
+2019-04-17 09:10:09.660 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='friendurl-controller', position=0} with description:Friendurl Controller for handler method:detailFriendurl
+2019-04-17 09:10:09.660 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectCompetition was friendurl-controller
+2019-04-17 09:10:09.660 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectCompetition belongs to groups: [[ResourceGroup{groupName='friendurl-controller', position=0}]] 
+2019-04-17 09:10:09.661 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='friendurl-controller', position=0} with description:Friendurl Controller for handler method:selectCompetition
+2019-04-17 09:10:09.661 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method uploadImg was image-controller
+2019-04-17 09:10:09.661 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: uploadImg belongs to groups: [[ResourceGroup{groupName='image-controller', position=0}]] 
+2019-04-17 09:10:09.661 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='image-controller', position=0} with description:Image Controller for handler method:uploadImg
+2019-04-17 09:10:09.662 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method showPhotos was image-controller
+2019-04-17 09:10:09.662 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: showPhotos belongs to groups: [[ResourceGroup{groupName='image-controller', position=0}]] 
+2019-04-17 09:10:09.662 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='image-controller', position=0} with description:Image Controller for handler method:showPhotos
+2019-04-17 09:10:09.662 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method uploadImg1 was image-controller
+2019-04-17 09:10:09.662 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: uploadImg1 belongs to groups: [[ResourceGroup{groupName='image-controller', position=0}]] 
+2019-04-17 09:10:09.663 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='image-controller', position=0} with description:Image Controller for handler method:uploadImg1
+2019-04-17 09:10:09.663 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addImpression was impression-controller
+2019-04-17 09:10:09.663 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addImpression belongs to groups: [[ResourceGroup{groupName='impression-controller', position=0}]] 
+2019-04-17 09:10:09.664 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='impression-controller', position=0} with description:Impression Controller for handler method:addImpression
+2019-04-17 09:10:09.664 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method agreeImpression was impression-controller
+2019-04-17 09:10:09.664 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: agreeImpression belongs to groups: [[ResourceGroup{groupName='impression-controller', position=0}]] 
+2019-04-17 09:10:09.665 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='impression-controller', position=0} with description:Impression Controller for handler method:agreeImpression
+2019-04-17 09:10:09.665 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteImpression was impression-controller
+2019-04-17 09:10:09.665 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteImpression belongs to groups: [[ResourceGroup{groupName='impression-controller', position=0}]] 
+2019-04-17 09:10:09.665 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='impression-controller', position=0} with description:Impression Controller for handler method:deleteImpression
+2019-04-17 09:10:09.665 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method userImpression was impression-controller
+2019-04-17 09:10:09.666 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: userImpression belongs to groups: [[ResourceGroup{groupName='impression-controller', position=0}]] 
+2019-04-17 09:10:09.666 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='impression-controller', position=0} with description:Impression Controller for handler method:userImpression
+2019-04-17 09:10:09.666 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUserImpression was impression-controller
+2019-04-17 09:10:09.666 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUserImpression belongs to groups: [[ResourceGroup{groupName='impression-controller', position=0}]] 
+2019-04-17 09:10:09.666 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='impression-controller', position=0} with description:Impression Controller for handler method:selectUserImpression
+2019-04-17 09:10:09.667 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method interextImpression was impression-controller
+2019-04-17 09:10:09.667 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: interextImpression belongs to groups: [[ResourceGroup{groupName='impression-controller', position=0}]] 
+2019-04-17 09:10:09.667 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='impression-controller', position=0} with description:Impression Controller for handler method:interextImpression
+2019-04-17 09:10:09.668 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method getIndexInfo was info-controller
+2019-04-17 09:10:09.668 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: getIndexInfo belongs to groups: [[ResourceGroup{groupName='info-controller', position=0}]] 
+2019-04-17 09:10:09.668 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='info-controller', position=0} with description:Info Controller for handler method:getIndexInfo
+2019-04-17 09:10:09.668 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectLecComInfo was info-controller
+2019-04-17 09:10:09.668 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectLecComInfo belongs to groups: [[ResourceGroup{groupName='info-controller', position=0}]] 
+2019-04-17 09:10:09.668 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='info-controller', position=0} with description:Info Controller for handler method:selectLecComInfo
+2019-04-17 09:10:09.669 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectNewAnnoInfo was info-controller
+2019-04-17 09:10:09.669 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectNewAnnoInfo belongs to groups: [[ResourceGroup{groupName='info-controller', position=0}]] 
+2019-04-17 09:10:09.669 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='info-controller', position=0} with description:Info Controller for handler method:selectNewAnnoInfo
+2019-04-17 09:10:09.669 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method invitationDetail was invitation-controller
+2019-04-17 09:10:09.669 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: invitationDetail belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.670 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:invitationDetail
+2019-04-17 09:10:09.670 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addInvitation was invitation-controller
+2019-04-17 09:10:09.670 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addInvitation belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.670 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:addInvitation
+2019-04-17 09:10:09.671 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method greateInvitation was invitation-controller
+2019-04-17 09:10:09.671 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: greateInvitation belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.671 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:greateInvitation
+2019-04-17 09:10:09.672 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectInvitation was invitation-controller
+2019-04-17 09:10:09.672 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectInvitation belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.672 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:selectInvitation
+2019-04-17 09:10:09.672 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method firstInvitation was invitation-controller
+2019-04-17 09:10:09.672 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: firstInvitation belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.673 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:firstInvitation
+2019-04-17 09:10:09.673 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteInvitation was invitation-controller
+2019-04-17 09:10:09.673 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteInvitation belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.674 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:deleteInvitation
+2019-04-17 09:10:09.674 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateInvitation was invitation-controller
+2019-04-17 09:10:09.674 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateInvitation belongs to groups: [[ResourceGroup{groupName='invitation-controller', position=0}]] 
+2019-04-17 09:10:09.675 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='invitation-controller', position=0} with description:Invitation Controller for handler method:updateInvitation
+2019-04-17 09:10:09.675 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method doneCompetition was lecture-controller
+2019-04-17 09:10:09.675 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: doneCompetition belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.675 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:doneCompetition
+2019-04-17 09:10:09.676 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateLecture was lecture-controller
+2019-04-17 09:10:09.676 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.676 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:updateLecture
+2019-04-17 09:10:09.677 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addLecture was lecture-controller
+2019-04-17 09:10:09.677 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.677 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:addLecture
+2019-04-17 09:10:09.677 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method personLecture was lecture-controller
+2019-04-17 09:10:09.677 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: personLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.678 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:personLecture
+2019-04-17 09:10:09.678 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method lectureDetail was lecture-controller
+2019-04-17 09:10:09.678 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: lectureDetail belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.678 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:lectureDetail
+2019-04-17 09:10:09.678 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method applyLecture was lecture-controller
+2019-04-17 09:10:09.679 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: applyLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.679 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:applyLecture
+2019-04-17 09:10:09.679 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteLecture was lecture-controller
+2019-04-17 09:10:09.679 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.679 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:deleteLecture
+2019-04-17 09:10:09.680 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method applyOrNot was lecture-controller
+2019-04-17 09:10:09.680 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: applyOrNot belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.680 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:applyOrNot
+2019-04-17 09:10:09.680 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectLecture was lecture-controller
+2019-04-17 09:10:09.680 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.680 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:selectLecture
+2019-04-17 09:10:09.681 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUserLecture was lecture-controller
+2019-04-17 09:10:09.681 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUserLecture belongs to groups: [[ResourceGroup{groupName='lecture-controller', position=0}]] 
+2019-04-17 09:10:09.681 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='lecture-controller', position=0} with description:Lecture Controller for handler method:selectUserLecture
+2019-04-17 09:10:09.681 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addNews was new-classify-controller
+2019-04-17 09:10:09.681 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addNews belongs to groups: [[ResourceGroup{groupName='new-classify-controller', position=0}]] 
+2019-04-17 09:10:09.681 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='new-classify-controller', position=0} with description:New Classify Controller for handler method:addNews
+2019-04-17 09:10:09.682 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectClass was new-classify-controller
+2019-04-17 09:10:09.682 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectClass belongs to groups: [[ResourceGroup{groupName='new-classify-controller', position=0}]] 
+2019-04-17 09:10:09.682 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='new-classify-controller', position=0} with description:New Classify Controller for handler method:selectClass
+2019-04-17 09:10:09.682 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectClass was new-classify-controller
+2019-04-17 09:10:09.682 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectClass belongs to groups: [[ResourceGroup{groupName='new-classify-controller', position=0}]] 
+2019-04-17 09:10:09.683 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='new-classify-controller', position=0} with description:New Classify Controller for handler method:selectClass
+2019-04-17 09:10:09.683 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method detail was news-controller
+2019-04-17 09:10:09.683 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: detail belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-04-17 09:10:09.683 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:detail
+2019-04-17 09:10:09.684 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addNews was news-controller
+2019-04-17 09:10:09.684 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addNews belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-04-17 09:10:09.684 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:addNews
+2019-04-17 09:10:09.685 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateNewMain was news-controller
+2019-04-17 09:10:09.685 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateNewMain belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-04-17 09:10:09.685 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:updateNewMain
+2019-04-17 09:10:09.685 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectNewsMain was news-controller
+2019-04-17 09:10:09.686 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectNewsMain belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-04-17 09:10:09.686 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:selectNewsMain
+2019-04-17 09:10:09.686 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteNewMain was news-controller
+2019-04-17 09:10:09.687 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteNewMain belongs to groups: [[ResourceGroup{groupName='news-controller', position=0}]] 
+2019-04-17 09:10:09.687 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='news-controller', position=0} with description:News Controller for handler method:deleteNewMain
+2019-04-17 09:10:09.687 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deletePhoto was photo-controller
+2019-04-17 09:10:09.687 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deletePhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-04-17 09:10:09.687 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:deletePhoto
+2019-04-17 09:10:09.687 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectPhoto was photo-controller
+2019-04-17 09:10:09.688 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectPhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-04-17 09:10:09.688 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:selectPhoto
+2019-04-17 09:10:09.688 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addPhoto was photo-controller
+2019-04-17 09:10:09.689 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addPhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-04-17 09:10:09.689 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:addPhoto
+2019-04-17 09:10:09.690 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method beCover was photo-controller
+2019-04-17 09:10:09.690 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: beCover belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-04-17 09:10:09.690 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:beCover
+2019-04-17 09:10:09.691 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUserPhoto was photo-controller
+2019-04-17 09:10:09.691 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUserPhoto belongs to groups: [[ResourceGroup{groupName='photo-controller', position=0}]] 
+2019-04-17 09:10:09.691 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='photo-controller', position=0} with description:Photo Controller for handler method:selectUserPhoto
+2019-04-17 09:10:09.691 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method deleteProblem was problem-controller
+2019-04-17 09:10:09.692 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: deleteProblem belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.692 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:deleteProblem
+2019-04-17 09:10:09.692 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method problemDetail was problem-controller
+2019-04-17 09:10:09.693 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: problemDetail belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.693 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:problemDetail
+2019-04-17 09:10:09.693 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addProblem was problem-controller
+2019-04-17 09:10:09.693 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addProblem belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.693 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:addProblem
+2019-04-17 09:10:09.694 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateProblem was problem-controller
+2019-04-17 09:10:09.694 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateProblem belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.694 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:updateProblem
+2019-04-17 09:10:09.695 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectReply was problem-controller
+2019-04-17 09:10:09.695 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectReply belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.695 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:selectReply
+2019-04-17 09:10:09.695 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method addAns was problem-controller
+2019-04-17 09:10:09.696 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: addAns belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.696 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:addAns
+2019-04-17 09:10:09.696 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method replyProblem was problem-controller
+2019-04-17 09:10:09.697 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: replyProblem belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.697 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:replyProblem
+2019-04-17 09:10:09.697 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectProblem was problem-controller
+2019-04-17 09:10:09.697 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectProblem belongs to groups: [[ResourceGroup{groupName='problem-controller', position=0}]] 
+2019-04-17 09:10:09.698 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='problem-controller', position=0} with description:problem Controller for handler method:selectProblem
+2019-04-17 09:10:09.698 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method register was user-controller
+2019-04-17 09:10:09.698 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.698 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:register
+2019-04-17 09:10:09.699 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method getUserInfo was user-controller
+2019-04-17 09:10:09.699 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.699 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:getUserInfo
+2019-04-17 09:10:09.700 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method userInfo was user-controller
+2019-04-17 09:10:09.700 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: userInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.700 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:userInfo
+2019-04-17 09:10:09.700 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateUserImageByMy was user-controller
+2019-04-17 09:10:09.701 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateUserImageByMy belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.701 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:updateUserImageByMy
+2019-04-17 09:10:09.701 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method notPassUser was user-controller
+2019-04-17 09:10:09.701 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: notPassUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.702 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:notPassUser
+2019-04-17 09:10:09.702 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method beAdmin was user-controller
+2019-04-17 09:10:09.702 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: beAdmin belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.702 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:beAdmin
+2019-04-17 09:10:09.702 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method bePlayer was user-controller
+2019-04-17 09:10:09.703 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: bePlayer belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.703 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:bePlayer
+2019-04-17 09:10:09.703 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUser was user-controller
+2019-04-17 09:10:09.703 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.703 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:selectUser
+2019-04-17 09:10:09.704 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method selectUser was user-controller
+2019-04-17 09:10:09.704 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: selectUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.704 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:selectUser
+2019-04-17 09:10:09.704 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateUserImage was user-controller
+2019-04-17 09:10:09.704 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateUserImage belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.705 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:updateUserImage
+2019-04-17 09:10:09.705 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method login was user-controller
+2019-04-17 09:10:09.705 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.705 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:login
+2019-04-17 09:10:09.705 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method updateUserInfo was user-controller
+2019-04-17 09:10:09.705 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: updateUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+2019-04-17 09:10:09.706 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:user Controller for handler method:updateUserInfo
+2019-04-17 09:10:09.706 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method register was program-controller
+2019-04-17 09:10:09.706 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: register belongs to groups: [[ResourceGroup{groupName='program-controller', position=0}]] 
+2019-04-17 09:10:09.706 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='program-controller', position=0} with description:program Controller for handler method:register
+2019-04-17 09:10:09.706 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method wInfo was program-controller
+2019-04-17 09:10:09.707 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: wInfo belongs to groups: [[ResourceGroup{groupName='program-controller', position=0}]] 
+2019-04-17 09:10:09.707 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='program-controller', position=0} with description:program Controller for handler method:wInfo
+2019-04-17 09:10:09.707 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method cLogin was program-controller
+2019-04-17 09:10:09.707 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: cLogin belongs to groups: [[ResourceGroup{groupName='program-controller', position=0}]] 
+2019-04-17 09:10:09.707 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='program-controller', position=0} with description:program Controller for handler method:cLogin
+2019-04-17 09:10:09.708 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method test was test
+2019-04-17 09:10:09.708 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: test belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.708 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:test
+2019-04-17 09:10:09.708 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method id was test
+2019-04-17 09:10:09.708 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: id belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.708 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:id
+2019-04-17 09:10:09.709 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method wInfo was test
+2019-04-17 09:10:09.709 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: wInfo belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.709 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:wInfo
+2019-04-17 09:10:09.709 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method cLogin was test
+2019-04-17 09:10:09.709 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: cLogin belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.709 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:cLogin
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method wLogin was test
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: wLogin belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:wLogin
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method menuGet was test
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: menuGet belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:menuGet
+2019-04-17 09:10:09.710 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method menuDelete was test
+2019-04-17 09:10:09.711 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: menuDelete belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.711 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:menuDelete
+2019-04-17 09:10:09.711 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method menu was test
+2019-04-17 09:10:09.711 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: menu belongs to groups: [[ResourceGroup{groupName='test', position=0}]] 
+2019-04-17 09:10:09.711 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='test', position=0} with description:test for handler method:menu
+2019-04-17 09:10:09.711 INFO  --- [main] com.mangofactory.swagger.core.RequestMappingEvaluator Line:74  - Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+2019-04-17 09:10:09.712 INFO  --- [main] com.mangofactory.swagger.core.RequestMappingEvaluator Line:74  - Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+2019-04-17 09:10:09.712 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method error was basic-error-controller
+2019-04-17 09:10:09.712 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0}]] 
+2019-04-17 09:10:09.712 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='basic-error-controller', position=0} with description:Basic Error Controller for handler method:error
+2019-04-17 09:10:09.712 INFO  --- [main] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping Line:50  - Group for method errorHtml was basic-error-controller
+2019-04-17 09:10:09.712 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:78  - Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0}]] 
+2019-04-17 09:10:09.713 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:82  - Adding resource to group:ResourceGroup{groupName='basic-error-controller', position=0} with description:Basic Error Controller for handler method:errorHtml
+2019-04-17 09:10:09.724 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/photo-controller Description: photo-controller Position: 0
+2019-04-17 09:10:09.724 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/announcement-c-ontroller Description: announcement-c-ontroller Position: 0
+2019-04-17 09:10:09.724 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/info-controller Description: info-controller Position: 0
+2019-04-17 09:10:09.724 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/image-controller Description: image-controller Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/problem-controller Description: problem-controller Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/friendurl-controller Description: friendurl-controller Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/test Description: test Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/lecture-controller Description: lecture-controller Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/album-controller Description: album-controller Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/impression-controller Description: impression-controller Position: 0
+2019-04-17 09:10:09.725 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/new-classify-controller Description: new-classify-controller Position: 0
+2019-04-17 09:10:09.726 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/invitation-controller Description: invitation-controller Position: 0
+2019-04-17 09:10:09.726 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2019-04-17 09:10:09.726 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/attendance-controller Description: attendance-controller Position: 0
+2019-04-17 09:10:09.728 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/program-controller Description: program-controller Position: 0
+2019-04-17 09:10:09.728 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/news-controller Description: news-controller Position: 0
+2019-04-17 09:10:09.728 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2019-04-17 09:10:09.728 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/competition-controller Description: competition-controller Position: 0
+2019-04-17 09:10:09.728 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/day-duty-controller Description: day-duty-controller Position: 0
+2019-04-17 09:10:09.728 INFO  --- [main] com.mangofactory.swagger.scanners.ApiListingReferenceScanner Line:96  - Created resource listing Path: /default/comment-controller Description: comment-controller Position: 0
+2019-04-17 09:10:12.596 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:89  - Added a resource listing with (20) api resources: 
+2019-04-17 09:10:12.596 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Album Controller at location: /api-docs/default/album-controller
+2019-04-17 09:10:12.596 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Announcement C Ontroller at location: /api-docs/default/announcement-c-ontroller
+2019-04-17 09:10:12.596 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Attendance Controller at location: /api-docs/default/attendance-controller
+2019-04-17 09:10:12.596 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Basic Error Controller at location: /api-docs/default/basic-error-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Comment Controller at location: /api-docs/default/comment-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Competition Controller at location: /api-docs/default/competition-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Day Duty Controller at location: /api-docs/default/day-duty-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Friendurl Controller at location: /api-docs/default/friendurl-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Image Controller at location: /api-docs/default/image-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Impression Controller at location: /api-docs/default/impression-controller
+2019-04-17 09:10:12.597 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Info Controller at location: /api-docs/default/info-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Invitation Controller at location: /api-docs/default/invitation-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Lecture Controller at location: /api-docs/default/lecture-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   New Classify Controller at location: /api-docs/default/new-classify-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   News Controller at location: /api-docs/default/news-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   Photo Controller at location: /api-docs/default/photo-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   problem Controller at location: /api-docs/default/problem-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   program Controller at location: /api-docs/default/program-controller
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   test at location: /api-docs/default/test
+2019-04-17 09:10:12.598 INFO  --- [main] com.mangofactory.swagger.core.SwaggerApiResourceListing Line:93  -   user Controller at location: /api-docs/default/user-controller
+2019-04-17 09:10:12.599 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-9999"]
+2019-04-17 09:10:12.617 INFO  --- [main] org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+2019-04-17 09:10:12.649 INFO  --- [main] com.example.acm.AcmApplication Line:59  - Started AcmApplication in 11.529 seconds (JVM running for 12.58)
+2019-04-17 09:11:09.310 INFO  --- [http-nio-9999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-17 09:11:09.374 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:11:09.479 INFO  --- [http-nio-9999-exec-2] io.lettuce.core.EpollProvider Line:101 - Starting without optional epoll library
+2019-04-17 09:11:09.480 INFO  --- [http-nio-9999-exec-2] io.lettuce.core.KqueueProvider Line:101 - Starting without optional kqueue library
+2019-04-17 09:11:10.562 INFO  --- [http-nio-9999-exec-2] com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2019-04-17 09:11:10.813 INFO  --- [http-nio-9999-exec-2] com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2019-04-17 09:11:11.095 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:11:27.307 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:11:27.342 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-04-17 09:12:34.700 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:12:35.836 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:13:43.270 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:13:43.271 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:13:52.507 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:13:52.614 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-04-17 09:15:31.045 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:31.054 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:31.055 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:138 - undefined
+2019-04-17 09:15:31.056 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:142 - undefined
+2019-04-17 09:15:32.043 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:34.793 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:34.793 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:52.619 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:52.620 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:58  - -----------token:7f9b04d04cb141e88d2cc4005b2281fe
+2019-04-17 09:15:52.620 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:59  - usernamegyt
+2019-04-17 09:15:52.640 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:68  - gyt
+2019-04-17 09:15:52.641 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.userController Line:69  - userId-----------------2
+2019-04-17 09:15:54.520 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:54.520 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:91  - ----------------uIDfdda4b262409498ca9b0bd63ba6d795f
+2019-04-17 09:15:54.530 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:15:54.564 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 09:15:59.696 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.699 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.707 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:15:59.711 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:15:59.962 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.971 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:15:59.974 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.978 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.981 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.988 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:15:59.995 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:00.003 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:00.004 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:00.014 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:02.870 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:02.871 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDfdda4b262409498ca9b0bd63ba6d795f
+2019-04-17 09:16:02.883 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:02.902 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 09:16:02.951 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:02.964 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:03.382 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:03.399 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:14.447 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:14.448 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:14.448 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:16:14.448 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:16:18.117 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:18.124 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.379 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.379 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.387 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.387 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.488 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.489 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.491 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.493 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.495 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:16:19.512 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.512 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.513 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.514 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:16:19.514 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.302 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.309 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.495 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.495 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.500 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.501 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.505 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.515 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:01.528 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.529 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.535 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.536 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.538 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:01.542 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:03.261 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:03.261 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:03.368 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-04-17 09:17:06.734 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:06.758 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:06.759 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:17:06.759 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:17:07.841 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:07.841 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID878b224e0b6a4d868b412a47aa5b5270
+2019-04-17 09:17:07.851 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:07.864 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 09:17:13.375 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:13.384 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.621 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.621 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.630 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.630 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.745 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.745 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.747 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.747 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.749 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:17:14.767 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.768 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.769 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.769 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:17:14.770 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:22:01.897 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:22:01.897 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:22:01.909 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:22:01.909 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.178 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.184 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.185 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.191 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.247 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.248 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.251 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.253 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.257 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:23:09.266 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.267 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.271 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.273 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:23:09.274 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:40.300 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:40.301 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:40.301 INFO  --- [http-nio-9999-exec-1] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:48:40.302 INFO  --- [http-nio-9999-exec-1] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:48:40.310 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:41.524 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:41.524 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID54c21f6281264b0faf97a2dcab5be946
+2019-04-17 09:48:41.533 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:41.544 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 09:48:45.121 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:45.129 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:52.392 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:52.432 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:52.433 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:48:52.433 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 09:48:53.714 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:53.715 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uIDbd049c9f916244f5a0e66d8fc306a6a0
+2019-04-17 09:48:53.723 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:53.732 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 09:48:56.040 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:56.049 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:57.642 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:57.649 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:48:57.803 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:48:57.811 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:51:02.544 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:51:02.552 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 09:51:02.669 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 09:51:02.680 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:01:08.663 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:01:08.677 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:08:10.432 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:08:10.432 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:08:10.444 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:08:10.444 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:08:10.496 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-04-17 10:08:13.918 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:08:13.925 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:08:25.783 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:08:25.796 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:31.907 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:31.908 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:31.909 INFO  --- [http-nio-9999-exec-3] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:12:31.909 INFO  --- [http-nio-9999-exec-3] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:12:31.919 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:33.268 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:33.277 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:34.789 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:34.789 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:34.799 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:34.799 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:36.850 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:36.859 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:36.876 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:36.876 INFO  --- [http-nio-9999-exec-5] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:12:36.876 INFO  --- [http-nio-9999-exec-5] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:12:37.901 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:37.914 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:40.324 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:40.324 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:12:40.337 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:12:40.337 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:14:02.762 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:14:02.783 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:14:03.043 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:14:03.044 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:14:03.059 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:14:03.059 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:14:03.207 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-04-17 10:16:33.570 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:16:33.578 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:16:33.592 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:16:33.592 INFO  --- [http-nio-9999-exec-8] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:16:33.592 INFO  --- [http-nio-9999-exec-8] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:16:34.645 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:16:34.645 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:91  - ----------------uID1e76664d36974f69ba7df66321f4656e
+2019-04-17 10:16:34.652 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:16:34.665 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 10:16:38.781 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:16:38.793 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:16:38.912 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------GET
+2019-04-17 10:17:33.590 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:17:33.598 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:17:33.712 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:17:33.721 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:18:04.471 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:18:04.475 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:18:04.484 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:18:04.488 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:18:07.509 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:18:07.510 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:18:07.520 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:18:07.520 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:21:11.694 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:21:11.702 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:25:52.978 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:25:52.985 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:32:09.480 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:32:09.488 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:32:09.497 INFO  --- [http-nio-9999-exec-3] com.example.acm.service.deal.Impl.LectureDealImpl Line:49  - 2019-04-17 10:30:13
+2019-04-17 10:35:21.097 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:35:21.099 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:35:21.100 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:35:21.100 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:35:21.106 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:35:22.169 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:35:22.169 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uID5767268446524dbebfc55c9ba8d7d465
+2019-04-17 10:35:22.177 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:35:22.193 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 10:35:27.538 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:35:27.546 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:47.971 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:47.971 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:47.985 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:47.986 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:49.928 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:49.936 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:49.955 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:49.956 INFO  --- [http-nio-9999-exec-4] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:43:49.956 INFO  --- [http-nio-9999-exec-4] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:43:50.963 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:50.963 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDc15139e085a54d95801600fd184abbe9
+2019-04-17 10:43:50.969 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:50.977 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 10:43:54.438 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:54.446 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:54.470 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:54.470 INFO  --- [http-nio-9999-exec-1] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:43:54.470 INFO  --- [http-nio-9999-exec-1] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:43:55.514 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:55.514 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:91  - ----------------uID5c3bc83f7b4f42b49352ccf3187c8681
+2019-04-17 10:43:55.558 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:55.565 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 10:43:57.740 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:57.749 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:59.847 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:59.847 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:43:59.856 INFO  --- [http-nio-9999-exec-9] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:43:59.856 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:44:12.443 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:44:12.451 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:53:41.169 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:53:41.170 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:53:41.171 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:53:41.171 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:53:41.177 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:53:41.929 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:53:41.929 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID64b6a56fae6743028f9d9f64a7015854
+2019-04-17 10:53:41.936 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:53:41.943 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 10:53:43.940 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:53:43.952 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:57:47.592 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:57:47.605 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 10:57:47.625 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 10:57:47.626 INFO  --- [http-nio-9999-exec-10] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 10:57:47.626 INFO  --- [http-nio-9999-exec-10] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 11:00:14.530 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 11:00:14.546 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 11:00:21.043 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 11:00:21.096 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 11:00:21.169 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 11:00:21.170 INFO  --- [http-nio-9999-exec-10] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 11:00:21.193 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 11:00:21.193 INFO  --- [http-nio-9999-exec-10] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 11:05:10.055 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 11:05:10.088 INFO  --- [http-nio-9999-exec-4] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 11:05:12.832 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 11:05:12.854 INFO  --- [http-nio-9999-exec-2] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 12:59:35.316 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 12:59:35.323 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 12:59:35.326 INFO  --- [http-nio-9999-exec-7] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 12:59:35.361 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 12:59:35.397 INFO  --- [http-nio-9999-exec-6] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 12:59:36.222 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 12:59:36.222 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:91  - ----------------uID60650ed6f0c3433f873bc19ecc2f5d0f
+2019-04-17 12:59:36.231 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 12:59:36.235 INFO  --- [http-nio-9999-exec-8] com.example.acm.controller.userController Line:101 - gyt
+2019-04-17 12:59:40.596 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 12:59:40.605 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 14:49:37.653 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 14:49:37.658 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 14:49:37.660 INFO  --- [http-nio-9999-exec-6] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 14:49:37.662 INFO  --- [http-nio-9999-exec-6] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 14:49:37.744 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 20:55:11.222 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:55:11.427 INFO  --- [http-nio-9999-exec-5] com.example.acm.controller.userController Line:91  - ----------------uIDundefined
+2019-04-17 20:55:48.347 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:55:52.948 INFO  --- [http-nio-9999-exec-7] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:55:53.053 INFO  --- [http-nio-9999-exec-7] com.example.acm.controller.userController Line:91  - ----------------uIDfdda4b262409498ca9b0bd63ba6d795f
+2019-04-17 20:55:53.165 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:55:53.204 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:55:55.843 INFO  --- [http-nio-9999-exec-5] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:56:44.604 INFO  --- [http-nio-9999-exec-4] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:56:47.666 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 20:56:47.667 INFO  --- [http-nio-9999-exec-2] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 23:39:48.711 INFO  --- [http-nio-9999-exec-9] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 23:39:57.895 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:74  - -----------
+2019-04-17 23:39:57.951 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:76  - {"access_token":"20_IYm7vGc4USn75XgBB1fMv0YgM4V9Cy066bOAM3ppcQlA4VZmSb92HjJmQ-NONvmaSKbtPq-mtOHqqbAFo4UAaA","expires_in":7200,"refresh_token":"20_-wDlnJW9EjBaWI338qs3avmeQWpmmctWzwCqzRFrrQMQ8iuXLhyQJhKC_zORmRXRG-VRg-w1Vb1CxZT8eyMYGg","openid":"olD4e0x14bo2CRMHAJiNgweDKaG4","scope":"snsapi_userinfo"}
+2019-04-17 23:39:57.951 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:77  - ----{"access_token":"20_IYm7vGc4USn75XgBB1fMv0YgM4V9Cy066bOAM3ppcQlA4VZmSb92HjJmQ-NONvmaSKbtPq-mtOHqqbAFo4UAaA","expires_in":7200,"refresh_token":"20_-wDlnJW9EjBaWI338qs3avmeQWpmmctWzwCqzRFrrQMQ8iuXLhyQJhKC_zORmRXRG-VRg-w1Vb1CxZT8eyMYGg","openid":"olD4e0x14bo2CRMHAJiNgweDKaG4","scope":"snsapi_userinfo"}
+2019-04-17 23:40:00.130 INFO  --- [http-nio-9999-exec-9] com.example.acm.weiController.test Line:108 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 23:40:10.386 INFO  --- [http-nio-9999-exec-8] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 23:40:10.732 INFO  --- [http-nio-9999-exec-8] com.example.acm.weiController.test Line:74  - -----------
+2019-04-17 23:40:10.732 INFO  --- [http-nio-9999-exec-8] com.example.acm.weiController.test Line:76  - {"access_token":"20_xBt7q-hahYde75iGF9LeDGnwGJ4vnsaxCkcLEiUZoDehtpQN9-lRFb_gRQQZbJd93G8L8jh6J9z_xRsx1RoGlw","expires_in":7200,"refresh_token":"20_MmqusVHkO7cVgmTs7Xw3GRHXsWc_rRK7zA1WuGxXzJLMuekD89ekEsqGEr3mAsNLfA3WzsvM-7KHAKgJJN5lNA","openid":"olD4e0x14bo2CRMHAJiNgweDKaG4","scope":"snsapi_userinfo"}
+2019-04-17 23:40:10.734 INFO  --- [http-nio-9999-exec-8] com.example.acm.weiController.test Line:77  - ----{"access_token":"20_xBt7q-hahYde75iGF9LeDGnwGJ4vnsaxCkcLEiUZoDehtpQN9-lRFb_gRQQZbJd93G8L8jh6J9z_xRsx1RoGlw","expires_in":7200,"refresh_token":"20_MmqusVHkO7cVgmTs7Xw3GRHXsWc_rRK7zA1WuGxXzJLMuekD89ekEsqGEr3mAsNLfA3WzsvM-7KHAKgJJN5lNA","openid":"olD4e0x14bo2CRMHAJiNgweDKaG4","scope":"snsapi_userinfo"}
+2019-04-17 23:40:10.904 INFO  --- [http-nio-9999-exec-8] com.example.acm.weiController.test Line:108 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 23:40:11.339 INFO  --- [http-nio-9999-exec-1] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 23:40:11.451 INFO  --- [http-nio-9999-exec-1] com.example.acm.controller.BaseController Line:50  - ------uID2
+2019-04-17 23:40:11.516 INFO  --- [http-nio-9999-exec-6] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 23:40:11.576 INFO  --- [http-nio-9999-exec-6] com.example.acm.weiController.test Line:138 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 23:40:11.577 INFO  --- [http-nio-9999-exec-6] com.example.acm.weiController.test Line:142 - olD4e0x14bo2CRMHAJiNgweDKaG4
+2019-04-17 23:40:14.355 INFO  --- [http-nio-9999-exec-3] com.example.acm.interceptor.AuthInterceptor Line:33  - -------------------------POST
+2019-04-17 23:40:14.445 INFO  --- [http-nio-9999-exec-3] com.example.acm.controller.BaseController Line:50  - ------uID2
