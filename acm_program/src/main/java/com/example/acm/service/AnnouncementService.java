@@ -8,7 +8,7 @@ import com.example.acm.entity.Announcement;
 /** 
  * 公告表服务接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-13 16:42:52
  */
 public interface AnnouncementService{
@@ -18,7 +18,7 @@ public interface AnnouncementService{
      * 
      * @param announcement 公告表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public void addAnnouncement(Announcement announcement);
@@ -28,7 +28,7 @@ public interface AnnouncementService{
      * 
      * @param list 公告表列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public void addAnnouncementList(List<Announcement> list);      
@@ -38,7 +38,7 @@ public interface AnnouncementService{
      * 
      * @param announceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public void deleteAnnouncementByAnnounceId(Long announceId);
@@ -49,7 +49,7 @@ public interface AnnouncementService{
      * @param announceId  
      * @param announcement 公告表信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public void updateAnnouncementByAnnounceId(Long announceId, Announcement announcement);
@@ -59,7 +59,7 @@ public interface AnnouncementService{
      * 
      * @param announceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public Announcement getAnnouncementByAnnounceId(Long announceId);
@@ -70,7 +70,7 @@ public interface AnnouncementService{
      * @param announceId  
      * @param announcement 公告表信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public List<Announcement> findAnnouncementListByAnnounceId(Long announceId);
@@ -80,7 +80,7 @@ public interface AnnouncementService{
      * 
      * @param announceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public List<Map<String,Object>> findAnnouncement2MapListByAnnounceId(Long announceId);
@@ -89,7 +89,7 @@ public interface AnnouncementService{
      * 获取公告表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public List<Announcement> findAnnouncementList();
@@ -98,7 +98,7 @@ public interface AnnouncementService{
      * 获取公告表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public List<Map<String,Object>> findAnnouncement2MapList();
@@ -107,7 +107,7 @@ public interface AnnouncementService{
      * 根据查询条件获取公告表个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public Integer countAnnouncementListByQuery(Map<String, Object> map);
@@ -116,7 +116,7 @@ public interface AnnouncementService{
      * 根据查询条件获取公告表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public List<Announcement> findAnnouncementListByQuery(Map<String, Object> map);
@@ -125,7 +125,7 @@ public interface AnnouncementService{
      * 根据查询条件获取公告表个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public Integer countAnnouncementMapListByQuery(Map<String, Object> map);
@@ -134,7 +134,7 @@ public interface AnnouncementService{
      * 根据查询条件获取公告表列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-13 16:42:52
      */
     public List<Map<String,Object>> findAnnouncementMapListByQuery(Map<String, Object> map);

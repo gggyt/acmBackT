@@ -8,7 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 /**
  * user实体
  *
- * @author guanyiting
+ * @author xgg
  * @date 2018-12-07 18:04:34
  */
 public class User implements Serializable {

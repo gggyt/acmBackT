@@ -4,7 +4,7 @@ import com.example.acm.common.ResultBean;
 import com.example.acm.entity.User;
 
 /**
- * Created by ggg on 2019/3/29.
+ * Created by xgg on 2019/3/29.
  */
 public interface AttendanceDealService {
 

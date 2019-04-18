@@ -24,7 +24,7 @@ import java.math.BigInteger;
 import java.util.*;
 
 /**
- * Created by ggg on 2019/1/19.
+ * Created by xgg on 2019/1/19.
  */
 @Service
 public class NewsDealImpl implements NewsDealService{
@@ -53,7 +53,9 @@ public class NewsDealImpl implements NewsDealService{
             news.setUpdateUser(user.getUserId().longValue());
             news.setUpdateDate(new Date());
             news.setIsEffective(1);
+            System.out.println("news body before: " + news.getNewsBody());
             newsService.addNews(news);
+            System.out.println("news body after: " + news.getNewsBody());
 
             if(classType.length()==0) {
                 Map<String, Object> map = new HashMap<>();

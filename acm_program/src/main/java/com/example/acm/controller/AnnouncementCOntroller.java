@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yxk on 2019/1/13.
+ * Created by xgg on 2019/1/13.
  */
 @Controller
 @RequestMapping("/announce")

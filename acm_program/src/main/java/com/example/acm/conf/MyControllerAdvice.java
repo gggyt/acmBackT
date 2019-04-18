@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Created by ggg on 2019/3/24.
+ * Created by xgg on 2019/3/24.
  */
 @ControllerAdvice
 public class MyControllerAdvice {

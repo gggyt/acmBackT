@@ -9,7 +9,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 /** 
  * 比赛报名实体
  * 
- * @author guanyiting
+ * @author xgg
  * @date 2019-02-19 22:49:11
  */
 public class ApplyCompetition implements Serializable {

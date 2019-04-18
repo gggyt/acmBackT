@@ -11,7 +11,7 @@ import com.example.acm.entity.Attendance;
 /** 
  * 签到数据操作接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-03-29 17:03:29
  */
 public interface AttendanceMapper{
@@ -21,7 +21,7 @@ public interface AttendanceMapper{
      * 
      * @param attendance 签到
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void addAttendance(@Param("attendance") Attendance attendance);
@@ -31,7 +31,7 @@ public interface AttendanceMapper{
      * 
      * @param list 签到列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void addAttendanceList(List<Attendance> list);       
@@ -41,7 +41,7 @@ public interface AttendanceMapper{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void deleteAttendanceByAttendenceId(@Param("attendenceId") Long attendenceId);
@@ -51,7 +51,7 @@ public interface AttendanceMapper{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void updateAttendanceByAttendenceId(@Param("attendenceId") Long attendenceId, @Param("attendance") Attendance attendance);
@@ -61,7 +61,7 @@ public interface AttendanceMapper{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Attendance getAttendanceByAttendenceId(@Param("attendenceId") Long attendenceId);
@@ -71,7 +71,7 @@ public interface AttendanceMapper{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceListByAttendenceId(@Param("attendenceId") Long attendenceId);
@@ -81,7 +81,7 @@ public interface AttendanceMapper{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendance2MapListByAttendenceId(@Param("attendenceId") Long attendenceId);
@@ -90,7 +90,7 @@ public interface AttendanceMapper{
      * 获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceList();
@@ -99,7 +99,7 @@ public interface AttendanceMapper{
      * 获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendance2MapList();
@@ -108,7 +108,7 @@ public interface AttendanceMapper{
      * 根据查询条件获取签到个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Integer countAttendanceListByQuery(@Param("map") Map<String, Object> map);
@@ -117,7 +117,7 @@ public interface AttendanceMapper{
      * 根据查询条件获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceListByQuery(@Param("map") Map<String, Object> map);
@@ -126,7 +126,7 @@ public interface AttendanceMapper{
      * 根据查询条件获取签到个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Integer countAttendanceMapListByQuery(@Param("map") Map<String, Object> map);
@@ -135,7 +135,7 @@ public interface AttendanceMapper{
      * 根据查询条件获取签到列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendanceMapListByQuery(@Param("map") Map<String, Object> map);

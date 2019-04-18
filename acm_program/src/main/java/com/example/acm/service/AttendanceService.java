@@ -3,12 +3,12 @@
  *
  * @className com.example.acm.service.AttendanceService
  * @version v1.0.0 
- * @author guanyiting
+ * @author xgg
  * 
  * Modification History:
  * Date         Author      Version     Description
  * -----------------------------------------------------------------
- * 2019-03-29      guanyiting      v1.0.0      create
+ * 2019-03-29      xgg      v1.0.0      create
  *
  */
 package com.example.acm.service;
@@ -21,7 +21,7 @@ import com.example.acm.entity.Attendance;
 /** 
  * 签到服务接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-03-29 17:03:29
  */
 public interface AttendanceService{
@@ -31,7 +31,7 @@ public interface AttendanceService{
      * 
      * @param attendance 签到
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void addAttendance(Attendance attendance);
@@ -41,7 +41,7 @@ public interface AttendanceService{
      * 
      * @param list 签到列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void addAttendanceList(List<Attendance> list);      
@@ -51,7 +51,7 @@ public interface AttendanceService{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void deleteAttendanceByAttendenceId(Long attendenceId);
@@ -62,7 +62,7 @@ public interface AttendanceService{
      * @param attendenceId  
      * @param attendance 签到信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void updateAttendanceByAttendenceId(Long attendenceId, Attendance attendance);
@@ -72,7 +72,7 @@ public interface AttendanceService{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Attendance getAttendanceByAttendenceId(Long attendenceId);
@@ -83,7 +83,7 @@ public interface AttendanceService{
      * @param attendenceId  
      * @param attendance 签到信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceListByAttendenceId(Long attendenceId);
@@ -93,7 +93,7 @@ public interface AttendanceService{
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendance2MapListByAttendenceId(Long attendenceId);
@@ -102,7 +102,7 @@ public interface AttendanceService{
      * 获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceList();
@@ -111,7 +111,7 @@ public interface AttendanceService{
      * 获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendance2MapList();
@@ -120,7 +120,7 @@ public interface AttendanceService{
      * 根据查询条件获取签到个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Integer countAttendanceListByQuery(Map<String, Object> map);
@@ -129,7 +129,7 @@ public interface AttendanceService{
      * 根据查询条件获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceListByQuery(Map<String, Object> map);
@@ -138,7 +138,7 @@ public interface AttendanceService{
      * 根据查询条件获取签到个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Integer countAttendanceMapListByQuery(Map<String, Object> map);
@@ -147,7 +147,7 @@ public interface AttendanceService{
      * 根据查询条件获取签到列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendanceMapListByQuery(Map<String, Object> map);

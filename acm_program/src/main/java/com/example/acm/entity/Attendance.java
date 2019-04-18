@@ -9,7 +9,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 /** 
  * 签到实体
  * 
- * @author guanyiting
+ * @author xgg
  * @date 2019-03-29 17:03:29
  */
 public class Attendance implements Serializable {

@@ -1,7 +1,7 @@
 package com.example.acm.view;
 
 /**
- * Created by ggg on 2019/4/9.
+ * Created by xgg on 2019/4/9.
  */
 public class ChartView {
 

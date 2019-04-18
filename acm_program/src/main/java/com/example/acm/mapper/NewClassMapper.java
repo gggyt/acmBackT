@@ -11,7 +11,7 @@ import com.example.acm.entity.NewClass;
 /** 
  * 新闻_类表数据操作接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-22 22:47:10
  */
 public interface NewClassMapper{
@@ -21,7 +21,7 @@ public interface NewClassMapper{
      * 
      * @param newClass 新闻_类表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void addNewClass(@Param("newClass") NewClass newClass);
@@ -31,7 +31,7 @@ public interface NewClassMapper{
      * 
      * @param list 新闻_类表列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void addNewClassList(List<NewClass> list);       
@@ -41,7 +41,7 @@ public interface NewClassMapper{
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void deleteNewClassByNewClassId(@Param("newClassId") Long newClassId);
@@ -51,7 +51,7 @@ public interface NewClassMapper{
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void updateNewClassByNewClassId(@Param("newClassId") Long newClassId, @Param("newClass") NewClass newClass);
@@ -61,7 +61,7 @@ public interface NewClassMapper{
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public NewClass getNewClassByNewClassId(@Param("newClassId") Long newClassId);
@@ -71,7 +71,7 @@ public interface NewClassMapper{
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<NewClass> findNewClassListByNewClassId(@Param("newClassId") Long newClassId);
@@ -81,7 +81,7 @@ public interface NewClassMapper{
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<Map<String,Object>> findNewClass2MapListByNewClassId(@Param("newClassId") Long newClassId);
@@ -90,7 +90,7 @@ public interface NewClassMapper{
      * 获取新闻_类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<NewClass> findNewClassList();
@@ -99,7 +99,7 @@ public interface NewClassMapper{
      * 获取新闻_类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<Map<String,Object>> findNewClass2MapList();
@@ -108,7 +108,7 @@ public interface NewClassMapper{
      * 根据查询条件获取新闻_类表个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public Integer countNewClassListByQuery(@Param("map") Map<String, Object> map);
@@ -117,7 +117,7 @@ public interface NewClassMapper{
      * 根据查询条件获取新闻_类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<NewClass> findNewClassListByQuery(@Param("map") Map<String, Object> map);
@@ -126,7 +126,7 @@ public interface NewClassMapper{
      * 根据查询条件获取新闻_类表个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public Integer countNewClassMapListByQuery(@Param("map") Map<String, Object> map);
@@ -135,7 +135,7 @@ public interface NewClassMapper{
      * 根据查询条件获取新闻_类表列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<Map<String,Object>> findNewClassMapListByQuery(@Param("map") Map<String, Object> map);

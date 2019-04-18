@@ -9,7 +9,7 @@ import com.example.acm.entity.ApplyCompetition;
 /** 
  * 比赛报名服务接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-02-19 22:49:11
  */
 public interface ApplyCompetitionService{
@@ -19,7 +19,7 @@ public interface ApplyCompetitionService{
      * 
      * @param applyCompetition 比赛报名
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public void addApplyCompetition(ApplyCompetition applyCompetition);
@@ -29,7 +29,7 @@ public interface ApplyCompetitionService{
      * 
      * @param list 比赛报名列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public void addApplyCompetitionList(List<ApplyCompetition> list);      
@@ -39,7 +39,7 @@ public interface ApplyCompetitionService{
      * 
      * @param applyCompetitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public void deleteApplyCompetitionByApplyCompetitionId(Long applyCompetitionId);
@@ -50,7 +50,7 @@ public interface ApplyCompetitionService{
      * @param applyCompetitionId  
      * @param applyCompetition 比赛报名信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public void updateApplyCompetitionByApplyCompetitionId(Long applyCompetitionId, ApplyCompetition applyCompetition);
@@ -60,7 +60,7 @@ public interface ApplyCompetitionService{
      * 
      * @param applyCompetitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public ApplyCompetition getApplyCompetitionByApplyCompetitionId(Long applyCompetitionId);
@@ -71,7 +71,7 @@ public interface ApplyCompetitionService{
      * @param applyCompetitionId  
      * @param applyCompetition 比赛报名信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<ApplyCompetition> findApplyCompetitionListByApplyCompetitionId(Long applyCompetitionId);
@@ -81,7 +81,7 @@ public interface ApplyCompetitionService{
      * 
      * @param competitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<ApplyCompetition> findApplyCompetitionListByCompetitionId(Long competitionId);
@@ -91,7 +91,7 @@ public interface ApplyCompetitionService{
      * 
      * @param applyCompetitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<Map<String,Object>> findApplyCompetition2MapListByApplyCompetitionId(Long applyCompetitionId);
@@ -101,7 +101,7 @@ public interface ApplyCompetitionService{
      * 
      * @param competitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<Map<String,Object>> findApplyCompetition2MapListByCompetitionId(Long competitionId);
@@ -110,7 +110,7 @@ public interface ApplyCompetitionService{
      * 获取比赛报名列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<ApplyCompetition> findApplyCompetitionList();
@@ -119,7 +119,7 @@ public interface ApplyCompetitionService{
      * 获取比赛报名列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<Map<String,Object>> findApplyCompetition2MapList();
@@ -128,7 +128,7 @@ public interface ApplyCompetitionService{
      * 根据查询条件获取比赛报名个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public Integer countApplyCompetitionListByQuery(Map<String, Object> map);
@@ -137,7 +137,7 @@ public interface ApplyCompetitionService{
      * 根据查询条件获取比赛报名列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<ApplyCompetition> findApplyCompetitionListByQuery(Map<String, Object> map);
@@ -146,7 +146,7 @@ public interface ApplyCompetitionService{
      * 根据查询条件获取比赛报名个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public Integer countApplyCompetitionMapListByQuery(Map<String, Object> map);
@@ -155,7 +155,7 @@ public interface ApplyCompetitionService{
      * 根据查询条件获取比赛报名列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-19 22:49:11
      */
     public List<Map<String,Object>> findApplyCompetitionMapListByQuery(Map<String, Object> map);

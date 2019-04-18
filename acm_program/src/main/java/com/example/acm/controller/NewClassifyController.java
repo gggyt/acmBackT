@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yxk on 2019/1/10.
+ * Created by xgg on 2019/1/10.
  */
 @Controller
 @RequestMapping(value = "/news")

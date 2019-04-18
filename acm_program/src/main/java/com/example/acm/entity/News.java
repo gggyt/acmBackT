@@ -9,7 +9,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 /** 
  * 新闻表实体
  * 
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-19 21:54:01
  */
 public class News implements Serializable {

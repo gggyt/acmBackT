@@ -25,7 +25,7 @@
 	</sql>
 
 	<insert id="addNewClass" useGeneratedKeys="true">
-		INSERT INTO newClass 
+		INSERT INTO newclass
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="newClass.newClassId != null">newClassId,</if>
 			<if test="newClass.newsId != null">newsId,</if>
@@ -50,7 +50,7 @@
 	</insert>
 	
 	<insert id="addNewClassList" parameterType="com.example.acm.entity.NewClass">
-		INSERT INTO newClass 
+		INSERT INTO newclass
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			newClassId,
 			newsId,
@@ -81,11 +81,11 @@
 	</insert>
 	
 	<delete id="deleteNewClassByNewClassId">
-		DELETE FROM newClass WHERE newClassId = #{newClassId};
+		DELETE FROM newclass WHERE newClassId = #{newClassId};
 	</delete>
 
 	<update id="updateNewClassByNewClassId">
-		UPDATE newClass
+		UPDATE newclass
 		<set>
 			<if test="newClass.newClassId != null">newClassId=#{newClass.newClassId},</if>
 			<if test="newClass.newsId != null">newsId=#{newClass.newsId},</if>
@@ -102,8 +102,8 @@
 	<select id="getNewClassByNewClassId" resultType="com.example.acm.entity.NewClass">
 		SELECT 
 			<include refid="newClass_field_list_alias"/> 
-		FROM 
-			newClass a
+		FROM
+			newclass a
 		WHERE 
 			newClassId = #{newClassId}
 		LIMIT 1;
@@ -113,7 +113,7 @@
 		SELECT
 		<include refid="newClass_field_list_alias"/>
 		FROM 
-			newClass a
+			newclass a
 		<where>
 			<if test="newClassId != null">
 				a.newClassId = #{newClassId}
@@ -125,7 +125,7 @@
 		SELECT
 		<include refid="newClass_field_list_alias"/>
 		FROM 
-			newClass a
+			newclass a
 		<where>
 			<if test="newClassId != null">
 				a.newClassId = #{newClassId}
@@ -137,21 +137,21 @@
 		SELECT
 		<include refid="newClass_field_list_alias"/>
 		FROM 
-			newClass a;		
+			newclass a;
 	</select>
 	
 	<select id="findNewClass2MapList" resultType="java.util.Map">
 		SELECT
 		<include refid="newClass_field_list_alias"/>
 		FROM 
-			newClass a;		
+			newclass a;
 	</select>
 	
 	<select id="countNewClassListByQuery" resultType="java.lang.Integer">
 		SELECT
 			count(*)
 		FROM 
-			newClass a
+			newclass a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -163,7 +163,7 @@
 		SELECT
 		<include refid="newClass_field_list_alias"/>
 		FROM 
-			newClass a
+			newclass a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -188,7 +188,7 @@
 		SELECT
 			count(*)
 		FROM 
-			newClass a
+			newclass a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -200,7 +200,7 @@
 		SELECT
 		<include refid="newClass_field_list_alias"/>
 		FROM 
-			newClass a
+			newclass a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 

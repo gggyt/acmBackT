@@ -11,7 +11,7 @@ import com.example.acm.entity.User;
 /** 
  * user数据操作接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2018-12-07 16:20:17
  */
 public interface UserMapper{
@@ -21,7 +21,7 @@ public interface UserMapper{
      * 
      * @param user user
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void addUser(@Param("user") User user);
@@ -31,7 +31,7 @@ public interface UserMapper{
      * 
      * @param list user列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void addUserList(List<User> list);       
@@ -41,7 +41,7 @@ public interface UserMapper{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void deleteUserByUserId(@Param("userId") Integer userId);
@@ -51,7 +51,7 @@ public interface UserMapper{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void updateUserByUserId(@Param("userId") Integer userId, @Param("user") User user);
@@ -61,7 +61,7 @@ public interface UserMapper{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public User getUserByUserId(@Param("userId") Integer userId);
@@ -71,7 +71,7 @@ public interface UserMapper{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<User> findUserListByUserId(@Param("userId") Integer userId);
@@ -81,7 +81,7 @@ public interface UserMapper{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUser2MapListByUserId(@Param("userId") Integer userId);
@@ -90,7 +90,7 @@ public interface UserMapper{
      * 获取user列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<User> findUserList();
@@ -99,7 +99,7 @@ public interface UserMapper{
      * 获取user列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUser2MapList();
@@ -108,7 +108,7 @@ public interface UserMapper{
      * 根据查询条件获取user个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public Integer countUserListByQuery(@Param("map") Map<String, Object> map);
@@ -117,7 +117,7 @@ public interface UserMapper{
      * 根据查询条件获取user列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<User> findUserListByQuery(@Param("map") Map<String, Object> map);
@@ -126,7 +126,7 @@ public interface UserMapper{
      * 根据查询条件获取user个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public Integer countUserMapListByQuery(@Param("map") Map<String, Object> map);
@@ -135,7 +135,7 @@ public interface UserMapper{
      * 根据查询条件获取user列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUserMapListByQuery(@Param("map") Map<String, Object> map);

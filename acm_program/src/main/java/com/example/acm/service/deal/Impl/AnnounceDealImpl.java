@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ggg on 2019/1/13.
+ * Created by xgg on 2019/1/13.
  */
 @Service
 public class AnnounceDealImpl implements AnnounceDealService{

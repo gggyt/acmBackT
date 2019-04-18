@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by ggg on 2019/1/23.
+ * Created by xgg on 2019/1/23.
  */
 public class NewsView {
     private Long newsId;//

@@ -15,7 +15,7 @@ import com.example.acm.service.DayDutyService;
 /** 
  * 值日服务
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-02-14 21:45:45
  */
 @Service("dayDutyService")
@@ -30,7 +30,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param dayDuty 值日
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public void addDayDuty(DayDuty dayDuty){
@@ -42,7 +42,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param list 值日列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public void addDayDutyList(List<DayDuty> list){
@@ -54,7 +54,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param dayDutyId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public void deleteDayDutyByDayDutyId(Integer dayDutyId){
@@ -66,7 +66,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param dayDutyId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public void updateDayDutyByDayDutyId(Integer dayDutyId,DayDuty dayDuty){
@@ -78,7 +78,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param dayDutyId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public DayDuty getDayDutyByDayDutyId(Integer dayDutyId){
@@ -90,7 +90,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param dayDutyId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public List<DayDuty> findDayDutyListByDayDutyId(Integer dayDutyId){
@@ -102,7 +102,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 
      * @param dayDutyId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public List<Map<String,Object>> findDayDuty2MapListByDayDutyId(Integer dayDutyId){
@@ -113,7 +113,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 获取值日列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public List<DayDuty> findDayDutyList(){
@@ -124,7 +124,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 获取值日列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public List<Map<String,Object>> findDayDuty2MapList(){
@@ -135,7 +135,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 根据查询条件获取值日个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public Integer countDayDutyListByQuery(Map<String, Object> map){
@@ -146,7 +146,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 根据查询条件获取值日列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public List<DayDuty> findDayDutyListByQuery(Map<String, Object> map){
@@ -157,7 +157,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 根据查询条件获取值日个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public Integer countDayDutyMapListByQuery(Map<String, Object> map){
@@ -168,7 +168,7 @@ public class DayDutyServiceImpl implements DayDutyService {
      * 根据查询条件获取值日列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-14 21:45:45
      */
     public List<Map<String,Object>> findDayDutyMapListByQuery(Map<String, Object> map){

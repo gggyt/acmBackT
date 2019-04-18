@@ -15,7 +15,7 @@ import com.example.acm.service.ImpressionService;
 /** 
  * 印象服务
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-04-11 11:54:19
  */
 @Service("impressionService")
@@ -30,7 +30,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param impression 印象
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public void addImpression(Impression impression){
@@ -42,7 +42,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param list 印象列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public void addImpressionList(List<Impression> list){
@@ -54,7 +54,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param impressionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public void deleteImpressionByImpressionId(Long impressionId){
@@ -66,7 +66,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param impressionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public void updateImpressionByImpressionId(Long impressionId,Impression impression){
@@ -78,7 +78,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param impressionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public Impression getImpressionByImpressionId(Long impressionId){
@@ -90,7 +90,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param impressionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public List<Impression> findImpressionListByImpressionId(Long impressionId){
@@ -102,7 +102,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 
      * @param impressionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public List<Map<String,Object>> findImpression2MapListByImpressionId(Long impressionId){
@@ -113,7 +113,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 获取印象列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public List<Impression> findImpressionList(){
@@ -124,7 +124,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 获取印象列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public List<Map<String,Object>> findImpression2MapList(){
@@ -135,7 +135,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 根据查询条件获取印象个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public Integer countImpressionListByQuery(Map<String, Object> map){
@@ -146,7 +146,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 根据查询条件获取印象列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public List<Impression> findImpressionListByQuery(Map<String, Object> map){
@@ -157,7 +157,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 根据查询条件获取印象个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public Integer countImpressionMapListByQuery(Map<String, Object> map){
@@ -168,7 +168,7 @@ public class ImpressionServiceImpl implements ImpressionService {
      * 根据查询条件获取印象列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-04-11 11:54:19
      */
     public List<Map<String,Object>> findImpressionMapListByQuery(Map<String, Object> map){

@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ggg on 2019/2/18.
+ * Created by xgg on 2019/2/18.
  */
 @Service
 public class CompetitionDealImpl implements CompetitionDealService{

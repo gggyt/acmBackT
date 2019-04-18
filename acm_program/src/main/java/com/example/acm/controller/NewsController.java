@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by yxk on 2019/1/19.
+ * Created by xgg on 2019/1/19.
  */
 @Controller
 @RequestMapping("/news")
@@ -43,7 +43,6 @@ public class NewsController extends BaseController{
                 user = new User();
                 user.setUserId(2);
             }
-
             return newsDealService.addNews(user, newsTitle, newsBody, isPublic, classType);
         } catch (Exception e) {
             e.printStackTrace();
@@ -58,7 +57,7 @@ public class NewsController extends BaseController{
                                      @RequestParam(value="newsTitle", required = true) String newsTitle,
                                      @RequestParam(value="newsBody", required = true) String newsBody,
                                      @RequestParam(value="isPublic", required = true) int isPublic,
-                                    @RequestParam(value="classType", required = true) String classType,
+                                    @RequestParam(value="classType", defaultValue = "", required = false) String classType,
                                      HttpServletRequest request, HttpServletResponse response) {
         try {
             User user = getUserIdFromSession(request);

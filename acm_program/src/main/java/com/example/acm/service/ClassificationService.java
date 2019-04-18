@@ -18,7 +18,7 @@ public interface ClassificationService{
      * 
      * @param list ?伴?诲??绫昏〃??琛?
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void addClassificationList(List<Classification> list);      
@@ -28,7 +28,7 @@ public interface ClassificationService{
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void deleteClassificationByClassId(Long classId);
@@ -39,7 +39,7 @@ public interface ClassificationService{
      * @param classId  
      * @param classification ?伴?诲??绫昏〃淇℃??
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void updateClassificationByClassId(Long classId, Classification classification);
@@ -49,7 +49,7 @@ public interface ClassificationService{
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public Classification getClassificationByClassId(Long classId);
@@ -60,7 +60,7 @@ public interface ClassificationService{
      * @param classId  
      * @param classification ?伴?诲??绫昏〃淇℃??
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Classification> findClassificationListByClassId(Long classId);
@@ -70,7 +70,7 @@ public interface ClassificationService{
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassification2MapListByClassId(Long classId);
@@ -79,7 +79,7 @@ public interface ClassificationService{
      * ?峰???伴?诲??绫昏〃??琛?
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Classification> findClassificationList();
@@ -88,7 +88,7 @@ public interface ClassificationService{
      * ?峰???伴?诲??绫昏〃??琛?
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassification2MapList();
@@ -97,7 +97,7 @@ public interface ClassificationService{
      * ?规???ヨ?㈡?′欢?峰???伴?诲??绫昏〃涓???
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public Integer countClassificationListByQuery(Map<String, Object> map);
@@ -106,7 +106,7 @@ public interface ClassificationService{
      * ?规???ヨ?㈡?′欢?峰???伴?诲??绫昏〃??琛?
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Classification> findClassificationListByQuery(Map<String, Object> map);
@@ -115,7 +115,7 @@ public interface ClassificationService{
      * ?规???ヨ?㈡?′欢?峰???伴?诲??绫昏〃涓???(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public Integer countClassificationMapListByQuery(Map<String, Object> map);
@@ -124,7 +124,7 @@ public interface ClassificationService{
      * ?规???ヨ?㈡?′欢?峰???伴?诲??绫昏〃??琛?(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassificationMapListByQuery(Map<String, Object> map);

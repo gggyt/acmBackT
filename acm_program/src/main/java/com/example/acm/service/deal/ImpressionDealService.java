@@ -5,7 +5,7 @@ import com.example.acm.entity.User;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by ggg on 2019/4/11.
+ * Created by xgg on 2019/4/11.
  */
 public interface ImpressionDealService {
 

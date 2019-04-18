@@ -3,12 +3,12 @@
  *
  * @className com.example.acm.service.AttendanceServiceImpl
  * @version v1.0.0 
- * @author guanyiting
+ * @author xgg
  * 
  * Modification History:
  * Date         Author      Version     Description
  * -----------------------------------------------------------------
- * 2019-03-29      guanyiting      v1.0.0      create
+ * 2019-03-29      xgg      v1.0.0      create
  *
  */
 package com.example.acm.service.Impl;
@@ -27,7 +27,7 @@ import com.example.acm.service.AttendanceService;
 /** 
  * 签到服务
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-03-29 17:03:29
  */
 @Service("attendanceService")
@@ -42,7 +42,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param attendance 签到
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void addAttendance(Attendance attendance){
@@ -54,7 +54,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param list 签到列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void addAttendanceList(List<Attendance> list){
@@ -66,7 +66,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void deleteAttendanceByAttendenceId(Long attendenceId){
@@ -78,7 +78,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public void updateAttendanceByAttendenceId(Long attendenceId,Attendance attendance){
@@ -90,7 +90,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Attendance getAttendanceByAttendenceId(Long attendenceId){
@@ -102,7 +102,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceListByAttendenceId(Long attendenceId){
@@ -114,7 +114,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 
      * @param attendenceId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendance2MapListByAttendenceId(Long attendenceId){
@@ -125,7 +125,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceList(){
@@ -136,7 +136,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendance2MapList(){
@@ -147,7 +147,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 根据查询条件获取签到个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Integer countAttendanceListByQuery(Map<String, Object> map){
@@ -158,7 +158,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 根据查询条件获取签到列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Attendance> findAttendanceListByQuery(Map<String, Object> map){
@@ -169,7 +169,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 根据查询条件获取签到个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public Integer countAttendanceMapListByQuery(Map<String, Object> map){
@@ -180,7 +180,7 @@ public class AttendanceServiceImpl implements AttendanceService {
      * 根据查询条件获取签到列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-03-29 17:03:29
      */
     public List<Map<String,Object>> findAttendanceMapListByQuery(Map<String, Object> map){

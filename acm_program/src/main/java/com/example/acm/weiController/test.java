@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ggg on 2019/3/10.
+ * Created by xgg on 2019/3/10.
  */
 @Controller
 public class test {
@@ -317,7 +317,6 @@ public class test {
         }
         System.out.println(json.toString());
         JSONObject jsStr = JSONObject.parseObject(json.toString());
-        //String menu = "{\"button\":[{\"name\":\"菜单\",\"sub_button\":[{\"type\":\"view\",\"name\":\"首页\",\"url\":\"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5418ed8c3ec757dd&redirect_uri=http://gyt.easy.echosite.cn/mobileIndex&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect\"}]},{\"name\":\"加入我们\",\"sub_button\":[{\"type\":\"view\",\"name\":\"加入\",\"url\":\"http://gyt.easy.echosite.cn/mobile/home\"}]}]}";
         String menu = "{\"button\":[{\"name\":\"菜单\",\"sub_button\":[{\"type\":\"view\",\"name\":\"首页\",\"url\":\"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5418ed8c3ec757dd&redirect_uri=http://gyt.easy.echosite.cn/mobilelogin&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect\"}]}]}";
         String url1 = " https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+jsStr.get("access_token");
         StringBuilder json1 = new StringBuilder();

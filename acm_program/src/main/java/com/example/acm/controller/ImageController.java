@@ -29,7 +29,7 @@ public class ImageController {
 
         try {
             System.out.println("-----------");
-            String filePath = "E://pic//"; // 上传后的路径
+            String filePath = "/home/xg/cache_data/"; // 上传后的路径
             // 由于是读取本机的文件，file是一定要加上的， path是在application配置文件中的路径
             System.out.println("-----------");
             return ResponseEntity.ok(resourceLoader.getResource("file:" + filePath + fileName));
@@ -48,7 +48,7 @@ public class ImageController {
         String fileName = file.getOriginalFilename();  // 文件名
         String suffixName = fileName.substring(fileName.lastIndexOf("."));  // 后缀名
 
-        String filePath = "D://pic/"; // 上传后的路径
+        String filePath = "/home/xg/cache_data/"; // 上传后的路径
          fileName = UUID.randomUUID() + suffixName; // 新文件名 File dest = new File(filePath + fileName);
         File dest = new File(filePath + fileName);
         System.out.println(filePath + fileName);
@@ -76,7 +76,7 @@ public class ImageController {
         String fileName = file.getOriginalFilename();  // 文件名
         String suffixName = fileName.substring(fileName.lastIndexOf("."));  // 后缀名
 
-        String filePath = "D://pic/"; // 上传后的路径
+        String filePath = "/home/xg/cache_data/"; // 上传后的路径
         fileName = UUID.randomUUID() + suffixName; // 新文件名 File dest = new File(filePath + fileName);
         File dest = new File(filePath + fileName);
         System.out.println(filePath + fileName);

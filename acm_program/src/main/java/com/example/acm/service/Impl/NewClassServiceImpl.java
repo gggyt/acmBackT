@@ -15,7 +15,7 @@ import com.example.acm.service.NewClassService;
 /** 
  * 新闻_类表服务
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-22 22:47:10
  */
 @Service("newClassService")
@@ -30,7 +30,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param newClass 新闻_类表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void addNewClass(NewClass newClass){
@@ -42,7 +42,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param list 新闻_类表列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void addNewClassList(List<NewClass> list){
@@ -54,7 +54,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void deleteNewClassByNewClassId(Long newClassId){
@@ -66,7 +66,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public void updateNewClassByNewClassId(Long newClassId,NewClass newClass){
@@ -78,7 +78,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public NewClass getNewClassByNewClassId(Long newClassId){
@@ -90,7 +90,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<NewClass> findNewClassListByNewClassId(Long newClassId){
@@ -102,7 +102,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 
      * @param newClassId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<Map<String,Object>> findNewClass2MapListByNewClassId(Long newClassId){
@@ -113,7 +113,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 获取新闻_类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<NewClass> findNewClassList(){
@@ -124,7 +124,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 获取新闻_类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<Map<String,Object>> findNewClass2MapList(){
@@ -135,7 +135,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 根据查询条件获取新闻_类表个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public Integer countNewClassListByQuery(Map<String, Object> map){
@@ -146,7 +146,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 根据查询条件获取新闻_类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<NewClass> findNewClassListByQuery(Map<String, Object> map){
@@ -157,7 +157,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 根据查询条件获取新闻_类表个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public Integer countNewClassMapListByQuery(Map<String, Object> map){
@@ -168,7 +168,7 @@ public class NewClassServiceImpl implements NewClassService {
      * 根据查询条件获取新闻_类表列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-22 22:47:10
      */
     public List<Map<String,Object>> findNewClassMapListByQuery(Map<String, Object> map){

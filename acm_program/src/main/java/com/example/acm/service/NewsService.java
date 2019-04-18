@@ -9,7 +9,7 @@ import com.example.acm.entity.News;
 /** 
  * 新闻表服务接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-19 21:49:28
  */
 public interface NewsService{
@@ -19,7 +19,7 @@ public interface NewsService{
      * 
      * @param news 新闻表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void addNews(News news);
@@ -29,7 +29,7 @@ public interface NewsService{
      * 
      * @param list 新闻表列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void addNewsList(List<News> list);      
@@ -39,7 +39,7 @@ public interface NewsService{
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void deleteNewsByNewsId(Long newsId);
@@ -50,7 +50,7 @@ public interface NewsService{
      * @param newsId  
      * @param news 新闻表信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void updateNewsByNewsId(Long newsId, News news);
@@ -60,7 +60,7 @@ public interface NewsService{
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public News getNewsByNewsId(Long newsId);
@@ -71,7 +71,7 @@ public interface NewsService{
      * @param newsId  
      * @param news 新闻表信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<News> findNewsListByNewsId(Long newsId);
@@ -81,7 +81,7 @@ public interface NewsService{
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<Map<String,Object>> findNews2MapListByNewsId(Long newsId);
@@ -90,7 +90,7 @@ public interface NewsService{
      * 获取新闻表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<News> findNewsList();
@@ -99,7 +99,7 @@ public interface NewsService{
      * 获取新闻表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<Map<String,Object>> findNews2MapList();
@@ -108,7 +108,7 @@ public interface NewsService{
      * 根据查询条件获取新闻表个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public Integer countNewsListByQuery(Map<String, Object> map);
@@ -117,7 +117,7 @@ public interface NewsService{
      * 根据查询条件获取新闻表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<News> findNewsListByQuery(Map<String, Object> map);
@@ -126,7 +126,7 @@ public interface NewsService{
      * 根据查询条件获取新闻表个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public Integer countNewsMapListByQuery(Map<String, Object> map);
@@ -135,7 +135,7 @@ public interface NewsService{
      * 根据查询条件获取新闻表列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<Map<String,Object>> findNewsMapListByQuery(Map<String, Object> map);

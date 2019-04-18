@@ -25,7 +25,7 @@
 	</sql>
 
 	<insert id="addDayDuty" useGeneratedKeys="true">
-		INSERT INTO dayDuty 
+		INSERT INTO dayduty
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="dayDuty.dayDutyId != null">dayDutyId,</if>
 			<if test="dayDuty.dayName != null">dayName,</if>
@@ -50,7 +50,7 @@
 	</insert>
 	
 	<insert id="addDayDutyList" parameterType="com.example.acm.entity.DayDuty">
-		INSERT INTO dayDuty 
+		INSERT INTO dayduty
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			dayDutyId,
 			dayName,
@@ -85,7 +85,7 @@
 	</delete>
 
 	<update id="updateDayDutyByDayDutyId">
-		UPDATE dayDuty
+		UPDATE dayduty
 		<set>
 			<if test="dayDuty.dayDutyId != null">dayDutyId=#{dayDuty.dayDutyId},</if>
 			<if test="dayDuty.dayName != null">dayName=#{dayDuty.dayName},</if>
@@ -96,14 +96,14 @@
 			<if test="dayDuty.updateData != null">updateData=#{dayDuty.updateData},</if>
 			<if test="dayDuty.isEffective != null">isEffective=#{dayDuty.isEffective},</if>
 		</set>
-		WHERE dayDutyId = #{dayDutyId};	
+		WHERE dayDutyId = #{dayDutyId};
 	</update>
 	
 	<select id="getDayDutyByDayDutyId" resultType="com.example.acm.entity.DayDuty">
 		SELECT 
 			<include refid="dayDuty_field_list_alias"/> 
 		FROM 
-			dayDuty a
+			dayduty a
 		WHERE 
 			dayDutyId = #{dayDutyId}
 		LIMIT 1;
@@ -113,7 +113,7 @@
 		SELECT
 		<include refid="dayDuty_field_list_alias"/>
 		FROM 
-			dayDuty a
+			dayduty a
 		<where>
 			<if test="dayDutyId != null">
 				a.dayDutyId = #{dayDutyId}
@@ -125,7 +125,7 @@
 		SELECT
 		<include refid="dayDuty_field_list_alias"/>
 		FROM 
-			dayDuty a
+			dayduty a
 		<where>
 			<if test="dayDutyId != null">
 				a.dayDutyId = #{dayDutyId}
@@ -137,21 +137,21 @@
 		SELECT
 		<include refid="dayDuty_field_list_alias"/>
 		FROM 
-			dayDuty a;		
+			dayduty a;
 	</select>
 	
 	<select id="findDayDuty2MapList" resultType="java.util.Map">
 		SELECT
 		<include refid="dayDuty_field_list_alias"/>
-		FROM 
-			dayDuty a;		
+		FROM
+			dayduty a;
 	</select>
 	
 	<select id="countDayDutyListByQuery" resultType="java.lang.Integer">
 		SELECT
 			count(*)
 		FROM 
-			dayDuty a
+			dayduty a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -163,7 +163,7 @@
 		SELECT
 		<include refid="dayDuty_field_list_alias"/>
 		FROM 
-			dayDuty a
+			dayduty a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -182,7 +182,7 @@
 		SELECT
 			count(*)
 		FROM 
-			dayDuty a
+			dayduty a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -194,7 +194,7 @@
 		SELECT
 		<include refid="dayDuty_field_list_alias"/>
 		FROM 
-			dayDuty a
+			dayduty a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 

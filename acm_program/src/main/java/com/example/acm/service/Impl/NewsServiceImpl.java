@@ -15,7 +15,7 @@ import com.example.acm.service.NewsService;
 /** 
  * 新闻表服务
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-19 21:49:28
  */
 @Service("newsService")
@@ -30,7 +30,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param news 新闻表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void addNews(News news){
@@ -42,7 +42,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param list 新闻表列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void addNewsList(List<News> list){
@@ -54,7 +54,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void deleteNewsByNewsId(Long newsId){
@@ -66,7 +66,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public void updateNewsByNewsId(Long newsId,News news){
@@ -78,7 +78,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public News getNewsByNewsId(Long newsId){
@@ -90,7 +90,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<News> findNewsListByNewsId(Long newsId){
@@ -102,7 +102,7 @@ public class NewsServiceImpl implements NewsService {
      * 
      * @param newsId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<Map<String,Object>> findNews2MapListByNewsId(Long newsId){
@@ -113,7 +113,7 @@ public class NewsServiceImpl implements NewsService {
      * 获取新闻表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<News> findNewsList(){
@@ -124,7 +124,7 @@ public class NewsServiceImpl implements NewsService {
      * 获取新闻表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<Map<String,Object>> findNews2MapList(){
@@ -135,7 +135,7 @@ public class NewsServiceImpl implements NewsService {
      * 根据查询条件获取新闻表个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public Integer countNewsListByQuery(Map<String, Object> map){
@@ -146,7 +146,7 @@ public class NewsServiceImpl implements NewsService {
      * 根据查询条件获取新闻表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<News> findNewsListByQuery(Map<String, Object> map){
@@ -157,7 +157,7 @@ public class NewsServiceImpl implements NewsService {
      * 根据查询条件获取新闻表个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public Integer countNewsMapListByQuery(Map<String, Object> map){
@@ -168,7 +168,7 @@ public class NewsServiceImpl implements NewsService {
      * 根据查询条件获取新闻表列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-19 21:49:28
      */
     public List<Map<String,Object>> findNewsMapListByQuery(Map<String, Object> map){

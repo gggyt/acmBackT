@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by ggg on 2019/4/11.
+ * Created by xgg on 2019/4/11.
  */
 public class UserImpression {
     private Integer auth;// 0-未通过审核 1-超级管理员 2-管理员 3-队员 4-萌新 5-未完善资料的萌新

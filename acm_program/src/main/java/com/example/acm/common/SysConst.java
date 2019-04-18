@@ -24,5 +24,5 @@ public interface SysConst {
     int LIVE = 1;
     int NOT_LIVE = 0;
 
-    String localhost="192.168.1.113:9999";
+    String localhost="localhost:9999";
 }

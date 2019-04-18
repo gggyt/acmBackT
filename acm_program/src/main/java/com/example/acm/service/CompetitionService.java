@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Param;
 /** 
  * 比赛服务接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-02-18 21:04:49
  */
 public interface CompetitionService{
@@ -20,7 +20,7 @@ public interface CompetitionService{
      * 
      * @param competition 比赛
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public void addCompetition(Competition competition);
@@ -30,7 +30,7 @@ public interface CompetitionService{
      * 
      * @param list 比赛列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public void addCompetitionList(List<Competition> list);      
@@ -40,7 +40,7 @@ public interface CompetitionService{
      * 
      * @param competitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public void deleteCompetitionByCompetitionId(Long competitionId);
@@ -51,7 +51,7 @@ public interface CompetitionService{
      * @param competitionId  
      * @param competition 比赛信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public void updateCompetitionByCompetitionId(Long competitionId, Competition competition);
@@ -61,7 +61,7 @@ public interface CompetitionService{
      * 
      * @param competitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public Competition getCompetitionByCompetitionId(Long competitionId);
@@ -72,7 +72,7 @@ public interface CompetitionService{
      * @param competitionId  
      * @param competition 比赛信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public List<Competition> findCompetitionListByCompetitionId(Long competitionId);
@@ -82,7 +82,7 @@ public interface CompetitionService{
      * 
      * @param competitionId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public List<Map<String,Object>> findCompetition2MapListByCompetitionId(Long competitionId);
@@ -91,7 +91,7 @@ public interface CompetitionService{
      * 获取比赛列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public List<Competition> findCompetitionList();
@@ -100,7 +100,7 @@ public interface CompetitionService{
      * 获取比赛列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public List<Map<String,Object>> findCompetition2MapList();
@@ -109,7 +109,7 @@ public interface CompetitionService{
      * 根据查询条件获取比赛个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public Integer countCompetitionListByQuery(Map<String, Object> map);
@@ -118,7 +118,7 @@ public interface CompetitionService{
      * 根据查询条件获取比赛列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public List<Competition> findCompetitionListByQuery(Map<String, Object> map);
@@ -127,7 +127,7 @@ public interface CompetitionService{
      * 根据查询条件获取比赛个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public Integer countCompetitionMapListByQuery(Map<String, Object> map);
@@ -136,7 +136,7 @@ public interface CompetitionService{
      * 根据查询条件获取比赛列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-02-18 21:04:49
      */
     public List<Map<String,Object>> findCompetitionMapListByQuery(Map<String, Object> map);

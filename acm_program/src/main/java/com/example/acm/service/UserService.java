@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
 /** 
  * user服务接口
  *
- * @author guanyiting
+ * @author xgg
  * @date 2018-12-07 16:20:17
  */
 public interface UserService{
@@ -19,7 +19,7 @@ public interface UserService{
      * 
      * @param user user
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void addUser(User user);
@@ -29,7 +29,7 @@ public interface UserService{
      * 
      * @param list user列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void addUserList(List<User> list);      
@@ -39,7 +39,7 @@ public interface UserService{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void deleteUserByUserId(Integer userId);
@@ -50,7 +50,7 @@ public interface UserService{
      * @param userId  
      * @param user user信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public void updateUserByUserId(Integer userId, User user);
@@ -60,7 +60,7 @@ public interface UserService{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public User getUserByUserId(Integer userId);
@@ -71,7 +71,7 @@ public interface UserService{
      * @param userId  
      * @param user user信息
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<User> findUserListByUserId(Integer userId);
@@ -81,7 +81,7 @@ public interface UserService{
      * 
      * @param userId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUser2MapListByUserId(Integer userId);
@@ -90,7 +90,7 @@ public interface UserService{
      * 获取user列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<User> findUserList();
@@ -99,7 +99,7 @@ public interface UserService{
      * 获取user列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUser2MapList();
@@ -108,7 +108,7 @@ public interface UserService{
      * 根据查询条件获取user个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public Integer countUserListByQuery(Map<String, Object> map);
@@ -117,7 +117,7 @@ public interface UserService{
      * 根据查询条件获取user列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<User> findUserListByQuery(Map<String, Object> map);
@@ -126,7 +126,7 @@ public interface UserService{
      * 根据查询条件获取user个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public Integer countUserMapListByQuery(Map<String, Object> map);
@@ -135,7 +135,7 @@ public interface UserService{
      * 根据查询条件获取user列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2018-12-07 16:20:17
      */
     public List<Map<String,Object>> findUserMapListByQuery(Map<String, Object> map);

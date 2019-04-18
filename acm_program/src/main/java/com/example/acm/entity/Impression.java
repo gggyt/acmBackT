@@ -9,7 +9,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 /** 
  * 印象实体
  * 
- * @author guanyiting
+ * @author xgg
  * @date 2019-04-11 11:54:19
  */
 public class Impression implements Serializable {

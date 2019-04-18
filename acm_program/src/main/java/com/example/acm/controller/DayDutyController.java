@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by yxk on 2019/2/14.
+ * Created by xgg on 2019/2/14.
  */
 @Controller
 @RequestMapping("/dayDuty")

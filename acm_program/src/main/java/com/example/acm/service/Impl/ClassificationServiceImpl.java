@@ -16,7 +16,7 @@ import com.example.acm.service.ClassificationService;
 /** 
  * 新闻分类表服务
  *
- * @author guanyiting
+ * @author xgg
  * @date 2019-01-10 21:05:22
  */
 @Service("classificationService")
@@ -31,7 +31,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param classification 新闻分类表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void addClassification(Classification classification){
@@ -43,7 +43,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param list 新闻分类表列表
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void addClassificationList(List<Classification> list){
@@ -55,7 +55,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void deleteClassificationByClassId(Long classId){
@@ -67,7 +67,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public void updateClassificationByClassId(Long classId,Classification classification){
@@ -79,7 +79,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public Classification getClassificationByClassId(Long classId){
@@ -91,7 +91,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Classification> findClassificationListByClassId(Long classId){
@@ -103,7 +103,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 
      * @param classId  
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassification2MapListByClassId(Long classId){
@@ -114,7 +114,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 获取新闻分类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Classification> findClassificationList(){
@@ -125,7 +125,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 获取新闻分类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassification2MapList(){
@@ -136,7 +136,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 根据查询条件获取新闻分类表个数
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public Integer countClassificationListByQuery(Map<String, Object> map){
@@ -147,7 +147,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 根据查询条件获取新闻分类表列表
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Classification> findClassificationListByQuery(Map<String, Object> map){
@@ -158,7 +158,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 根据查询条件获取新闻分类表个数(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public Integer countClassificationMapListByQuery(Map<String, Object> map){
@@ -169,7 +169,7 @@ public class ClassificationServiceImpl implements ClassificationService {
      * 根据查询条件获取新闻分类表列表(Map)
      * 
      * @version v1.0
-     * @author guanyiting
+     * @author xgg
      * @date 2019-01-10 21:05:22
      */
     public List<Map<String,Object>> findClassificationMapListByQuery(Map<String, Object> map){

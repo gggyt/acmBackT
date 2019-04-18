@@ -8,7 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 /** 
  * 值日实体
  * 
- * @author guanyiting
+ * @author xgg
  * @date 2019-02-14 21:45:45
  */
 public class DayDuty implements Serializable {

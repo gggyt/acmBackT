@@ -5,7 +5,7 @@ import com.example.acm.entity.User;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by ggg on 2019/1/19.
+ * Created by xgg on 2019/1/19.
  */
 @Service
 public interface NewsDealService {
