@@ -1,0 +1,420 @@
+2019-04-18 16:05:28.210 DEBUG --- [background-preinit] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Line:89  - Loaded expression factory via original TCCL
+2019-04-18 16:05:28.227 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:578 - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-04-18 16:05:28.228 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:579 - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-04-18 16:05:28.229 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:580 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-04-18 16:05:28.230 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:581 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-04-18 16:05:28.231 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:582 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-04-18 16:05:28.248 INFO  --- [main] com.example.acm.AcmApplication Line:50  - Starting AcmApplication on DESKTOP-03CDSMO with PID 23800 (D:\ACM\acmBackT\wei_account\target\classes started by ggg in D:\ACM\acmBackT\wei_account)
+2019-04-18 16:05:28.249 DEBUG --- [main] com.example.acm.AcmApplication Line:53  - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-04-18 16:05:28.250 INFO  --- [main] com.example.acm.AcmApplication Line:659 - No active profile set, falling back to default profiles: default
+2019-04-18 16:05:29.626 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AlbumMapper.class]
+2019-04-18 16:05:29.627 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AlbumPhotoMapper.class]
+2019-04-18 16:05:29.629 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AnnouncementMapper.class]
+2019-04-18 16:05:29.629 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ApplyCompetitionMapper.class]
+2019-04-18 16:05:29.630 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ApplylectureMapper.class]
+2019-04-18 16:05:29.630 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AttendanceMapper.class]
+2019-04-18 16:05:29.631 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ClassificationMapper.class]
+2019-04-18 16:05:29.632 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\CommentMapper.class]
+2019-04-18 16:05:29.632 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\CompetitionMapper.class]
+2019-04-18 16:05:29.633 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\DayDutyMapper.class]
+2019-04-18 16:05:29.633 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\FriendurlMapper.class]
+2019-04-18 16:05:29.634 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ImpressionMapper.class]
+2019-04-18 16:05:29.634 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\InvitationMapper.class]
+2019-04-18 16:05:29.635 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\LectureMapper.class]
+2019-04-18 16:05:29.635 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\NewClassMapper.class]
+2019-04-18 16:05:29.636 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\NewsMapper.class]
+2019-04-18 16:05:29.636 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\PhotoMapper.class]
+2019-04-18 16:05:29.637 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ProblemMapper.class]
+2019-04-18 16:05:29.638 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ReplyproblemMapper.class]
+2019-04-18 16:05:29.638 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\UserMapper.class]
+2019-04-18 16:05:29.639 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'albumMapper' and 'com.example.acm.mapper.AlbumMapper' mapperInterface
+2019-04-18 16:05:29.640 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'albumMapper'.
+2019-04-18 16:05:29.640 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'albumPhotoMapper' and 'com.example.acm.mapper.AlbumPhotoMapper' mapperInterface
+2019-04-18 16:05:29.641 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'albumPhotoMapper'.
+2019-04-18 16:05:29.641 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'announcementMapper' and 'com.example.acm.mapper.AnnouncementMapper' mapperInterface
+2019-04-18 16:05:29.642 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'announcementMapper'.
+2019-04-18 16:05:29.643 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'applyCompetitionMapper' and 'com.example.acm.mapper.ApplyCompetitionMapper' mapperInterface
+2019-04-18 16:05:29.644 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'applyCompetitionMapper'.
+2019-04-18 16:05:29.645 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'applylectureMapper' and 'com.example.acm.mapper.ApplylectureMapper' mapperInterface
+2019-04-18 16:05:29.645 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'applylectureMapper'.
+2019-04-18 16:05:29.646 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'attendanceMapper' and 'com.example.acm.mapper.AttendanceMapper' mapperInterface
+2019-04-18 16:05:29.646 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'attendanceMapper'.
+2019-04-18 16:05:29.647 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'classificationMapper' and 'com.example.acm.mapper.ClassificationMapper' mapperInterface
+2019-04-18 16:05:29.647 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'classificationMapper'.
+2019-04-18 16:05:29.648 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'commentMapper' and 'com.example.acm.mapper.CommentMapper' mapperInterface
+2019-04-18 16:05:29.648 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'commentMapper'.
+2019-04-18 16:05:29.649 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'competitionMapper' and 'com.example.acm.mapper.CompetitionMapper' mapperInterface
+2019-04-18 16:05:29.649 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'competitionMapper'.
+2019-04-18 16:05:29.650 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'dayDutyMapper' and 'com.example.acm.mapper.DayDutyMapper' mapperInterface
+2019-04-18 16:05:29.650 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'dayDutyMapper'.
+2019-04-18 16:05:29.651 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'friendurlMapper' and 'com.example.acm.mapper.FriendurlMapper' mapperInterface
+2019-04-18 16:05:29.651 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'friendurlMapper'.
+2019-04-18 16:05:29.652 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'impressionMapper' and 'com.example.acm.mapper.ImpressionMapper' mapperInterface
+2019-04-18 16:05:29.652 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'impressionMapper'.
+2019-04-18 16:05:29.652 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'invitationMapper' and 'com.example.acm.mapper.InvitationMapper' mapperInterface
+2019-04-18 16:05:29.653 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'invitationMapper'.
+2019-04-18 16:05:29.653 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'lectureMapper' and 'com.example.acm.mapper.LectureMapper' mapperInterface
+2019-04-18 16:05:29.653 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'lectureMapper'.
+2019-04-18 16:05:29.654 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'newClassMapper' and 'com.example.acm.mapper.NewClassMapper' mapperInterface
+2019-04-18 16:05:29.654 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'newClassMapper'.
+2019-04-18 16:05:29.655 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'newsMapper' and 'com.example.acm.mapper.NewsMapper' mapperInterface
+2019-04-18 16:05:29.655 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'newsMapper'.
+2019-04-18 16:05:29.656 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'photoMapper' and 'com.example.acm.mapper.PhotoMapper' mapperInterface
+2019-04-18 16:05:29.657 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'photoMapper'.
+2019-04-18 16:05:29.657 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'problemMapper' and 'com.example.acm.mapper.ProblemMapper' mapperInterface
+2019-04-18 16:05:29.657 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'problemMapper'.
+2019-04-18 16:05:29.659 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'replyproblemMapper' and 'com.example.acm.mapper.ReplyproblemMapper' mapperInterface
+2019-04-18 16:05:29.660 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'replyproblemMapper'.
+2019-04-18 16:05:29.661 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'userMapper' and 'com.example.acm.mapper.UserMapper' mapperInterface
+2019-04-18 16:05:29.661 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2019-04-18 16:05:31.733 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-9999"]
+2019-04-18 16:05:31.750 INFO  --- [main] org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-04-18 16:05:31.750 INFO  --- [main] org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-04-18 16:05:31.779 INFO  --- [localhost-startStop-1] org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\ggg\tomcat\apache-tomcat-7.0.82\lib;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\ggg\apache-maven-3.5.2\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\sbin;C:\Program Files\hadoop\hadoop-2.7.4\bin;C:\Program Files\hadoop\hadoop-2.7.4\sbin;C:\Python27;C:\Program Files\PuTTY\;C:\Python27\Lib\site-packages\django\bin;C:\Python27\Scripts;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\ggg\SDK\tools;C:\Users\ggg\SDK\platform-tools;D:\Git\cmd;D:\nodej\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\ggg\AppData\Local\Microsoft\WindowsApps;C:\Users\ggg\SSH Secure Shell;D:\GO\bin;C:\Users\ggg\AppData\Roaming\npm;D:\Microsoft VS Code\bin;;.]
+2019-04-18 16:05:31.949 INFO  --- [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-04-18 16:05:32.281 DEBUG --- [main] io.netty.util.internal.logging.InternalLoggerFactory Line:71  - Using SLF4J as the default logging framework
+2019-04-18 16:05:32.283 DEBUG --- [main] io.lettuce.core.resource.DefaultClientResources Line:76  - -Dio.netty.eventLoopThreads: 8
+2019-04-18 16:05:32.316 DEBUG --- [main] io.netty.util.ResourceLeakDetector Line:81  - -Dio.netty.leakDetection.level: simple
+2019-04-18 16:05:32.317 DEBUG --- [main] io.netty.util.ResourceLeakDetector Line:81  - -Dio.netty.leakDetection.targetRecords: 4
+2019-04-18 16:05:32.320 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:71  - Platform: Windows
+2019-04-18 16:05:32.322 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - -Dio.netty.noUnsafe: false
+2019-04-18 16:05:32.322 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - Java version: 8
+2019-04-18 16:05:32.324 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - sun.misc.Unsafe.theUnsafe: available
+2019-04-18 16:05:32.325 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - sun.misc.Unsafe.copyMemory: available
+2019-04-18 16:05:32.326 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - java.nio.Buffer.address: available
+2019-04-18 16:05:32.328 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - direct buffer constructor: available
+2019-04-18 16:05:32.330 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - java.nio.Bits.unaligned: available, true
+2019-04-18 16:05:32.331 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-04-18 16:05:32.332 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-04-18 16:05:32.333 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - sun.misc.Unsafe: available
+2019-04-18 16:05:32.334 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.tmpdir: C:\Users\ggg\AppData\Local\Temp (java.io.tmpdir)
+2019-04-18 16:05:32.335 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-04-18 16:05:32.337 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.noPreferDirect: false
+2019-04-18 16:05:32.338 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.maxDirectMemory: 1884815360 bytes
+2019-04-18 16:05:32.339 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-04-18 16:05:32.341 DEBUG --- [main] io.netty.util.internal.CleanerJava6 Line:71  - java.nio.ByteBuffer.cleaner(): available
+2019-04-18 16:05:32.342 DEBUG --- [main] io.netty.util.ResourceLeakDetectorFactory Line:76  - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3cee53dc
+2019-04-18 16:05:32.346 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:71  - org.jctools-core.MpscChunkedArrayQueue: available
+2019-04-18 16:05:32.364 DEBUG --- [main] reactor.util.Loggers$LoggerFactory Line:213 - Using Slf4j logging framework
+2019-04-18 16:05:32.383 DEBUG --- [main] reactor.core.publisher.UnsafeSupport Line:213 - Starting UnsafeSupport init in Java 1.8
+2019-04-18 16:05:32.385 DEBUG --- [main] reactor.core.publisher.UnsafeSupport Line:213 - Unsafe is available
+2019-04-18 16:05:32.393 DEBUG --- [main] io.lettuce.core.resource.DefaultClientResources Line:71  - LatencyUtils/HdrUtils are not available, metrics are disabled
+2019-04-18 16:05:32.446 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.numHeapArenas: 16
+2019-04-18 16:05:32.447 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.numDirectArenas: 16
+2019-04-18 16:05:32.448 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.pageSize: 8192
+2019-04-18 16:05:32.449 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.maxOrder: 11
+2019-04-18 16:05:32.449 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.chunkSize: 16777216
+2019-04-18 16:05:32.449 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.tinyCacheSize: 512
+2019-04-18 16:05:32.449 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.smallCacheSize: 256
+2019-04-18 16:05:32.450 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.normalCacheSize: 64
+2019-04-18 16:05:32.450 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-04-18 16:05:32.450 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-04-18 16:05:32.450 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-04-18 16:05:32.454 DEBUG --- [main] io.netty.util.internal.InternalThreadLocalMap Line:76  - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-04-18 16:05:32.454 DEBUG --- [main] io.netty.util.internal.InternalThreadLocalMap Line:76  - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-04-18 16:05:32.723 DEBUG --- [main] com.zaxxer.hikari.HikariConfig Line:495 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-04-18 16:05:32.755 DEBUG --- [main] org.apache.ibatis.logging.LogFactory Line:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-18 16:05:32.928 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\AlbumMapper.xml]'
+2019-04-18 16:05:32.950 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\ApplylectureMapper.xml]'
+2019-04-18 16:05:32.971 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\CommentMapper.xml]'
+2019-04-18 16:05:32.986 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\FriendurlMapper.xml]'
+2019-04-18 16:05:33.005 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\InvitationMapper.xml]'
+2019-04-18 16:05:33.020 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\LectureMapper.xml]'
+2019-04-18 16:05:33.037 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\PhotoMapper.xml]'
+2019-04-18 16:05:33.052 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\ProblemMapper.xml]'
+2019-04-18 16:05:33.065 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\ReplyproblemMapper.xml]'
+2019-04-18 16:05:33.080 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\UserMapper.xml]'
+2019-04-18 16:05:33.336 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerConfig': Unsatisfied dependency expressed through method 'setSpringSwaggerConfig' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.mangofactory.swagger.configuration.SpringSwaggerConfig': Unsatisfied dependency expressed through field 'handlerMappings'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+2019-04-18 16:05:33.359 INFO  --- [main] org.apache.catalina.core.StandardService Line:180 - Stopping service [Tomcat]
+2019-04-18 16:05:33.389 ERROR --- [main] org.springframework.boot.SpringApplication Line:842 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerConfig': Unsatisfied dependency expressed through method 'setSpringSwaggerConfig' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.mangofactory.swagger.configuration.SpringSwaggerConfig': Unsatisfied dependency expressed through field 'handlerMappings'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:667)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1348)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.example.acm.AcmApplication.main(AcmApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.mangofactory.swagger.configuration.SpringSwaggerConfig': Unsatisfied dependency expressed through field 'handlerMappings'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1348)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1291)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:129)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
+	... 45 common frames omitted
+2019-04-18 16:06:27.772 DEBUG --- [background-preinit] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Line:89  - Loaded expression factory via original TCCL
+2019-04-18 16:06:27.787 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:578 - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-04-18 16:06:27.787 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:579 - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-04-18 16:06:27.788 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:580 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-04-18 16:06:27.788 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:581 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-04-18 16:06:27.789 DEBUG --- [background-preinit] org.hibernate.validator.internal.engine.ValidatorFactoryImpl Line:582 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-04-18 16:06:27.852 INFO  --- [main] com.example.acm.AcmApplication Line:50  - Starting AcmApplication on DESKTOP-03CDSMO with PID 21472 (D:\ACM\acmBackT\wei_account\target\classes started by ggg in D:\ACM\acmBackT\wei_account)
+2019-04-18 16:06:27.853 DEBUG --- [main] com.example.acm.AcmApplication Line:53  - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-04-18 16:06:27.854 INFO  --- [main] com.example.acm.AcmApplication Line:659 - No active profile set, falling back to default profiles: default
+2019-04-18 16:06:29.299 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AlbumMapper.class]
+2019-04-18 16:06:29.300 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AlbumPhotoMapper.class]
+2019-04-18 16:06:29.301 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AnnouncementMapper.class]
+2019-04-18 16:06:29.301 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ApplyCompetitionMapper.class]
+2019-04-18 16:06:29.302 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ApplylectureMapper.class]
+2019-04-18 16:06:29.302 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\AttendanceMapper.class]
+2019-04-18 16:06:29.303 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ClassificationMapper.class]
+2019-04-18 16:06:29.303 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\CommentMapper.class]
+2019-04-18 16:06:29.304 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\CompetitionMapper.class]
+2019-04-18 16:06:29.304 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\DayDutyMapper.class]
+2019-04-18 16:06:29.305 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\FriendurlMapper.class]
+2019-04-18 16:06:29.305 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ImpressionMapper.class]
+2019-04-18 16:06:29.306 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\InvitationMapper.class]
+2019-04-18 16:06:29.306 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\LectureMapper.class]
+2019-04-18 16:06:29.307 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\NewClassMapper.class]
+2019-04-18 16:06:29.307 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\NewsMapper.class]
+2019-04-18 16:06:29.307 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\PhotoMapper.class]
+2019-04-18 16:06:29.308 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ProblemMapper.class]
+2019-04-18 16:06:29.308 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\ReplyproblemMapper.class]
+2019-04-18 16:06:29.309 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:437 - Identified candidate component class: file [D:\ACM\acmBackT\wei_account\target\classes\com\example\acm\mapper\UserMapper.class]
+2019-04-18 16:06:29.310 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'albumMapper' and 'com.example.acm.mapper.AlbumMapper' mapperInterface
+2019-04-18 16:06:29.310 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'albumMapper'.
+2019-04-18 16:06:29.311 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'albumPhotoMapper' and 'com.example.acm.mapper.AlbumPhotoMapper' mapperInterface
+2019-04-18 16:06:29.311 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'albumPhotoMapper'.
+2019-04-18 16:06:29.312 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'announcementMapper' and 'com.example.acm.mapper.AnnouncementMapper' mapperInterface
+2019-04-18 16:06:29.312 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'announcementMapper'.
+2019-04-18 16:06:29.313 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'applyCompetitionMapper' and 'com.example.acm.mapper.ApplyCompetitionMapper' mapperInterface
+2019-04-18 16:06:29.313 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'applyCompetitionMapper'.
+2019-04-18 16:06:29.313 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'applylectureMapper' and 'com.example.acm.mapper.ApplylectureMapper' mapperInterface
+2019-04-18 16:06:29.314 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'applylectureMapper'.
+2019-04-18 16:06:29.314 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'attendanceMapper' and 'com.example.acm.mapper.AttendanceMapper' mapperInterface
+2019-04-18 16:06:29.315 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'attendanceMapper'.
+2019-04-18 16:06:29.315 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'classificationMapper' and 'com.example.acm.mapper.ClassificationMapper' mapperInterface
+2019-04-18 16:06:29.315 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'classificationMapper'.
+2019-04-18 16:06:29.316 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'commentMapper' and 'com.example.acm.mapper.CommentMapper' mapperInterface
+2019-04-18 16:06:29.316 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'commentMapper'.
+2019-04-18 16:06:29.317 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'competitionMapper' and 'com.example.acm.mapper.CompetitionMapper' mapperInterface
+2019-04-18 16:06:29.317 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'competitionMapper'.
+2019-04-18 16:06:29.317 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'dayDutyMapper' and 'com.example.acm.mapper.DayDutyMapper' mapperInterface
+2019-04-18 16:06:29.317 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'dayDutyMapper'.
+2019-04-18 16:06:29.318 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'friendurlMapper' and 'com.example.acm.mapper.FriendurlMapper' mapperInterface
+2019-04-18 16:06:29.318 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'friendurlMapper'.
+2019-04-18 16:06:29.319 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'impressionMapper' and 'com.example.acm.mapper.ImpressionMapper' mapperInterface
+2019-04-18 16:06:29.319 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'impressionMapper'.
+2019-04-18 16:06:29.319 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'invitationMapper' and 'com.example.acm.mapper.InvitationMapper' mapperInterface
+2019-04-18 16:06:29.320 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'invitationMapper'.
+2019-04-18 16:06:29.320 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'lectureMapper' and 'com.example.acm.mapper.LectureMapper' mapperInterface
+2019-04-18 16:06:29.320 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'lectureMapper'.
+2019-04-18 16:06:29.321 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'newClassMapper' and 'com.example.acm.mapper.NewClassMapper' mapperInterface
+2019-04-18 16:06:29.321 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'newClassMapper'.
+2019-04-18 16:06:29.321 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'newsMapper' and 'com.example.acm.mapper.NewsMapper' mapperInterface
+2019-04-18 16:06:29.322 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'newsMapper'.
+2019-04-18 16:06:29.322 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'photoMapper' and 'com.example.acm.mapper.PhotoMapper' mapperInterface
+2019-04-18 16:06:29.322 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'photoMapper'.
+2019-04-18 16:06:29.323 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'problemMapper' and 'com.example.acm.mapper.ProblemMapper' mapperInterface
+2019-04-18 16:06:29.323 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'problemMapper'.
+2019-04-18 16:06:29.324 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'replyproblemMapper' and 'com.example.acm.mapper.ReplyproblemMapper' mapperInterface
+2019-04-18 16:06:29.324 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'replyproblemMapper'.
+2019-04-18 16:06:29.324 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:180 - Creating MapperFactoryBean with name 'userMapper' and 'com.example.acm.mapper.UserMapper' mapperInterface
+2019-04-18 16:06:29.325 DEBUG --- [main] org.mybatis.spring.mapper.ClassPathMapperScanner Line:216 - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2019-04-18 16:06:31.322 INFO  --- [main] org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-9999"]
+2019-04-18 16:06:31.335 INFO  --- [main] org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-04-18 16:06:31.335 INFO  --- [main] org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-04-18 16:06:31.343 INFO  --- [localhost-startStop-1] org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\ggg\tomcat\apache-tomcat-7.0.82\lib;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Users\ggg\apache-maven-3.5.2\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\bin;C:\Users\ggg\hadoop\hadoop-2.7.4\sbin;C:\Program Files\hadoop\hadoop-2.7.4\bin;C:\Program Files\hadoop\hadoop-2.7.4\sbin;C:\Python27;C:\Program Files\PuTTY\;C:\Python27\Lib\site-packages\django\bin;C:\Python27\Scripts;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\ggg\SDK\tools;C:\Users\ggg\SDK\platform-tools;D:\Git\cmd;D:\nodej\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\ggg\AppData\Local\Microsoft\WindowsApps;C:\Users\ggg\SSH Secure Shell;D:\GO\bin;C:\Users\ggg\AppData\Roaming\npm;D:\Microsoft VS Code\bin;;.]
+2019-04-18 16:06:31.494 INFO  --- [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-04-18 16:06:31.823 DEBUG --- [main] io.netty.util.internal.logging.InternalLoggerFactory Line:71  - Using SLF4J as the default logging framework
+2019-04-18 16:06:31.826 DEBUG --- [main] io.lettuce.core.resource.DefaultClientResources Line:76  - -Dio.netty.eventLoopThreads: 8
+2019-04-18 16:06:31.865 DEBUG --- [main] io.netty.util.ResourceLeakDetector Line:81  - -Dio.netty.leakDetection.level: simple
+2019-04-18 16:06:31.865 DEBUG --- [main] io.netty.util.ResourceLeakDetector Line:81  - -Dio.netty.leakDetection.targetRecords: 4
+2019-04-18 16:06:31.869 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:71  - Platform: Windows
+2019-04-18 16:06:31.871 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - -Dio.netty.noUnsafe: false
+2019-04-18 16:06:31.872 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - Java version: 8
+2019-04-18 16:06:31.873 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - sun.misc.Unsafe.theUnsafe: available
+2019-04-18 16:06:31.874 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - sun.misc.Unsafe.copyMemory: available
+2019-04-18 16:06:31.875 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - java.nio.Buffer.address: available
+2019-04-18 16:06:31.876 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - direct buffer constructor: available
+2019-04-18 16:06:31.878 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - java.nio.Bits.unaligned: available, true
+2019-04-18 16:06:31.878 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:71  - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-04-18 16:06:31.879 DEBUG --- [main] io.netty.util.internal.PlatformDependent0 Line:76  - java.nio.DirectByteBuffer.<init>(long, int): available
+2019-04-18 16:06:31.880 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - sun.misc.Unsafe: available
+2019-04-18 16:06:31.881 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.tmpdir: C:\Users\ggg\AppData\Local\Temp (java.io.tmpdir)
+2019-04-18 16:06:31.882 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-04-18 16:06:31.884 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.noPreferDirect: false
+2019-04-18 16:06:31.884 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.maxDirectMemory: 1884815360 bytes
+2019-04-18 16:06:31.885 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:76  - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-04-18 16:06:31.886 DEBUG --- [main] io.netty.util.internal.CleanerJava6 Line:71  - java.nio.ByteBuffer.cleaner(): available
+2019-04-18 16:06:31.886 DEBUG --- [main] io.netty.util.ResourceLeakDetectorFactory Line:76  - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5411dd90
+2019-04-18 16:06:31.891 DEBUG --- [main] io.netty.util.internal.PlatformDependent Line:71  - org.jctools-core.MpscChunkedArrayQueue: available
+2019-04-18 16:06:31.908 DEBUG --- [main] reactor.util.Loggers$LoggerFactory Line:213 - Using Slf4j logging framework
+2019-04-18 16:06:31.926 DEBUG --- [main] reactor.core.publisher.UnsafeSupport Line:213 - Starting UnsafeSupport init in Java 1.8
+2019-04-18 16:06:31.926 DEBUG --- [main] reactor.core.publisher.UnsafeSupport Line:213 - Unsafe is available
+2019-04-18 16:06:31.937 DEBUG --- [main] io.lettuce.core.resource.DefaultClientResources Line:71  - LatencyUtils/HdrUtils are not available, metrics are disabled
+2019-04-18 16:06:31.989 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.numHeapArenas: 16
+2019-04-18 16:06:31.989 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.numDirectArenas: 16
+2019-04-18 16:06:31.990 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.pageSize: 8192
+2019-04-18 16:06:31.990 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.maxOrder: 11
+2019-04-18 16:06:31.990 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.chunkSize: 16777216
+2019-04-18 16:06:31.991 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.tinyCacheSize: 512
+2019-04-18 16:06:31.991 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.smallCacheSize: 256
+2019-04-18 16:06:31.991 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.normalCacheSize: 64
+2019-04-18 16:06:31.991 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-04-18 16:06:31.992 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-04-18 16:06:31.993 DEBUG --- [main] io.netty.buffer.PooledByteBufAllocator Line:76  - -Dio.netty.allocator.useCacheForAllThreads: true
+2019-04-18 16:06:32.001 DEBUG --- [main] io.netty.util.internal.InternalThreadLocalMap Line:76  - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-04-18 16:06:32.002 DEBUG --- [main] io.netty.util.internal.InternalThreadLocalMap Line:76  - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-04-18 16:06:32.299 DEBUG --- [main] com.zaxxer.hikari.HikariConfig Line:495 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-04-18 16:06:32.331 DEBUG --- [main] org.apache.ibatis.logging.LogFactory Line:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-18 16:06:32.510 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\AlbumMapper.xml]'
+2019-04-18 16:06:32.537 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\ApplylectureMapper.xml]'
+2019-04-18 16:06:32.561 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\CommentMapper.xml]'
+2019-04-18 16:06:32.583 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\FriendurlMapper.xml]'
+2019-04-18 16:06:32.606 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\InvitationMapper.xml]'
+2019-04-18 16:06:32.625 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\LectureMapper.xml]'
+2019-04-18 16:06:32.643 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\PhotoMapper.xml]'
+2019-04-18 16:06:32.656 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\ProblemMapper.xml]'
+2019-04-18 16:06:32.670 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\ReplyproblemMapper.xml]'
+2019-04-18 16:06:32.691 DEBUG --- [main] org.mybatis.spring.SqlSessionFactoryBean Line:529 - Parsed mapper file: 'file [D:\ACM\acmBackT\wei_account\target\classes\mapper\UserMapper.xml]'
+2019-04-18 16:06:32.979 WARN  --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerConfig': Unsatisfied dependency expressed through method 'setSpringSwaggerConfig' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.mangofactory.swagger.configuration.SpringSwaggerConfig': Unsatisfied dependency expressed through field 'handlerMappings'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+2019-04-18 16:06:33.007 INFO  --- [main] org.apache.catalina.core.StandardService Line:180 - Stopping service [Tomcat]
+2019-04-18 16:06:33.048 ERROR --- [main] org.springframework.boot.SpringApplication Line:842 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'swaggerConfig': Unsatisfied dependency expressed through method 'setSpringSwaggerConfig' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.mangofactory.swagger.configuration.SpringSwaggerConfig': Unsatisfied dependency expressed through field 'handlerMappings'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:667)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1348)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.example.acm.AcmApplication.main(AcmApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.mangofactory.swagger.configuration.SpringSwaggerConfig': Unsatisfied dependency expressed through field 'handlerMappings'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1348)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1291)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'infoController1' method 
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController1.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+to {[/info/getIndexInfo]}: There is already 'infoController' bean method
+public com.example.acm.common.ResultBean com.example.acm.controller.InfoController.getIndexInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:129)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
+	... 45 common frames omitted
