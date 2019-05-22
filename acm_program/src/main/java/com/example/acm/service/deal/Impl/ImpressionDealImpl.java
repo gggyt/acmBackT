@@ -199,4 +199,29 @@ public class ImpressionDealImpl implements ImpressionDealService{
 
         return new ResultBean(ResultCode.SUCCESS, ans);
     }
+
+
+    public ResultBean updateImpression(long impressionId, String impreeesionTitle, int agreeNum) {
+        List<Impression> impressions = impressionService.findImpressionListByImpressionId(impressionId);
+
+        if (impressions.size()==0) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该印象");
+        }
+        Impression impression = impressions.get(0);
+
+        if (impression.getIsEffective()==SysConst.NOT_LIVE) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "不存在该印象");
+        }
+        if (impreeesionTitle == "") {
+            return new ResultBean(ResultCode.PARAM_ERROR, "印象不能为空");
+        }
+        if (agreeNum < 0) {
+            return new ResultBean(ResultCode.PARAM_ERROR, "点赞数输入范围错误");
+        }
+        impression.setAgreeNum(agreeNum);
+        impression.setImpressionTitle(impreeesionTitle);
+        impressionService.updateImpressionByImpressionId(impressionId, impression);
+
+        return new ResultBean(ResultCode.SUCCESS);
+    }
 }

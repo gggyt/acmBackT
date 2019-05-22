@@ -37,7 +37,7 @@
 		from user a left join impression b on a.userId=b.imUser
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
-				AND a.isEffective=#{map.isEffective}
+				AND b.isEffective=#{map.isEffective}
 			</if>
 			<if test="map.userId != null ">
 				AND a.userId=#{map.userId}

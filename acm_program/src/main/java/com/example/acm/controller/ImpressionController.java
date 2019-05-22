@@ -116,4 +116,20 @@ public class ImpressionController extends BaseController{
 
         return impressionDealService.interestImpression(userId, user);
     }
+
+    @RequestMapping("/updateImpression")
+    @ResponseBody
+    public ResultBean updateImpression(@RequestParam(value = "impressionId", required = true) int impreeesionId,
+                                         @RequestParam(value = "impressionTitle", defaultValue = "", required = false) String impressionTitle,
+                                         @RequestParam(value = "agreeNum", defaultValue = "-1", required = false) int agreeNum,
+                                         HttpServletRequest request, HttpServletResponse response) {
+        User user = getUserIdFromSession(request);
+        if (user == null) {
+            //return new ResultBean(ResultCode.SESSION_OUT);
+            user = new User();
+            user.setUserId(2);
+        }
+
+        return impressionDealService.updateImpression(impreeesionId, impressionTitle, agreeNum);
+    }
 }

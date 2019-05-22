@@ -20,4 +20,6 @@ public interface ImpressionDealService {
     ResultBean agreeImpression(long impressionId, User user);
 
     ResultBean interestImpression(int userId, User user);
+
+    ResultBean updateImpression(long impressionId, String impreeesionTitle, int agreeNum);
 }
