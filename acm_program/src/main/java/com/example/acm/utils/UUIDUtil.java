@@ -30,12 +30,12 @@ public class UUIDUtil {
     public static String getNumUUID(){
         StringBuilder sb=new StringBuilder();
         Random rand=new Random();
-        for(int i=0;i<16;i++)
+        for(int i=0;i<13;i++)
         {
             sb.append(rand.nextInt(10));
         }
         String data=sb.toString();
-        System.out.println(16+" random data: "+data);
+        System.out.println(13+" random data: "+data);
         return data;
     }
 

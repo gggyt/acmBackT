@@ -8,7 +8,7 @@ import com.example.acm.entity.User;
  */
 public interface CompetitionDealService {
 
-    ResultBean addCompetition(User user, String competitionTitle, String competitionBody);
+    ResultBean addCompetition(User user, String competitionTitle, String competitionBody, String competitionBeginTime);
 
     ResultBean updateCompetition(User user, long competitionId, String competitionTitle, String competitionBody);
 
@@ -20,9 +20,13 @@ public interface CompetitionDealService {
 
     ResultBean joinCompetition(User user, long competitionId);
 
+    ResultBean quitCompetition(User user, long competitionId);
+
     ResultBean doneCompetition(User user, long competitionId);
 
     ResultBean personCompetition(User user, long competitionId, int aOrs, String order, int pageNum, int pageSize);
 
     ResultBean userCompetition(User user, int userId, int aOrs, String order, int pageNum, int pageSize);
+
+    ResultBean detailCompetitionWithUser(User user, long competitionId);
 }

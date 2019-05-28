@@ -20,6 +20,8 @@ public interface UserDealService {
 
     public ResultBean updateUserImage(User user, int userId, String image);
 
-    public ResultBean updateUserInfo(User user, int userId, String username, String realname, String password, String mobile,
+    public ResultBean updateUserInfo(User user, int userId, String username, String realname, String mobile,
                                      long studentId, int grade, int classNum);
+    public ResultBean deleteUserInfo(int userId);
+    public ResultBean updatePassword(User user, int userId, String password);
 }

@@ -23,6 +23,8 @@ public class Competition implements Serializable {
     private Integer updateUser;//
     private Integer isDone;//
     private Integer isEffective;//
+	private Date BeginDate;//
+	private Date UntilDate;//
 
 	public void setCompetitionId(Long competitionId) {
 		this.competitionId = competitionId;
@@ -77,6 +79,18 @@ public class Competition implements Serializable {
 	}
 	public Integer getIsEffective() {
 		return this.isEffective;
+	}
+	public Date getBeginDate() {
+		return BeginDate;
+	}
+	public void setBeginDate(Date beginDate) {
+		BeginDate = beginDate;
+	}
+	public Date getUntilDate() {
+		return UntilDate;
+	}
+	public void setUntilDate(Date untilDate) {
+		UntilDate = untilDate;
 	}
 }
 

@@ -170,28 +170,10 @@ public class userController extends BaseController{
         }
     }
 
-    @RequestMapping(value = "/passUser", method = RequestMethod.POST)
-    @ResponseBody
-    public ResultBean selectUser(@RequestParam(value = "userId",  required = true) int userId,
-                                 HttpServletRequest request) {
-        try {
-            User user =getUserIdFromSession(request);
-            if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
-            }
-            return userDealService.changeAuth(user, userId, SysConst.NEW_MAN);
-        } catch(Exception e) {
-            LOG.error(e.getMessage(), e);
-            e.printStackTrace();
-            return new ResultBean(ResultCode.SYSTEM_FAILED);
-        }
-    }
-
-    @RequestMapping(value = "/notPassUser", method = RequestMethod.POST)
+    @RequestMapping(value = "/changeUserAuth", method = RequestMethod.POST)
     @ResponseBody
     public ResultBean notPassUser(@RequestParam(value = "userId",  required = true) int userId,
+                                  @RequestParam(value = "auth", required = true) int auth,
                                  HttpServletRequest request) {
         try {
             User user =getUserIdFromSession(request);
@@ -200,7 +182,15 @@ public class userController extends BaseController{
                 user = new User();
                 user.setUserId(2);
             }
-            return userDealService.changeAuth(user, userId, SysConst.NOT_PASS);
+            if (auth == 4) {
+                return userDealService.changeAuth(user, userId, SysConst.ADMIN);
+            } else if (auth == 1) {
+                return userDealService.changeAuth(user, userId, SysConst.USE);
+            } else if (auth == 0){
+                return userDealService.changeAuth(user, userId, SysConst.NOT_PASS);
+            } else {
+                return new ResultBean(ResultCode.PARAM_ERROR, "权限输入错误");
+            }
         } catch(Exception e) {
             LOG.error(e.getMessage(), e);
             e.printStackTrace();
@@ -208,43 +198,6 @@ public class userController extends BaseController{
         }
     }
 
-    @RequestMapping(value = "/beAdmin", method = RequestMethod.POST)
-    @ResponseBody
-    public ResultBean beAdmin(@RequestParam(value = "userId",  required = true) int userId,
-                                  HttpServletRequest request) {
-        try {
-            User user =getUserIdFromSession(request);
-            if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
-            }
-            return userDealService.changeAuth(user, userId, SysConst.ADMIN);
-        } catch(Exception e) {
-            LOG.error(e.getMessage(), e);
-            e.printStackTrace();
-            return new ResultBean(ResultCode.SYSTEM_FAILED);
-        }
-    }
-
-    @RequestMapping(value = "/bePlayer", method = RequestMethod.POST)
-    @ResponseBody
-    public ResultBean bePlayer(@RequestParam(value = "userId",  required = true) int userId,
-                              HttpServletRequest request) {
-        try {
-            User user =getUserIdFromSession(request);
-            if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
-            }
-            return userDealService.changeAuth(user, userId, SysConst.PLAYER);
-        } catch(Exception e) {
-            LOG.error(e.getMessage(), e);
-            e.printStackTrace();
-            return new ResultBean(ResultCode.SYSTEM_FAILED);
-        }
-    }
     @RequestMapping(value = "/userInfo", method = RequestMethod.POST)
     @ResponseBody
     public ResultBean userInfo(@RequestParam(value = "userId",  required = true) int userId,
@@ -307,7 +260,7 @@ public class userController extends BaseController{
     public ResultBean updateUserInfo(@RequestParam("userId") int userId,
                                      @RequestParam("username") String username,
                                      @RequestParam("realname") String realname,
-                                     @RequestParam("password") String password,
+//                                     @RequestParam("password") String password,
                                @RequestParam("mobile") String mobile,
                                @RequestParam("studentId") long studentId,
                                @RequestParam("grade") int grade,
@@ -329,6 +282,26 @@ public class userController extends BaseController{
             if (!NumUtil.isUserName(username)) {
                 return new ResultBean(ResultCode.PARAM_ERROR, "请输入3-20字符的用户名");
             }
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.updateUserInfo(user, userId, username, realname, mobile, studentId, grade, classNum);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/updatePassword", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean updateUserInfo(@RequestParam("userId") int userId,
+                                     @RequestParam("password") String password,
+                                     HttpServletRequest request) {
+        try {
             if (StringUtils.isNull(password)) {
                 return new ResultBean(ResultCode.PARAM_ERROR, "请输入密码");
             }
@@ -341,7 +314,26 @@ public class userController extends BaseController{
                 user = new User();
                 user.setUserId(2);
             }
-            return userDealService.updateUserInfo(user, userId, username, realname, password, mobile, studentId, grade, classNum);
+            return userDealService.updatePassword(user, userId, password);
+        } catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/deleteUser", method = RequestMethod.POST)
+    @ResponseBody
+    public ResultBean deleteUserInfo(@RequestParam("userId") int userId,
+                                     HttpServletRequest request) {
+        try {
+            User user =getUserIdFromSession(request);
+            if (user == null) {
+                //return new ResultBean(ResultCode.SESSION_OUT);
+                user = new User();
+                user.setUserId(2);
+            }
+            return userDealService.deleteUserInfo(userId);
         } catch(Exception e) {
             LOG.error(e.getMessage(), e);
             e.printStackTrace();

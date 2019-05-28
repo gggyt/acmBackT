@@ -433,7 +433,7 @@
                                              AND c.isEffective=#{map.isEffective}
                                          </if>
                              		</trim>
-
+		 updateUserByUserId
 
                  	</select>
 

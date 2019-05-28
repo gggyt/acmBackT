@@ -11,6 +11,13 @@ public class UserView {
     private String image;
     private int auth;
 
+    public String getMonile() {
+        return monile;
+    }
+
+    private String monile;
+    private Long studentId;
+
     public UserView(User user) {
         this.uId = user.getUserId();
         this.username = user.getUsername();
@@ -25,9 +32,15 @@ public class UserView {
             this.image = user.getImage();
         }
         this.auth = user.getAuth();
+        this.monile = user.getMobile();
+        this.studentId = user.getStudentId();
     }
     public int getuId() {
         return uId;
+    }
+
+    public Long getStudentId() {
+        return studentId;
     }
 
     public void setuId(int uId) {

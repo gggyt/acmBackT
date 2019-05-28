@@ -33,6 +33,7 @@ public class CompetitionController extends BaseController {
     @ResponseBody
     public ResultBean addCompetition(@RequestParam(value = "competitionTitle", required = true) String competitionTitle,
                                      @RequestParam(value = "competitionBody", required = true) String competitionBody,
+                                     @RequestParam(value = "competitionBeginTime", required = true) String competitionBeginTime,
                                      HttpServletRequest request, HttpServletResponse response) {
         try{
             User user = getUserIdFromSession(request);
@@ -40,15 +41,18 @@ public class CompetitionController extends BaseController {
                 return new ResultBean(ResultCode.SESSION_OUT);
             }
             if (StringUtils.isNull(competitionTitle)) {
-                return new ResultBean(ResultCode.PARAM_ERROR, "比赛名称不为空");
+                return new ResultBean(ResultCode.PARAM_ERROR, "比赛名称不能为空");
             }
             if (competitionTitle.length()>100) {
-                return new ResultBean(ResultCode.PARAM_ERROR, "比赛长度不超过50");
+                return new ResultBean(ResultCode.PARAM_ERROR, "比赛长度不能超过50");
             }
             if (StringUtils.isNull(competitionBody)) {
-                return new ResultBean(ResultCode.PARAM_ERROR, "比赛内容不为空");
+                return new ResultBean(ResultCode.PARAM_ERROR, "比赛内容不能为空");
             }
-            return competitionDealService.addCompetition(user, competitionTitle, competitionBody);
+            if (StringUtils.isNull(competitionBeginTime) || competitionBeginTime == "") {
+                return new ResultBean(ResultCode.PARAM_ERROR, "需输入校赛时间");
+            }
+            return competitionDealService.addCompetition(user, competitionTitle, competitionBody, competitionBeginTime);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error(e.getMessage());
@@ -165,6 +169,23 @@ public class CompetitionController extends BaseController {
         }
     }
 
+    @RequestMapping("detailCompetitionWithUser")
+    @ResponseBody
+    public ResultBean detailCompetitionWithUser(@RequestParam(value = "competitionId", required = true) long competition,
+                                        HttpServletRequest request, HttpServletResponse response) {
+        try{
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            return competitionDealService.detailCompetitionWithUser(user, competition);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
     @RequestMapping("joinCompetition")
     @ResponseBody
     public ResultBean joinCompetition(@RequestParam(value = "competitionId", required = true) long competition,
@@ -174,8 +195,8 @@ public class CompetitionController extends BaseController {
             if (user == null) {
                 return new ResultBean(ResultCode.SESSION_OUT);
             }
-            if (user.getAuth()<SysConst.ADMIN) {
-                return new ResultBean(ResultCode.USER_NOT_ADMIN);
+            if (user.getAuth()<SysConst.USE) {
+                return new ResultBean(ResultCode.OTHER_FAIL, "用户无权限报名");
             }
             return competitionDealService.joinCompetition(user, competition);
         } catch (Exception e) {
@@ -184,6 +205,27 @@ public class CompetitionController extends BaseController {
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    @RequestMapping("quitCompetition")
+    @ResponseBody
+    public ResultBean quitCompetition(@RequestParam(value = "competitionId", required = true) long competition,
+                                      HttpServletRequest request, HttpServletResponse response) {
+        try{
+            User user = getUserIdFromSession(request);
+            if (user == null) {
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth()<SysConst.USE) {
+                return new ResultBean(ResultCode.OTHER_FAIL, "用户无权限");
+            }
+            return competitionDealService.quitCompetition(user, competition);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
 
     @RequestMapping("personCompetition")
     @ResponseBody

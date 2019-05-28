@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -38,8 +39,10 @@ public class CompetitionDealImpl implements CompetitionDealService{
     @Autowired
     private ApplyCompetitionService applyCompetitionService;
 
-    public ResultBean addCompetition(User user, String competitionTitle, String competitionBody){
+    public ResultBean addCompetition(User user, String competitionTitle, String competitionBody, String competitionBeginTime){
         try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
             Long bigInteger = new Long(UUIDUtil.getNumUUID());
             Date now = new Date();
             Competition competition = new Competition();
@@ -47,7 +50,7 @@ public class CompetitionDealImpl implements CompetitionDealService{
             competition.setCompetitionTitle(competitionTitle);
             competition.setCompetitionBody(competitionBody);
             competition.setCreateUser(user.getUserId());
-            competition.setCreateDate(now);
+            competition.setCreateDate(sdf.parse(competitionBeginTime));
             competition.setUpdateUser(user.getUserId());
             competition.setUpdateDate(now);
             competition.setIsEffective(SysConst.LIVE);
@@ -222,14 +225,57 @@ public class CompetitionDealImpl implements CompetitionDealService{
             if (applyCompetitions.size()!=0) {
                 return new ResultBean(ResultCode.PARAM_ERROR, "您已报名");
             }
+            map.put("isEffective", SysConst.NOT_LIVE);
+            applyCompetitions = applyCompetitionService.findApplyCompetitionListByQuery(map);
             ApplyCompetition applyCompetition = new ApplyCompetition();
-            applyCompetition.setCompetitionId(competitionId);
-            applyCompetition.setJoinUser(user.getUserId());
-            applyCompetition.setCreateDate(new Date());
+            if (applyCompetitions.size() != 0) {
+                if (applyCompetitions.size() != 1) {
+                    return new ResultBean(ResultCode.SYSTEM_FAILED);
+                }
+                applyCompetition = applyCompetitions.get(0);
+            } else {
+                applyCompetition.setCompetitionId(competitionId);
+                applyCompetition.setJoinUser(user.getUserId());
+                applyCompetition.setCreateDate(new Date());
+            }
             applyCompetition.setIsEffective(SysConst.LIVE);
-            applyCompetitionService.addApplyCompetition(applyCompetition);
+            applyCompetitionService.updateApplyCompetitionByApplyCompetitionId(applyCompetition.getApplyCompetitionId(), applyCompetition);
 
             return new ResultBean(ResultCode.SUCCESS, "报名成功");
+        }catch (Exception e) {
+            e.printStackTrace();
+            LOG.error((e.getMessage()));
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+
+    public ResultBean quitCompetition(User user, long competitionId) {
+        try{
+            List<Competition> competitions = competitionService.findCompetitionListByCompetitionId(competitionId);
+            if (competitions.size()==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "不存在校赛");
+            }
+            Competition competition = competitions.get(0);
+            if (competition.getIsEffective()==SysConst.NOT_PASS) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "不存在该校赛");
+            }
+            if (competition.getIsDone()==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "该比赛已结束");
+            }
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("competitionId", competitionId);
+            map.put("joinUser", user.getUserId());
+            map.put("isEffective", SysConst.LIVE);
+            List<ApplyCompetition> applyCompetitions = applyCompetitionService.findApplyCompetitionListByQuery(map);
+            if (applyCompetitions.size() != 1) {
+                return new ResultBean(ResultCode.SYSTEM_FAILED);
+            }
+            ApplyCompetition applyCompetition = applyCompetitions.get(0);
+            applyCompetition.setIsEffective(SysConst.NOT_LIVE);
+            applyCompetitionService.updateApplyCompetitionByApplyCompetitionId(applyCompetition.getApplyCompetitionId(), applyCompetition);
+
+            return new ResultBean(ResultCode.SUCCESS, "取消报名成功");
         }catch (Exception e) {
             e.printStackTrace();
             LOG.error((e.getMessage()));
@@ -328,6 +374,29 @@ public class CompetitionDealImpl implements CompetitionDealService{
             ListPage<List<Map<String, Object>>> listPage = ListPage.createListPage(pageNum, pageSize, allNum, list);
 
             return new ResultBean(ResultCode.SUCCESS, listPage);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error((e.getMessage()));
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+    public ResultBean detailCompetitionWithUser(User user, long competitionId) {
+        try {
+            List<Map<String, Object>> competitions = competitionService.findCompetition2MapListByCompetitionId(competitionId);
+            if (competitions.size()==0) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "不存在该校赛");
+            }
+            Map<String, Object> competition = competitions.get(0);
+            if ((int)competition.get("isEffective")==SysConst.NOT_PASS) {
+                return new ResultBean(ResultCode.PARAM_ERROR, "不存在该校赛");
+            }
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("competitionId", competitionId);
+            map.put("isEffective", SysConst.LIVE);
+            map.put("joinUser", user.getUserId());
+            List<ApplyCompetition> applyCompetitions = applyCompetitionService.findApplyCompetitionListByQuery(map);
+            competition.put("isJoin", applyCompetitions.size());
+            return new ResultBean(ResultCode.SUCCESS, competition);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error((e.getMessage()));

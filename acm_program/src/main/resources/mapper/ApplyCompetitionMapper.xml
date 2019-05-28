@@ -19,7 +19,7 @@
 	</sql>
 
 	<insert id="addApplyCompetition" useGeneratedKeys="true">
-		INSERT INTO applyCompetition 
+		INSERT INTO applycompetition
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="applyCompetition.applyCompetitionId != null">applyCompetitionId,</if>
 			<if test="applyCompetition.competitionId != null">competitionId,</if>
@@ -38,7 +38,7 @@
 	</insert>
 	
 	<insert id="addApplyCompetitionList" parameterType="com.example.acm.entity.ApplyCompetition">
-		INSERT INTO applyCompetition 
+		INSERT INTO applycompetition
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			applyCompetitionId,
 			competitionId,
@@ -63,11 +63,11 @@
 	</insert>
 	
 	<delete id="deleteApplyCompetitionByApplyCompetitionId">
-		DELETE FROM applyCompetition WHERE applyCompetitionId = #{applyCompetitionId};
+		DELETE FROM applycompetition WHERE applyCompetitionId = #{applyCompetitionId};
 	</delete>
 
 	<update id="updateApplyCompetitionByApplyCompetitionId">
-		UPDATE applyCompetition
+		UPDATE applycompetition
 		<set>
 			<if test="applyCompetition.applyCompetitionId != null">applyCompetitionId=#{applyCompetition.applyCompetitionId},</if>
 			<if test="applyCompetition.competitionId != null">competitionId=#{applyCompetition.competitionId},</if>
@@ -81,8 +81,8 @@
 	<select id="getApplyCompetitionByApplyCompetitionId" resultType="com.example.acm.entity.ApplyCompetition">
 		SELECT 
 			<include refid="applyCompetition_field_list_alias"/> 
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		WHERE 
 			applyCompetitionId = #{applyCompetitionId}
 		LIMIT 1;
@@ -91,8 +91,8 @@
 	<select id="findApplyCompetitionListByApplyCompetitionId" resultType="com.example.acm.entity.ApplyCompetition">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<where>
 			<if test="applyCompetitionId != null">
 				a.applyCompetitionId = #{applyCompetitionId}
@@ -103,8 +103,8 @@
 	<select id="findApplyCompetitionListByCompetitionId" resultType="com.example.acm.entity.ApplyCompetition">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<where>
 			<if test="competitionId != null">
 				a.competitionId = #{competitionId}
@@ -115,8 +115,8 @@
 	<select id="findApplyCompetition2MapListByApplyCompetitionId" resultType="java.util.Map">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<where>
 			<if test="applyCompetitionId != null">
 				a.applyCompetitionId = #{applyCompetitionId}
@@ -127,8 +127,8 @@
 	<select id="findApplyCompetition2MapListByCompetitionId" resultType="java.util.Map">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<where>
 			<if test="competitionId != null">
 				a.competitionId = #{competitionId}
@@ -139,22 +139,22 @@
 	<select id="findApplyCompetitionList" resultType="com.example.acm.entity.ApplyCompetition">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a;		
+		FROM
+			applycompetition a;
 	</select>
 	
 	<select id="findApplyCompetition2MapList" resultType="java.util.Map">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a;		
+		FROM
+			applycompetition a;
 	</select>
 	
 	<select id="countApplyCompetitionListByQuery" resultType="java.lang.Integer">
 		SELECT
 			count(*)
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -165,8 +165,8 @@
 	<select id="findApplyCompetitionListByQuery" resultType="com.example.acm.entity.ApplyCompetition">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.competitionId != null ">
 				AND a.competitionId=#{map.competitionId}
@@ -190,8 +190,8 @@
 	<select id="countApplyCompetitionMapListByQuery" resultType="java.lang.Integer">
 		SELECT
 			count(*)
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 
@@ -205,8 +205,8 @@
 	<select id="findApplyCompetitionMapListByQuery" resultType="java.util.Map">
 		SELECT
 		<include refid="applyCompetition_field_list_alias"/>
-		FROM 
-			applyCompetition a
+		FROM
+			applycompetition a
 		<trim prefix="WHERE" prefixOverrides="AND|OR">
 			<if test="map.isEffective != null ">
 				AND a.isEffective=#{map.isEffective} 

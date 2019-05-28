@@ -210,7 +210,7 @@ public class UserDealServiceImpl implements UserDealService{
         }
     }
 
-    public ResultBean updateUserInfo(User user, int userId, String username, String realname, String password, String mobile,
+    public ResultBean updateUserInfo(User user, int userId, String username, String realname, String mobile,
                                      long studentId, int grade, int classNum){
         try {
             List<User> users = userService.findUserListByUserId(userId);
@@ -220,7 +220,6 @@ public class UserDealServiceImpl implements UserDealService{
             User userN = users.get(0);
             userN.setUsername(username);
             userN.setRealname(realname);
-            userN.setPassword(password);
             userN.setMobile(mobile);
             userN.setStudentId(studentId);
             userN.setGrade(grade);
@@ -236,4 +235,46 @@ public class UserDealServiceImpl implements UserDealService{
         }
     }
 
+    public ResultBean deleteUserInfo(int userId) {
+        try {
+            List<User> users = userService.findUserListByUserId(userId);
+            if (users.size()==0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+            User userN = users.get(0);
+
+            if (userN.getIsEffective()==SysConst.NOT_LIVE) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+
+            userN.setIsEffective(SysConst.NOT_LIVE);
+
+            userService.updateUserByUserId(userId, userN);
+
+            return new ResultBean(ResultCode.SUCCESS);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    public ResultBean updatePassword(User user, int userId, String password) {
+        try {
+            List<User> users = userService.findUserListByUserId(userId);
+            if (users.size()==0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
+            User userN = users.get(0);
+
+            userN.setPassword(password);
+            userService.updateUserByUserId(userId, userN);
+
+            return new ResultBean(ResultCode.SUCCESS);
+        }catch(Exception e) {
+            LOG.error(e.getMessage(), e);
+            e.printStackTrace();
+            return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
 }
