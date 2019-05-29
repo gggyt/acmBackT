@@ -13,6 +13,10 @@ import com.example.acm.service.deal.CompetitionDealService;
 import com.example.acm.utils.DateUtils;
 import com.example.acm.utils.ListPage;
 import com.example.acm.utils.UUIDUtil;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.util.CellRangeAddress;
+import org.apache.poi.xssf.usermodel.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -181,7 +185,7 @@ public class CompetitionDealImpl implements CompetitionDealService{
         }
     }
 
-    public ResultBean doneCompetition(User user, long competitionId){
+    public ResultBean doneCompetition(User user, long competitionId, int mean){
         try{
             List<Competition> competitions = competitionService.findCompetitionListByCompetitionId(competitionId);
             if (competitions.size()==0) {
@@ -193,7 +197,7 @@ public class CompetitionDealImpl implements CompetitionDealService{
             }
             competition.setUpdateDate(new Date());
             competition.setUpdateUser(user.getUserId());
-            competition.setIsDone(0);
+            competition.setIsDone(mean);
             competitionService.updateCompetitionByCompetitionId(competitionId, competition);
 
             return new ResultBean(ResultCode.SUCCESS);
@@ -233,13 +237,15 @@ public class CompetitionDealImpl implements CompetitionDealService{
                     return new ResultBean(ResultCode.SYSTEM_FAILED);
                 }
                 applyCompetition = applyCompetitions.get(0);
+                applyCompetition.setIsEffective(SysConst.LIVE);
+                applyCompetitionService.updateApplyCompetitionByApplyCompetitionId(applyCompetition.getApplyCompetitionId(), applyCompetition);
             } else {
                 applyCompetition.setCompetitionId(competitionId);
                 applyCompetition.setJoinUser(user.getUserId());
                 applyCompetition.setCreateDate(new Date());
+                applyCompetition.setIsEffective(SysConst.LIVE);
+                applyCompetitionService.addApplyCompetition(applyCompetition);
             }
-            applyCompetition.setIsEffective(SysConst.LIVE);
-            applyCompetitionService.updateApplyCompetitionByApplyCompetitionId(applyCompetition.getApplyCompetitionId(), applyCompetition);
 
             return new ResultBean(ResultCode.SUCCESS, "报名成功");
         }catch (Exception e) {
@@ -403,4 +409,87 @@ public class CompetitionDealImpl implements CompetitionDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
+
+    public XSSFWorkbook export(long competitionId) {
+        try {
+            List<Competition> competitions = competitionService.findCompetitionListByCompetitionId(competitionId);
+            if (competitions.size()==0) {
+                //return new ResultBean(ResultCode.PARAM_ERROR, "不存在校赛");
+            }
+            Competition competition = competitions.get(0);
+            if (competition.getIsEffective()==SysConst.NOT_PASS) {
+                //return new ResultBean(ResultCode.PARAM_ERROR, "不存在该校赛");
+            }
+
+            // 第一步：定义一个新的工作簿
+            XSSFWorkbook wb = new XSSFWorkbook();
+            // 第二步：创建一个Sheet页
+            XSSFSheet sheet = wb.createSheet("参赛证明");
+
+
+            sheet.setDefaultRowHeight((short) (2 * 256));//设置行高
+            sheet.setColumnWidth(0, 4000);//设置列宽
+            sheet.setColumnWidth(1,5500);
+            XSSFFont font = wb.createFont();
+            font.setFontName("宋体");
+            font.setFontHeightInPoints((short) 20);
+
+            CellStyle cellStyle = wb.createCellStyle();
+            cellStyle.setFont(font);
+            cellStyle.setAlignment(HorizontalAlignment.CENTER);
+
+            XSSFRow row0 = sheet.createRow(0);
+            XSSFCell cell0 = row0.createCell(0);
+            cell0.setCellValue(competition.getCompetitionTitle());
+            cell0.setCellStyle(cellStyle);
+
+
+
+            XSSFRow row = sheet.createRow(1);
+            XSSFCell cell = row.createCell(0);
+            cell.setCellValue("参赛人姓名 ");
+            cell = row.createCell(1);
+            cell.setCellValue("参赛人学号");
+
+            Map<String, Object> map = new HashMap<>();
+
+            map.put("competitionId", competitionId);
+            //  map.put("isPublic", isPublic);
+            map.put("isEffective", 1);
+            List<Map<String, Object>> list = userService.findUserByCompetitionId(map);
+            XSSFRow rows;
+            XSSFCell cells;
+            int sum=2;
+            if (list.size() >0) {
+                System.out.println(list.size());
+                for (Map<String, Object> mapTemp : list) {
+                    System.out.println(mapTemp.get("realname"));
+                    mapTemp.put("createDate", DateUtils.convDateToStr((Date) mapTemp.get("createDate"), "yyyy-MM-dd HH:mm:ss"));
+                    // 第三步：在这个sheet页里创建一行
+                    rows = sheet.createRow(sum++);
+                    // 第四步：在该行创建一个单元格
+                    cells = rows.createCell(0);
+                    // 第五步：在该单元格里设置值
+                    cells.setCellValue((String)mapTemp.get("realname"));
+
+                    cells = rows.createCell(1);
+                    cells.setCellValue((long)mapTemp.get("studentId"));
+                }
+            }
+
+            // 合并日期占两行(4个参数，分别为起始行，结束行，起始列，结束列)
+            // 行和列都是从0开始计数，且起始结束都会合并
+            // 这里是合并excel中日期的两行为一行
+            CellRangeAddress region = new CellRangeAddress(0, 0, 0, 1);
+            sheet.addMergedRegion(region);
+
+
+            return wb;
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOG.error(e.getMessage());
+            return null;
+        }
+    }
+
 }

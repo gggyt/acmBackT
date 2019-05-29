@@ -6,16 +6,21 @@ import com.example.acm.common.SysConst;
 import com.example.acm.entity.User;
 import com.example.acm.service.deal.CompetitionDealService;
 import com.example.acm.utils.StringUtils;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.URLEncoder;
 
 /**
  * Created by xgg on 2019/2/18.
@@ -37,6 +42,7 @@ public class CompetitionController extends BaseController {
                                      HttpServletRequest request, HttpServletResponse response) {
         try{
             User user = getUserIdFromSession(request);
+            competitionBody = StringUtils.getHtml(competitionBody);
             if (user == null) {
                 return new ResultBean(ResultCode.SESSION_OUT);
             }
@@ -68,6 +74,7 @@ public class CompetitionController extends BaseController {
                                      HttpServletRequest request, HttpServletResponse response) {
         try{
             User user = getUserIdFromSession(request);
+            competitionBody = StringUtils.getHtml(competitionBody);
             if (user == null) {
                 return new ResultBean(ResultCode.SESSION_OUT);
             }
@@ -135,6 +142,7 @@ public class CompetitionController extends BaseController {
     @RequestMapping("doneCompetition")
     @ResponseBody
     public ResultBean doneCompetition(@RequestParam(value = "competitionId", required = true) long competition,
+                                      @RequestParam(value = "mean", required = true) int mean,
                                         HttpServletRequest request, HttpServletResponse response) {
         try{
             User user = getUserIdFromSession(request);
@@ -144,7 +152,7 @@ public class CompetitionController extends BaseController {
             if (user.getAuth()<SysConst.ADMIN) {
                 return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
-            return competitionDealService.doneCompetition(user, competition);
+            return competitionDealService.doneCompetition(user, competition, mean);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error(e.getMessage());
@@ -269,6 +277,37 @@ public class CompetitionController extends BaseController {
             e.printStackTrace();
             LOG.error(e.getMessage());
             return new ResultBean(ResultCode.SYSTEM_FAILED);
+        }
+    }
+
+    @RequestMapping(value = "/export",method = RequestMethod.GET)
+    @ResponseBody
+    public void exportExcel(@RequestParam(value = "competitionId", required = true) long competitionId
+            ,HttpServletRequest request,HttpServletResponse response) throws Exception{
+        //一、从后台拿数据
+        if (null == request || null == response)
+        {
+            return;
+        }
+        //二、 数据转成excel
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("application/x-download");
+
+        String fileName = "参赛证明.xlsx";
+        fileName = URLEncoder.encode(fileName, "UTF-8");
+        response.addHeader("Content-Disposition", "attachment;filename=" + fileName);
+        // 第一步：定义一个新的工作簿
+        XSSFWorkbook wb = competitionDealService.export(competitionId);
+
+        try {
+            OutputStream out = response.getOutputStream();
+            wb.write(out);
+            out.close();
+            wb.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 }

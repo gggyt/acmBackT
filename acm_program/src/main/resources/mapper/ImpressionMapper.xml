@@ -43,6 +43,10 @@
 				AND a.userId=#{map.userId}
 			</if>
 		</trim>
+		order by b.agreeNum DESC
+		<if test="map.start != null ">
+			limit #{map.start},#{map.limit}
+		</if>
 	</select>
 
 	<sql id="impression_field_list_alias">

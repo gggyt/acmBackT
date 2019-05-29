@@ -252,7 +252,7 @@
 		</trim>
 		<if test="map.order != null ">
 		ORDER BY
-			a.isFirst DESC, a.${map.order} ${map.aOrs}
+			a.isFirst DESC, a.${map.order} ${map.aOrS}
 		</if>
 		<if test="map.order == null ">
 			ORDER BY

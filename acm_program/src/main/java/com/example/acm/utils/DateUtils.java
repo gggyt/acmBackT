@@ -5,11 +5,7 @@ import java.sql.Time;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.List;
+import java.util.*;
 
 public class DateUtils {
     private static final SimpleDateFormat ORA_DATE_TIME_EXTENDED_FORMAT = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -1112,6 +1108,17 @@ public class DateUtils {
             return day2-day1;
         }
     }
+
+    public static List<Map<String, Object>> changeDateNormal(List<Map<String, Object>> list, String first, String second) {
+        if (list.size() >0) {
+            for (Map<String, Object> mapTemp : list) {
+                mapTemp.put(first, DateUtils.convDateToStr((Date) mapTemp.get(first), "yyyy/MM/dd HH:mm:ss"));
+                mapTemp.put(second, DateUtils.convDateToStr((Date) mapTemp.get(second), "yyyy/MM/dd HH:mm:ss"));
+            }
+        }
+        return list;
+    }
+
     public static void main(String[] args) throws Exception {
         Date d1 = new Date();
         Date d2 = addDayDate(d1, -1);

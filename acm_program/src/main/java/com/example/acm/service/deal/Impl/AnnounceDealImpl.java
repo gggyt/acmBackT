@@ -104,9 +104,9 @@ public class AnnounceDealImpl implements AnnounceDealService{
             map.put("limit", limit);
             map.put("order", order);
             if (aOrs == 1) {
-                map.put("aOrs", "DESC");
+                map.put("aOrS", "DESC");
             } else {
-                map.put("a0rs", "ASC");
+                map.put("aOrS", "ASC");
             }
             map.put("isEffective", 1);
             List<Map<String, Object>> list = announcementService.findAnnouncementMapListByQuery(map);

@@ -211,7 +211,7 @@
 		</trim>
 		<if test="map.order != null ">
 		ORDER BY 
-			a.${map.order} ${map.aOrs}
+			a.${map.order} ${map.aOrS}
 		</if>
 		<if test="map.start != null ">
 		limit #{map.start},#{map.limit}

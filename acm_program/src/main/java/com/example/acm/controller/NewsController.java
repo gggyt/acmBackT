@@ -4,6 +4,7 @@ import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
 import com.example.acm.entity.User;
 import com.example.acm.service.deal.NewsDealService;
+import com.example.acm.utils.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,7 @@ public class NewsController extends BaseController{
                               HttpServletRequest request, HttpServletResponse response) {
         try {
             User user = getUserIdFromSession(request);
+            newsBody = StringUtils.getHtml(newsBody);
             if (user == null) {
                 //return new ResultBean(ResultCode.SESSION_OUT);
                 user = new User();
@@ -61,6 +63,7 @@ public class NewsController extends BaseController{
                                      HttpServletRequest request, HttpServletResponse response) {
         try {
             User user = getUserIdFromSession(request);
+            newsBody = StringUtils.getHtml(newsBody);
             if (user == null) {
                 //return new ResultBean(ResultCode.SESSION_OUT);
                 user = new User();

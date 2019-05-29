@@ -11,4 +11,12 @@ public class StringUtils {
         }
         return false;
     }
+
+    public static String getHtml(String html) {
+        html = html.replace("%26", "&");
+        html = html.replace("%2B", "\\");
+
+        return html;
+    }
+
 }

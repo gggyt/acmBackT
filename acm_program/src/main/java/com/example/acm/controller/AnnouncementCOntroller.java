@@ -7,6 +7,7 @@ import com.example.acm.entity.User;
 import com.example.acm.service.AnnouncementService;
 import com.example.acm.service.deal.AnnounceDealService;
 import com.example.acm.utils.ListPage;
+import com.example.acm.utils.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,7 @@ public class AnnouncementCOntroller extends BaseController{
                               HttpServletRequest request, HttpServletResponse response) {
         try {
             User user = getUserIdFromSession(request);
+            announceBody = StringUtils.getHtml(announceBody);
             if (user == null) {
                 //return new ResultBean(ResultCode.SESSION_OUT);
                 user = new User();
@@ -65,6 +67,7 @@ public class AnnouncementCOntroller extends BaseController{
                                       HttpServletRequest request, HttpServletResponse response) {
         try {
             User user = getUserIdFromSession(request);
+            announceBody = StringUtils.getHtml(announceBody);
             if (user == null) {
                 //return new ResultBean(ResultCode.SESSION_OUT);
                 user = new User();
