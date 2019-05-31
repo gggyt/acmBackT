@@ -2,6 +2,7 @@ package com.example.acm.controller;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.entity.Classification;
 import com.example.acm.entity.User;
 import com.example.acm.service.ClassificationService;
@@ -42,9 +43,10 @@ public class NewClassifyController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
             return classificationDealService.addClassify(user, name);
         } catch (Exception e) {
@@ -65,9 +67,7 @@ public class NewClassifyController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
 
             return classificationDealService.selectClass(user, className, aOrs, order, pageNum, pageSize);
@@ -85,9 +85,10 @@ public class NewClassifyController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
 
             return classificationDealService.deleteClass(user, classId);

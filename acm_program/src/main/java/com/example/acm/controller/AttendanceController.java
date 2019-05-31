@@ -2,6 +2,7 @@ package com.example.acm.controller;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.entity.User;
 import com.example.acm.service.deal.AttendanceDealService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,9 @@ public class AttendanceController extends BaseController{
         User user = getUserIdFromSession(request);
         if (user == null) {
             return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() != SysConst.NORMAL) {
+            return new ResultBean(ResultCode.NO_OAUTH);
         }
         return attendanceDealService.addAttendance(user);
     }

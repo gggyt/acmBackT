@@ -47,13 +47,11 @@ public class DayDutyController extends BaseController{
                                     HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-           // return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
         }
-        /*if (user.getAuth()< SysConst.ADMIN) {
+        if (user.getAuth()< SysConst.ADMIN) {
             return new ResultBean(ResultCode.USER_NOT_ADMIN);
-        }*/
+        }
 
         return dayDutyDealService.updateDayDuty(user, dayDutyId, dutyUserNames);
     }
@@ -64,14 +62,8 @@ public class DayDutyController extends BaseController{
                                     HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-          //  return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
         }
-        //if (user.getAuth()< SysConst.ADMIN) {
-        //    return new ResultBean(ResultCode.USER_NOT_ADMIN);
-      //  }
-
         return dayDutyDealService.detailDayDuty(user, dayDutyId);
     }
 }

@@ -2,6 +2,7 @@ package com.example.acm.controller;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.entity.Announcement;
 import com.example.acm.entity.User;
 import com.example.acm.service.AnnouncementService;
@@ -46,9 +47,10 @@ public class AnnouncementCOntroller extends BaseController{
             User user = getUserIdFromSession(request);
             announceBody = StringUtils.getHtml(announceBody);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
             return announceDealService.addAnnounce(user, announceTitle, announceBody, isPublic);
         } catch (Exception e) {
@@ -69,9 +71,10 @@ public class AnnouncementCOntroller extends BaseController{
             User user = getUserIdFromSession(request);
             announceBody = StringUtils.getHtml(announceBody);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
             return announceDealService.updateAnnounce(user, announceId, announceTitle, announceBody, isPublic);
         } catch (Exception e) {
@@ -92,9 +95,7 @@ public class AnnouncementCOntroller extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-//                return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
 
             return announceDealService.selectAnnounce(announceTitle,  aOrs,  order,  pageNum,  pageSize);
@@ -112,11 +113,12 @@ public class AnnouncementCOntroller extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
 
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
+            }
             return announceDealService.deleteAnnounce(user, announceId);
         } catch (Exception e) {
             e.printStackTrace();
@@ -132,9 +134,7 @@ public class AnnouncementCOntroller extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
 
             return announceDealService.detail(user, announceId);
@@ -153,9 +153,10 @@ public class AnnouncementCOntroller extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
 
             return announceDealService.updateFirst(user, announceId);

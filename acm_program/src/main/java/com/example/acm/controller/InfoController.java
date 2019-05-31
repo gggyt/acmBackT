@@ -51,9 +51,10 @@ public class InfoController extends BaseController{
     public ResultBean getIndexInfo(HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            // return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+             return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() < SysConst.NORMAL) {
+            return new ResultBean(ResultCode.USER_NOT_ADMIN);
         }
 
         Map<String, Object> map = new HashMap<>();
@@ -83,7 +84,7 @@ public class InfoController extends BaseController{
         int allNum = userService.countUserMapListByQuery(map);
         System.out.println("allNum---------"+allNum);
         int start = 0;
-        int limit = 3;
+        int limit = 5;
         map.put("start", start);
         map.put("limit", limit);
         List<Map<String, Object>> users = userMapper.findUserBuImpressionSort(map);
@@ -112,9 +113,10 @@ public class InfoController extends BaseController{
     public ResultBean getNewsAndAnnoun(HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            // return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+             return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() < SysConst.NORMAL) {
+            return new ResultBean(ResultCode.USER_NOT_ADMIN);
         }
 
         Map<String, Object> map = new HashMap<>();

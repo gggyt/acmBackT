@@ -63,6 +63,9 @@ public class userController extends BaseController{
             if (user==null) {
                 return new ResultBean(ResultCode.HAS_NO_THIS_USER);
             }
+            if (user.size() == 0) {
+                return new ResultBean(ResultCode.HAS_NO_THIS_USER);
+            }
             if (user.get(0).getPassword().equals(password)) {
                 setUserSession(request, response, request.getSession(), user.get(0));
                 LOG.info(username);
@@ -158,9 +161,7 @@ public class userController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.selectUsers(user, name, aOrs, order, pageNum, pageSize);
         } catch(Exception e) {
@@ -178,14 +179,15 @@ public class userController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
             if (auth == 4) {
                 return userDealService.changeAuth(user, userId, SysConst.ADMIN);
             } else if (auth == 1) {
-                return userDealService.changeAuth(user, userId, SysConst.USE);
+                return userDealService.changeAuth(user, userId, SysConst.NORMAL);
             } else if (auth == 0){
                 return userDealService.changeAuth(user, userId, SysConst.NOT_PASS);
             } else {
@@ -205,9 +207,7 @@ public class userController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.userInfo(user, userId);
         } catch(Exception e) {
@@ -225,9 +225,7 @@ public class userController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.updateUserImage(user, userId, image);
         } catch(Exception e) {
@@ -243,9 +241,7 @@ public class userController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.updateUserImage(user, user.getUserId(), image);
         } catch(Exception e) {
@@ -284,9 +280,7 @@ public class userController extends BaseController{
             }
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.updateUserInfo(user, userId, username, realname, mobile, studentId, grade, classNum);
         } catch(Exception e) {
@@ -310,9 +304,7 @@ public class userController extends BaseController{
             }
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.updatePassword(user, userId, password);
         } catch(Exception e) {
@@ -329,9 +321,7 @@ public class userController extends BaseController{
         try {
             User user =getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
             return userDealService.deleteUserInfo(userId);
         } catch(Exception e) {

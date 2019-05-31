@@ -4,12 +4,13 @@ public interface SysConst {
 
     String TOKEN = "Authorization";
 
-    int TOKEN_TIME = 3*60*60;
+    int TOKEN_TIME = 24*60*60;
 
     int SUPER_ADMIN = 5;
     int ADMIN = 4;
     int PLAYER = 3;
     int NEW_MAN = 2;
+    int NORMAL = 1;
     int NOT_PASS = 0;
 
     int USE=1;

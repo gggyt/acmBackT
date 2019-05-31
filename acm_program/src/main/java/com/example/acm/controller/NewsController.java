@@ -2,6 +2,7 @@ package com.example.acm.controller;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.entity.User;
 import com.example.acm.service.deal.NewsDealService;
 import com.example.acm.utils.StringUtils;
@@ -41,9 +42,10 @@ public class NewsController extends BaseController{
             User user = getUserIdFromSession(request);
             newsBody = StringUtils.getHtml(newsBody);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
             return newsDealService.addNews(user, newsTitle, newsBody, isPublic, classType);
         } catch (Exception e) {
@@ -65,9 +67,10 @@ public class NewsController extends BaseController{
             User user = getUserIdFromSession(request);
             newsBody = StringUtils.getHtml(newsBody);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
 
             return newsDealService.updateNews(user, newsId, newsTitle, newsBody, isPublic, classType);
@@ -85,9 +88,10 @@ public class NewsController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
+            }
+            if (user.getAuth() < SysConst.ADMIN) {
+                return new ResultBean(ResultCode.USER_NOT_ADMIN);
             }
 
             return newsDealService.deleteNews(user, newsId);
@@ -110,9 +114,7 @@ public class NewsController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
 
             return newsDealService.selectNews(newsTitle,  aOrs,  order,  pageNum,  pageSize, isPublic);
@@ -130,9 +132,7 @@ public class NewsController extends BaseController{
         try {
             User user = getUserIdFromSession(request);
             if (user == null) {
-                //return new ResultBean(ResultCode.SESSION_OUT);
-                user = new User();
-                user.setUserId(2);
+                return new ResultBean(ResultCode.SESSION_OUT);
             }
 
             return newsDealService.detail(user, newsId);

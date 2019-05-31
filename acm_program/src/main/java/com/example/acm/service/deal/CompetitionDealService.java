@@ -11,7 +11,7 @@ public interface CompetitionDealService {
 
     ResultBean addCompetition(User user, String competitionTitle, String competitionBody, String competitionBeginTime);
 
-    ResultBean updateCompetition(User user, long competitionId, String competitionTitle, String competitionBody);
+    ResultBean updateCompetition(User user, long competitionId, String competitionTitle, String competitionBody, String competitionBeginTime);
 
     ResultBean selectCompetition(String competitionTitle, int aOrs, String order, int pageNum, int pageSize);
 

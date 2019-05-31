@@ -92,7 +92,7 @@ public class CompetitionDealImpl implements CompetitionDealService{
             return new ResultBean(ResultCode.SYSTEM_FAILED);
         }
     }
-    public ResultBean updateCompetition(User user, long competitionId, String competitionTitle, String competitionBody){
+    public ResultBean updateCompetition(User user, long competitionId, String competitionTitle, String competitionBody, String competitionBeginTime){
         try {
             List<Competition> competitions = competitionService.findCompetitionListByCompetitionId(competitionId);
             if (competitions.size()==0) {
@@ -102,10 +102,12 @@ public class CompetitionDealImpl implements CompetitionDealService{
             if (competition.getIsEffective()==SysConst.NOT_PASS) {
                 return new ResultBean(ResultCode.PARAM_ERROR, "不存在该校赛");
             }
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             competition.setCompetitionTitle(competitionTitle);
             competition.setCompetitionBody(competitionBody);
             competition.setUpdateDate(new Date());
             competition.setUpdateUser(user.getUserId());
+            competition.setCreateDate(sdf.parse(competitionBeginTime));
             competitionService.updateCompetitionByCompetitionId(competitionId, competition);
 
             return new ResultBean(ResultCode.SUCCESS);

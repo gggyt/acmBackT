@@ -116,7 +116,9 @@ public class AnnounceDealImpl implements AnnounceDealService{
                     mapTemp.put("announceCreateTime", DateUtils.convDateToStr((Date) mapTemp.get("announceCreateTime"), "yyyy/MM/dd HH:mm:ss"));
                     mapTemp.put("announceUpdateTime", DateUtils.convDateToStr((Date) mapTemp.get("announceUpdateTime"), "yyyy/MM/dd HH:mm:ss"));
                     List<User> users = userService.findUserListByUserId(Integer.parseInt(mapTemp.get("announceCreateUser").toString()));
-                    mapTemp.put("announceCreateUser", users.get(0).getUsername());
+                    if (users.size() != 0) {
+                        mapTemp.put("announceCreateUser", users.get(0).getUsername());
+                    }
                 }
             }
 

@@ -2,6 +2,7 @@ package com.example.acm.controller;
 
 import com.example.acm.common.ResultBean;
 import com.example.acm.common.ResultCode;
+import com.example.acm.common.SysConst;
 import com.example.acm.entity.User;
 import com.example.acm.service.deal.ImpressionDealService;
 import com.example.acm.utils.StringUtils;
@@ -31,9 +32,10 @@ public class ImpressionController extends BaseController{
                                     HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() < SysConst.NORMAL) {
+            return new ResultBean(ResultCode.NO_OAUTH);
         }
 
         if (StringUtils.isNull(impressionTitle)) {
@@ -49,9 +51,10 @@ public class ImpressionController extends BaseController{
                                     HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() < SysConst.ADMIN) {
+            return new ResultBean(ResultCode.USER_NOT_ADMIN);
         }
 
         return impressionDealService.deleteImpression(impressionId, user);
@@ -67,9 +70,7 @@ public class ImpressionController extends BaseController{
                                        HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
         }
 
         return impressionDealService.selectImpression(user, uxername, aOrs, order, pageNum, pageSize);
@@ -81,9 +82,7 @@ public class ImpressionController extends BaseController{
                                        HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
         }
 
         return impressionDealService.userImpression(userId, user);
@@ -95,9 +94,10 @@ public class ImpressionController extends BaseController{
                                        HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() != SysConst.NORMAL) {
+            return new ResultBean(ResultCode.NO_OAUTH);
         }
 
         return impressionDealService.agreeImpression(impressionId, user);
@@ -109,9 +109,7 @@ public class ImpressionController extends BaseController{
                                      HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
         }
 
         return impressionDealService.interestImpression(userId, user);
@@ -125,9 +123,10 @@ public class ImpressionController extends BaseController{
                                          HttpServletRequest request, HttpServletResponse response) {
         User user = getUserIdFromSession(request);
         if (user == null) {
-            //return new ResultBean(ResultCode.SESSION_OUT);
-            user = new User();
-            user.setUserId(2);
+            return new ResultBean(ResultCode.SESSION_OUT);
+        }
+        if (user.getAuth() < SysConst.ADMIN) {
+            return new ResultBean(ResultCode.USER_NOT_ADMIN);
         }
 
         return impressionDealService.updateImpression(impreeesionId, impressionTitle, agreeNum);
